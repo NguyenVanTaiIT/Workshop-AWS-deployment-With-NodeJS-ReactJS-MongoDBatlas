@@ -1,3 +1,6 @@
+baseURL = "https://github.com/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/"
+
+
 # Change the default theme to be use when building the site with Hugo
 theme = "hugo-theme-learn"
 

@@ -2,194 +2,194 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>//localhost:1313/vi/2-preparation/2.2-iam-and-secrets/</loc>
+    <loc>http://localhost:1313/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/vi/2-preparation/2.2-iam-and-secrets/</loc>
     <lastmod>2025-05-25T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:1313/2-preparation/2.2-iam-and-secrets/"
+                href="http://localhost:1313/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/2-preparation/2.2-iam-and-secrets/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="//localhost:1313/vi/2-preparation/2.2-iam-and-secrets/"
+                href="http://localhost:1313/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/vi/2-preparation/2.2-iam-and-secrets/"
                 />
   </url><url>
-    <loc>//localhost:1313/vi/1-introduce/</loc>
+    <loc>http://localhost:1313/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/vi/1-introduce/</loc>
     <lastmod>2025-05-25T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:1313/1-introduce/"
+                href="http://localhost:1313/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/1-introduce/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="//localhost:1313/vi/1-introduce/"
+                href="http://localhost:1313/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/vi/1-introduce/"
                 />
   </url><url>
-    <loc>//localhost:1313/vi/</loc>
+    <loc>http://localhost:1313/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/vi/</loc>
     <lastmod>2025-05-25T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:1313/"
+                href="http://localhost:1313/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="//localhost:1313/vi/"
+                href="http://localhost:1313/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/vi/"
                 />
   </url><url>
-    <loc>//localhost:1313/vi/2-preparation/2.2-iam-and-secrets/2.2.1-create-iam-user/</loc>
+    <loc>http://localhost:1313/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/vi/2-preparation/2.2-iam-and-secrets/2.2.1-create-iam-user/</loc>
     <lastmod>2025-05-25T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:1313/2-preparation/2.2-iam-and-secrets/2.2.1-create-iam-user/"
+                href="http://localhost:1313/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/2-preparation/2.2-iam-and-secrets/2.2.1-create-iam-user/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="//localhost:1313/vi/2-preparation/2.2-iam-and-secrets/2.2.1-create-iam-user/"
+                href="http://localhost:1313/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/vi/2-preparation/2.2-iam-and-secrets/2.2.1-create-iam-user/"
                 />
   </url><url>
-    <loc>//localhost:1313/vi/2-preparation/2.3-create-beanstalk/</loc>
+    <loc>http://localhost:1313/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/vi/2-preparation/2.3-create-beanstalk/</loc>
     <lastmod>2025-05-25T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:1313/2-preparation/2.3-create-beanstalk/"
+                href="http://localhost:1313/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/2-preparation/2.3-create-beanstalk/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="//localhost:1313/vi/2-preparation/2.3-create-beanstalk/"
+                href="http://localhost:1313/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/vi/2-preparation/2.3-create-beanstalk/"
                 />
   </url><url>
-    <loc>//localhost:1313/vi/2-preparation/2.2-iam-and-secrets/2.2.2-create-iam-role/</loc>
+    <loc>http://localhost:1313/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/vi/2-preparation/2.2-iam-and-secrets/2.2.2-create-iam-role/</loc>
     <lastmod>2025-05-25T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:1313/2-preparation/2.2-iam-and-secrets/2.2.2-create-iam-role/"
+                href="http://localhost:1313/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/2-preparation/2.2-iam-and-secrets/2.2.2-create-iam-role/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="//localhost:1313/vi/2-preparation/2.2-iam-and-secrets/2.2.2-create-iam-role/"
+                href="http://localhost:1313/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/vi/2-preparation/2.2-iam-and-secrets/2.2.2-create-iam-role/"
                 />
   </url><url>
-    <loc>//localhost:1313/vi/2-preparation/2.2-iam-and-secrets/2.2.3-create-secret/</loc>
+    <loc>http://localhost:1313/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/vi/2-preparation/2.2-iam-and-secrets/2.2.3-create-secret/</loc>
     <lastmod>2025-05-25T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:1313/2-preparation/2.2-iam-and-secrets/2.2.3-create-secret/"
+                href="http://localhost:1313/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/2-preparation/2.2-iam-and-secrets/2.2.3-create-secret/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="//localhost:1313/vi/2-preparation/2.2-iam-and-secrets/2.2.3-create-secret/"
+                href="http://localhost:1313/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/vi/2-preparation/2.2-iam-and-secrets/2.2.3-create-secret/"
                 />
   </url><url>
-    <loc>//localhost:1313/vi/2-preparation/2.4-mongodb-integration/</loc>
+    <loc>http://localhost:1313/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/vi/2-preparation/2.4-mongodb-integration/</loc>
     <lastmod>2025-05-25T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:1313/2-preparation/2.4-mongodb-integration/"
+                href="http://localhost:1313/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/2-preparation/2.4-mongodb-integration/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="//localhost:1313/vi/2-preparation/2.4-mongodb-integration/"
+                href="http://localhost:1313/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/vi/2-preparation/2.4-mongodb-integration/"
                 />
   </url><url>
-    <loc>//localhost:1313/vi/3-xray-sdk/</loc>
+    <loc>http://localhost:1313/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/vi/3-xray-sdk/</loc>
     <lastmod>1970-01-01T07:33:41+07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:1313/3-xray-sdk/"
+                href="http://localhost:1313/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/3-xray-sdk/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="//localhost:1313/vi/3-xray-sdk/"
+                href="http://localhost:1313/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/vi/3-xray-sdk/"
                 />
   </url><url>
-    <loc>//localhost:1313/vi/2-preparation/</loc>
+    <loc>http://localhost:1313/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/vi/2-preparation/</loc>
     <lastmod>2025-05-25T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:1313/2-preparation/"
+                href="http://localhost:1313/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/2-preparation/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="//localhost:1313/vi/2-preparation/"
+                href="http://localhost:1313/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/vi/2-preparation/"
                 />
   </url><url>
-    <loc>//localhost:1313/vi/2-preparation/2.1-create-mongodb-atlas-db/</loc>
+    <loc>http://localhost:1313/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/vi/2-preparation/2.1-create-mongodb-atlas-db/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:1313/2-preparation/2.1-create-mongodb-atlas-db/"
+                href="http://localhost:1313/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/2-preparation/2.1-create-mongodb-atlas-db/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="//localhost:1313/vi/2-preparation/2.1-create-mongodb-atlas-db/"
+                href="http://localhost:1313/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/vi/2-preparation/2.1-create-mongodb-atlas-db/"
                 />
   </url><url>
-    <loc>//localhost:1313/vi/2-preparation/2.3-create-beanstalk/2.3.1-create-eb-env/</loc>
+    <loc>http://localhost:1313/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/vi/2-preparation/2.3-create-beanstalk/2.3.1-create-eb-env/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:1313/2-preparation/2.3-create-beanstalk/2.3.1-create-eb-env/"
+                href="http://localhost:1313/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/2-preparation/2.3-create-beanstalk/2.3.1-create-eb-env/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="//localhost:1313/vi/2-preparation/2.3-create-beanstalk/2.3.1-create-eb-env/"
+                href="http://localhost:1313/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/vi/2-preparation/2.3-create-beanstalk/2.3.1-create-eb-env/"
                 />
   </url><url>
-    <loc>//localhost:1313/vi/2-preparation/2.3-create-beanstalk/2.3.2-configure-eb-env/</loc>
+    <loc>http://localhost:1313/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/vi/2-preparation/2.3-create-beanstalk/2.3.2-configure-eb-env/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:1313/2-preparation/2.3-create-beanstalk/2.3.2-configure-eb-env/"
+                href="http://localhost:1313/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/2-preparation/2.3-create-beanstalk/2.3.2-configure-eb-env/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="//localhost:1313/vi/2-preparation/2.3-create-beanstalk/2.3.2-configure-eb-env/"
+                href="http://localhost:1313/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/vi/2-preparation/2.3-create-beanstalk/2.3.2-configure-eb-env/"
                 />
   </url><url>
-    <loc>//localhost:1313/vi/categories/</loc>
+    <loc>http://localhost:1313/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/vi/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:1313/categories/"
+                href="http://localhost:1313/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="//localhost:1313/vi/categories/"
+                href="http://localhost:1313/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/vi/categories/"
                 />
   </url><url>
-    <loc>//localhost:1313/vi/tags/</loc>
+    <loc>http://localhost:1313/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/vi/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:1313/tags/"
+                href="http://localhost:1313/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="//localhost:1313/vi/tags/"
+                href="http://localhost:1313/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/vi/tags/"
                 />
   </url>
 </urlset>
