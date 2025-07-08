@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Create MongoDB Atlas Database for Development on AWS System Manager</title>
+    <link>/2-preparation/2.1-create-mongodb-atlas-db/</link>
+    <description>Recent content in Create MongoDB Atlas Database for Development on AWS System Manager</description>
+    <generator>Hugo 0.125.0</generator>
+    <language>en</language>
+    <lastBuildDate></lastBuildDate>
+    <atom:link href="/2-preparation/2.1-create-mongodb-atlas-db/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

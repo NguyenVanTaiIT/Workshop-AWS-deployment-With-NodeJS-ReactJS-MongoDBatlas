@@ -1,0 +1,1550 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.125.0">
+    <meta name="description" content="">
+<meta name="author" content="journeyoftheaverageguy@gmail.com">
+
+    <link rel="icon" href="/images/favicon.png" type="image/png">
+
+    <title>Create and Configure Elastic Beanstalk Environment :: AWS System Manager</title>
+
+    
+    <link href="/css/nucleus.css?1751986769" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1751986769" rel="stylesheet">
+    <link href="/css/hybrid.css?1751986769" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1751986769" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1751986769" rel="stylesheet">
+    <link href="/css/auto-complete.css?1751986769" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1751986769" rel="stylesheet">
+    <link href="/css/theme.css?1751986769" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1751986769" rel="stylesheet">
+    
+    <link href="/css/theme-workshop.css?1751986769" rel="stylesheet">
+    
+    
+
+    <script src="/js/jquery-3.3.1.min.js?1751986769"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="/2-preparation/2.3-create-beanstalk/2.3.1-create-eb-env/">
+    <nav id="sidebar" class="showVisitedLinks">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <a id="logo" href="/">
+
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 30" width="30%"><defs><style>.cls-1{fill:#fff;}.cls-2{fill:#f90;fill-rule:evenodd;}</style></defs><title>AWS-Logo_White-Color</title><path class="cls-1" d="M14.09,10.85a4.7,4.7,0,0,0,.19,1.48,7.73,7.73,0,0,0,.54,1.19.77.77,0,0,1,.12.38.64.64,0,0,1-.32.49l-1,.7a.83.83,0,0,1-.44.15.69.69,0,0,1-.49-.23,3.8,3.8,0,0,1-.6-.77q-.25-.42-.51-1a6.14,6.14,0,0,1-4.89,2.3,4.54,4.54,0,0,1-3.32-1.19,4.27,4.27,0,0,1-1.22-3.2A4.28,4.28,0,0,1,3.61,7.75,6.06,6.06,0,0,1,7.69,6.46a12.47,12.47,0,0,1,1.76.13q.92.13,1.91.36V5.73a3.65,3.65,0,0,0-.79-2.66A3.81,3.81,0,0,0,7.86,2.3a7.71,7.71,0,0,0-1.79.22,12.78,12.78,0,0,0-1.79.57,4.55,4.55,0,0,1-.58.22l-.26,0q-.35,0-.35-.52V2a1.09,1.09,0,0,1,.12-.58,1.2,1.2,0,0,1,.47-.35A10.88,10.88,0,0,1,5.77.32,10.19,10.19,0,0,1,8.36,0a6,6,0,0,1,4.35,1.35,5.49,5.49,0,0,1,1.38,4.09ZM7.34,13.38a5.36,5.36,0,0,0,1.72-.31A3.63,3.63,0,0,0,10.63,12,2.62,2.62,0,0,0,11.19,11a5.63,5.63,0,0,0,.16-1.44v-.7a14.35,14.35,0,0,0-1.53-.28,12.37,12.37,0,0,0-1.56-.1,3.84,3.84,0,0,0-2.47.67A2.34,2.34,0,0,0,5,11a2.35,2.35,0,0,0,.61,1.76A2.4,2.4,0,0,0,7.34,13.38Zm13.35,1.8a1,1,0,0,1-.64-.16,1.3,1.3,0,0,1-.35-.65L15.81,1.51a3,3,0,0,1-.15-.67.36.36,0,0,1,.41-.41H17.7a1,1,0,0,1,.65.16,1.4,1.4,0,0,1,.33.65l2.79,11,2.59-11A1.17,1.17,0,0,1,24.39.6a1.1,1.1,0,0,1,.67-.16H26.4a1.1,1.1,0,0,1,.67.16,1.17,1.17,0,0,1,.32.65L30,12.39,32.88,1.25A1.39,1.39,0,0,1,33.22.6a1,1,0,0,1,.65-.16h1.54a.36.36,0,0,1,.41.41,1.36,1.36,0,0,1,0,.26,3.64,3.64,0,0,1-.12.41l-4,12.86a1.3,1.3,0,0,1-.35.65,1,1,0,0,1-.64.16H29.25a1,1,0,0,1-.67-.17,1.26,1.26,0,0,1-.32-.67L25.67,3.64,23.11,14.34a1.26,1.26,0,0,1-.32.67,1,1,0,0,1-.67.17Zm21.36.44a11.28,11.28,0,0,1-2.56-.29,7.44,7.44,0,0,1-1.92-.67,1,1,0,0,1-.61-.93v-.84q0-.52.38-.52a.9.9,0,0,1,.31.06l.42.17a8.77,8.77,0,0,0,1.83.58,9.78,9.78,0,0,0,2,.2,4.48,4.48,0,0,0,2.43-.55,1.76,1.76,0,0,0,.86-1.57,1.61,1.61,0,0,0-.45-1.16A4.29,4.29,0,0,0,43,9.22l-2.41-.76A5.15,5.15,0,0,1,38,6.78a3.94,3.94,0,0,1-.83-2.41,3.7,3.7,0,0,1,.45-1.85,4.47,4.47,0,0,1,1.19-1.37A5.27,5.27,0,0,1,40.51.29,7.4,7.4,0,0,1,42.6,0a8.87,8.87,0,0,1,1.12.07q.57.07,1.08.19t.95.26a4.27,4.27,0,0,1,.7.29,1.59,1.59,0,0,1,.49.41.94.94,0,0,1,.15.55v.79q0,.52-.38.52a1.76,1.76,0,0,1-.64-.2,7.74,7.74,0,0,0-3.2-.64,4.37,4.37,0,0,0-2.21.47,1.6,1.6,0,0,0-.79,1.48,1.58,1.58,0,0,0,.49,1.18,4.94,4.94,0,0,0,1.83.92L44.55,7a5.08,5.08,0,0,1,2.57,1.6A3.76,3.76,0,0,1,47.9,11a4.21,4.21,0,0,1-.44,1.93,4.4,4.4,0,0,1-1.21,1.47,5.43,5.43,0,0,1-1.85.93A8.25,8.25,0,0,1,42.05,15.62Z"></path><path class="cls-2" d="M45.19,23.81C39.72,27.85,31.78,30,25,30A36.64,36.64,0,0,1,.22,20.57c-.51-.46-.06-1.09.56-.74A49.78,49.78,0,0,0,25.53,26.4,49.23,49.23,0,0,0,44.4,22.53C45.32,22.14,46.1,23.14,45.19,23.81Z"></path><path class="cls-2" d="M47.47,21.21c-.7-.9-4.63-.42-6.39-.21-.53.06-.62-.4-.14-.74,3.13-2.2,8.27-1.57,8.86-.83s-.16,5.89-3.09,8.35c-.45.38-.88.18-.68-.32C46.69,25.8,48.17,22.11,47.47,21.21Z"></path></svg>
+
+</a>
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="/js/lunr.min.js?1751986769"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1751986769"></script>
+<script type="text/javascript">
+    
+        var baseurl = "\/";
+    
+</script>
+
+<script type="text/javascript" src="/js/search.js?1751986769"></script>
+
+    
+  </div>
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/1-introduce/" title="Introduction" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/1-introduce/">
+           <b> 1. </b> Introduction
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/2-preparation/" title="Preparation" class="dd-item 
+        parent
+        
+        
+        ">
+      <a href="/2-preparation/">
+          <b> 2. </b>Preparation
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/2-preparation/2.1-create-mongodb-atlas-db/" title="Create MongoDB Atlas Database for Development" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/2-preparation/2.1-create-mongodb-atlas-db/">
+           <b> 2.1 </b> Create MongoDB Atlas Database for Development
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/2-preparation/2.2-iam-and-secrets/" title="Preparing IAM and Secrets" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/2-preparation/2.2-iam-and-secrets/">
+           <b> 2.2 </b> Preparing IAM and Secrets
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/2-preparation/2.2-iam-and-secrets/2.2.1-create-iam-user/" title="Create IAM User for Development" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/2-preparation/2.2-iam-and-secrets/2.2.1-create-iam-user/">
+           <b> 2.2.1 </b> Create IAM User for Development
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/2-preparation/2.2-iam-and-secrets/2.2.2-create-iam-role/" title="Create IAM Role for Beanstalk" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/2-preparation/2.2-iam-and-secrets/2.2.2-create-iam-role/">
+           <b> 2.2.2 </b> Create IAM Role for Beanstalk
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/2-preparation/2.2-iam-and-secrets/2.2.3-create-secret/" title="Create and Use Secret in AWS Secrets Manager" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/2-preparation/2.2-iam-and-secrets/2.2.3-create-secret/">
+           <b> 2.2.3 </b> Create and Use Secret in AWS Secrets Manager
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/2-preparation/2.3-create-beanstalk/" title="Create Elastic Beanstalk Environment" class="dd-item 
+        parent
+        
+        
+        ">
+      <a href="/2-preparation/2.3-create-beanstalk/">
+           <b> 2.3 </b> Create Elastic Beanstalk Environment
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/2-preparation/2.3-create-beanstalk/2.3.1-create-eb-env/" title="Create and Configure Elastic Beanstalk Environment" class="dd-item 
+        
+        active
+        
+        ">
+      <a href="/2-preparation/2.3-create-beanstalk/2.3.1-create-eb-env/">
+           <b> 2.3.1 </b> Create and Configure Elastic Beanstalk Environment
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/2-preparation/2.3-create-beanstalk/2.3.2-configure-eb-env/" title="Update Elastic Beanstalk Environment Configuration" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/2-preparation/2.3-create-beanstalk/2.3.2-configure-eb-env/">
+           <b> 2.3.2 </b> Update Elastic Beanstalk Environment Configuration
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/2-preparation/2.4-mongodb-integration/" title="Integrate MongoDB Atlas and Mongoose" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/2-preparation/2.4-mongodb-integration/">
+           <b> 2.4 </b> Integrate MongoDB Atlas and Mongoose
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/2-preparation/2.5-s3-setup/" title="Setup Amazon S3 for Image Upload" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/2-preparation/2.5-s3-setup/">
+           <b> 2.5. </b> Setup Amazon S3 for Image Upload
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/2-preparation/2.5-s3-setup/2.5.1-create-bucket/" title="Create S3 Bucket for Product Images" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/2-preparation/2.5-s3-setup/2.5.1-create-bucket/">
+           <b> 2.5.1 </b> Create S3 Bucket for Product Images
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/2-preparation/2.5-s3-setup/2.5.2-test-upload/" title="Test Image Upload to S3" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/2-preparation/2.5-s3-setup/2.5.2-test-upload/">
+           <b> 2.5.2 </b> Test Image Upload to S3
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/3-xray-sdk/" title="Instrument Node.js Backend with AWS X-Ray SDK" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/3-xray-sdk/">
+           <b> 3. </b> Instrument Node.js Backend with AWS X-Ray SDK
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/4-deployment/" title="Deployment Backend and Frontend" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/4-deployment/">
+          <b> 4. </b>Deployment Backend and Frontend
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/4-deployment/4.1-deploy-backend/" title="Deploy Backend to AWS Elastic Beanstalk" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/4-deployment/4.1-deploy-backend/">
+           <b> 4.1 </b> Deploy Backend to AWS Elastic Beanstalk
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/4-deployment/4.2-deploy-frontend/" title="Deploy React Frontend to AWS Elastic Beanstalk" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/4-deployment/4.2-deploy-frontend/">
+           <b> 4.2 </b> Deploy React Frontend to AWS Elastic Beanstalk
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/5-s3-upload/" title="Enable S3 Upload and Image Hosting" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/5-s3-upload/">
+           <b> 5. </b> Enable S3 Upload and Image Hosting
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/6-end-to-end-tracing/" title="Trace Requests from Frontend to Database" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/6-end-to-end-tracing/">
+           <b> 6. </b> Trace Requests from Frontend to Database
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/7-review/" title="Workshop Review and Common Issues" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/7-review/">
+           <b> 7. </b> Workshop Review and Common Issues
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/8-cleanup/" title="Clean Up AWS Resources" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/8-cleanup/">
+           <b> 8. </b> Clean Up AWS Resources
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+         
+    </ul>
+
+    
+    
+      <section id="shortcuts">
+        <h3>More</h3>
+        <ul>
+          
+              <li> 
+                  <a class="padding" href="https://www.facebook.com/groups/awsstudygroupfcj/"><i class='fab fa-facebook'></i> AWS Study Group</a>
+              </li>
+          
+        </ul>
+      </section>
+    
+
+    
+    <section id="prefooter">
+      <hr/>
+      <ul>
+      
+        <li>
+          <a class="padding">
+            <i class="fas fa-language fa-fw"></i>
+          <div class="select-style">
+            <select id="select-language" onchange="location = this.value;">
+          
+          
+          
+              
+              
+                  
+                    
+                    
+                      <option id="en" value="/2-preparation/2.3-create-beanstalk/2.3.1-create-eb-env/" selected>English</option>
+                    
+                  
+              
+                  
+              
+          
+              
+              
+                  
+              
+                  
+                    
+                    
+                      <option id="vi" value="/vi/2-preparation/2.3-create-beanstalk/2.3.1-create-eb-env/">Tiếng Việt</option>
+                    
+                  
+              
+          
+        </select>
+        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          width="255px" height="255px" viewBox="0 0 255 255" style="enable-background:new 0 0 255 255;" xml:space="preserve">
+          <g>
+            <g id="arrow-drop-down">
+              <polygon points="0,63.75 127.5,191.25 255,63.75 		" />
+            </g>
+          </g>
+        </svg>
+        </div>
+        </a>
+        </li>
+      
+      
+      
+        <li><a class="padding" href="#" data-clear-history-toggle=""><i class="fas fa-history fa-fw"></i> Clear History</a></li>
+      
+      </ul>
+    </section>
+    
+    <section id="footer">
+      <left>
+    
+     <b> Workshop</b> <br>
+    <img src="https://hitwebcounter.com/counter/counter.php?page=7920860&style=0038&nbdigits=9&type=page&initCount=0" title="Migrate" Alt="web counter"   border="0" /></a>  <br>
+     <b> <a href="https://cloudjourney.awsstudygroup.com/">Cloud Journey</a></b> <br>
+    <img src="https://hitwebcounter.com/counter/counter.php?page=7830807&style=0038&nbdigits=9&type=page&initCount=0" title="Total CLoud Journey" Alt="web counter"   border="0"   />
+     
+</left>
+<left>
+    <br>
+    <br>
+        <b> Last Updated </b> <br>
+        <i><font color=orange>30-01-2022</font></i>
+    </left>
+    <left>
+        <br>
+        <br>
+            <b> Team </b> <br>
+           
+            <i> <a href="https://www.linkedin.com/in/sutrinh/"  style="color:orange">Sử Trịnh  </a> <br>
+                <a href="https://www.linkedin.com/in/jotaguy"  style="color:orange">Gia Hưng </a> <br>
+                <a href="https://www.linkedin.com/in/hiepnguyendt"  style="color:orange">Thanh Hiệp </a>
+               
+        </i>
+        </left>
+
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/'>Tracing and Debugging Node.js Applications with AWS X-Ray, CloudWatch, and MongoDB Atlas</a> > <a href='/2-preparation/'>Preparation</a> > <a href='/2-preparation/2.3-create-beanstalk/'>Create Elastic Beanstalk Environment</a> > Create and Configure Elastic Beanstalk Environment
+          
+        
+          
+        
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#-step-1-prepare-backend-source-code">📦 Step 1: Prepare Backend Source Code</a></li>
+    <li><a href="#-step-2-prepare-environment-variables">🔐 Step 2: Prepare Environment Variables</a></li>
+    <li><a href="#-step-3-create-elastic-beanstalk-environment">☁️ Step 3: Create Elastic Beanstalk Environment</a></li>
+    <li><a href="#-step-4-configure-service-access">⚙️ Step 4: Configure Service Access</a></li>
+    <li><a href="#-step-5-enable-monitoring-and-x-ray">⚙️ Step 5: Enable Monitoring and X-Ray</a></li>
+    <li><a href="#-step-6-set-environment-variables">⚙️ Step 6: Set Environment Variables</a></li>
+    <li><a href="#-step-7-validate-deployment">✅ Step 7: Validate Deployment</a>
+      <ul>
+        <li><a href="#-verify">🧪 Verify:</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              Create and Configure Elastic Beanstalk Environment
+            </h1>
+          
+
+        
+
+
+
+	<p>In this step, you will create and configure an <strong>Elastic Beanstalk environment</strong> to host your Node.js backend.</p>
+<p>You will:</p>
+<ul>
+<li>Upload the zipped backend source</li>
+<li>Set up environment variables</li>
+<li>Attach the IAM instance role</li>
+<li>Enable AWS X-Ray daemon for tracing</li>
+<li>Deploy and validate the backend application</li>
+</ul>
+<hr>
+<h2 id="-step-1-prepare-backend-source-code">📦 Step 1: Prepare Backend Source Code</h2>
+<p>Download the backend source code (already configured for Beanstalk + X-Ray):</p>
+<p><a href="../../../downloads/ecommerce-backend.zip">⬇️ Download Workshop backend Source Code</a></p>
+<p>After downloading, extract and re-zip the contents of the <code>backend/</code> folder (not the folder itself):</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cd backend
+</span></span><span style="display:flex;"><span>zip -r ../ecommerce-backend.zip .
+</span></span></code></pre></div><hr>
+<h2 id="-step-2-prepare-environment-variables">🔐 Step 2: Prepare Environment Variables</h2>
+<p>Use this .env template for local development or apply as environment variables in Beanstalk:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ini" data-lang="ini"><span style="display:flex;"><span><span style="color:#a6e22e">PORT</span><span style="color:#f92672">=</span><span style="color:#e6db74">8080</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">ALLOWED_ORIGINS</span><span style="color:#f92672">=</span><span style="color:#e6db74">http://your-backend-url.elasticbeanstalk.com,http://localhost:5173</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">JWT_SECRET</span><span style="color:#f92672">=</span><span style="color:#e6db74">your-jwt-secret-key</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">REFRESH_TOKEN_SECRET</span><span style="color:#f92672">=</span><span style="color:#e6db74">your-refresh-token-secret-key</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">SECRET_NAME</span><span style="color:#f92672">=</span><span style="color:#e6db74">your-secret-name</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">AWS_REGION</span><span style="color:#f92672">=</span><span style="color:#e6db74">ap-southeast-1</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">NODE_ENV</span><span style="color:#f92672">=</span><span style="color:#e6db74">development</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">ENABLE_XRAY</span><span style="color:#f92672">=</span><span style="color:#e6db74">true</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">XRAY_DAEMON_ADDRESS</span><span style="color:#f92672">=</span><span style="color:#e6db74">127.0.0.1:2000</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">MONGODB_URI</span><span style="color:#f92672">=</span><span style="color:#e6db74">mongodb+srv://your-username:your-password@cluster0.mongodb.net/?retryWrites=true&amp;w=majority&amp;appName=Cluster0</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">AWS_ACCESS_KEY</span><span style="color:#f92672">=</span><span style="color:#e6db74">your-aws-access-key</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">AWS_SECRET_KEY</span><span style="color:#f92672">=</span><span style="color:#e6db74">your-aws-secret-key</span>
+</span></span></code></pre></div><p>⚠️ Store sensitive keys (e.g., AWS &amp; MongoDB credentials) securely in AWS Secrets Manager.</p>
+<hr>
+<h2 id="-step-3-create-elastic-beanstalk-environment">☁️ Step 3: Create Elastic Beanstalk Environment</h2>
+<p>Go to the <a href="https://console.aws.amazon.com/elasticbeanstalk/home">Elastic Beanstalk Console</a></p>
+<figure><img src="../../../images/2-preparation/033-ElasticBeanstalk.png"><figcaption>
+      <h4>Elastic Beanstalk Console</h4>
+    </figcaption>
+</figure>
+
+<ul>
+<li>Click <strong>Create Application</strong></li>
+<li>Fill in:
+<ul>
+<li>Application name: <code>ecommerce-app</code></li>
+</ul>
+</li>
+<li>Under Platform:
+<ul>
+<li>Platform: Node.js</li>
+<li>Platform Branch: Node.js 20 running on 64bit Amazon Linux 2023</li>
+</ul>
+</li>
+<li>Under Application code:
+<ul>
+<li>Choose Upload your code</li>
+<li>Upload: <strong>ecommerce-backend.zip</strong></li>
+</ul>
+</li>
+</ul>
+<p><figure><img src="../../../images/2-preparation/034-ElasticBeanstalk.png"><figcaption>
+      <h4>Select Platform and Upload Application</h4>
+    </figcaption>
+</figure>
+
+<figure><img src="../../../images/2-preparation/035-ElasticBeanstalk.png"><figcaption>
+      <h4>Environment Type and Upload ZIP</h4>
+    </figcaption>
+</figure>
+</p>
+<hr>
+<h2 id="-step-4-configure-service-access">⚙️ Step 4: Configure Service Access</h2>
+<figure><img src="../../../images/2-preparation/036-ElasticBeanstalk.png"><figcaption>
+      <h4>Attach IAM Role to EC2 instance</h4>
+    </figcaption>
+</figure>
+
+
+<div class="notices note" ><p>This IAM role allows the EC2 instance to access Secrets Manager, S3, and X-Ray</p>
+</div>
+
+<hr>
+<h2 id="-step-5-enable-monitoring-and-x-ray">⚙️ Step 5: Enable Monitoring and X-Ray</h2>
+<p>Under Monitoring <strong>enable AWS X-Ray tracing</strong></p>
+<figure><img src="../../../images/2-preparation/037-ElasticBeanstalk.png"><figcaption>
+      <h4>Enable X-Ray daemon in environment settings</h4>
+    </figcaption>
+</figure>
+
+<p>Click Apply.</p>
+<p>After that, review all settings, then <strong>click Create environment</strong></p>
+<hr>
+<h2 id="-step-6-set-environment-variables">⚙️ Step 6: Set Environment Variables</h2>
+<p>Once the environment is up and running:</p>
+<ul>
+<li>Go to the Configuration tab</li>
+<li>Click <strong>Edit</strong></li>
+</ul>
+<figure><img src="../../../images/2-preparation/038-ElasticBeanstalk.png"><figcaption>
+      <h4>Edit software settings to add environment variables</h4>
+    </figcaption>
+</figure>
+
+<p>Copy the following variables:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ini" data-lang="ini"><span style="display:flex;"><span><span style="color:#a6e22e">PORT</span><span style="color:#f92672">=</span><span style="color:#e6db74">8080</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">NODE_ENV</span><span style="color:#f92672">=</span><span style="color:#e6db74">production</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">AWS_XRAY_DAEMON_ADDRESS</span><span style="color:#f92672">=</span><span style="color:#e6db74">127.0.0.1:2000</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">JWT_SECRET</span><span style="color:#f92672">=</span><span style="color:#e6db74">your-jwt-secret-key</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">REFRESH_TOKEN_SECRET</span><span style="color:#f92672">=</span><span style="color:#e6db74">your-refresh-token-secret-key</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">ALLOWED_ORIGINS</span><span style="color:#f92672">=</span><span style="color:#e6db74">http://localhost:5173,https://your-frontend</span>
+</span></span></code></pre></div><p>Click <strong>Add environment property</strong>.
+<figure><img src="../../../images/2-preparation/039-ElasticBeanstalk.png"><figcaption>
+      <h4>Set environment variables</h4>
+    </figcaption>
+</figure>
+</p>
+<p>Click Apply to save changes.</p>
+
+<div class="notices tip" ><p>💡 You may also add variables like SECRET_NAME, AWS_ACCESS_KEY, and AWS_SECRET_KEY if your app doesn&rsquo;t fetch from Secrets Manager yet.</p>
+</div>
+
+<hr>
+<h2 id="-step-7-validate-deployment">✅ Step 7: Validate Deployment</h2>
+<p>Once deployed, visit your environment URL (e.g.):</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-arduino" data-lang="arduino"><span style="display:flex;"><span>http:<span style="color:#75715e">//ecommerce-env.eba-xxxx.ap-southeast-1.elasticbeanstalk.com
+</span></span></span></code></pre></div><p>Test the following endpoints:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-http" data-lang="http"><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">GET /api/status
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">GET /health
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">GET /api/products
+</span></span></span></code></pre></div><h3 id="-verify">🧪 Verify:</h3>
+<ul>
+<li>✅ API responds with 200 OK</li>
+<li>✅ /health returns:
+<ul>
+<li>database: connected</li>
+<li>xray: enabled</li>
+</ul>
+</li>
+<li>✅ Traces appear in AWS X-Ray &gt; Service Map</li>
+</ul>
+<p>🧩 Troubleshooting</p>
+<ul>
+<li>❌ App crash or white screen?
+→ Check Logs → Last 100 lines in EB console</li>
+<li>❌ MongoDB not connected?
+→ Check if secret mongodb/connection exists and IAM role has permission</li>
+<li>❌ No traces?
+→ Make sure .ebextensions/01_xray.config exists and IAM role has AWSXRayFullAccess</li>
+</ul>
+<p>🎉 <strong>Congratulations!</strong>
+You have successfully deployed a production-ready backend with AWS Elastic Beanstalk, connected to MongoDB Atlas, integrated with AWS X-Ray, and ready for scaling.</p>
+
+
+
+
+
+<footer class=" footline" >
+	
+</footer>
+
+        
+        </div> 
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+        
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="/2-preparation/2.3-create-beanstalk/" title="Create Elastic Beanstalk Environment"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="/2-preparation/2.3-create-beanstalk/2.3.2-configure-eb-env/" title="Update Elastic Beanstalk Environment Configuration" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+    
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/js/clipboard.min.js?1751986769"></script>
+    <script src="/js/perfect-scrollbar.min.js?1751986769"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1751986769"></script>
+    <script src="/js/jquery.sticky.js?1751986769"></script>
+    <script src="/js/featherlight.min.js?1751986769"></script>
+    <script src="/js/highlight.pack.js?1751986769"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/modernizr.custom-3.6.0.js?1751986769"></script>
+    <script src="/js/learn.js?1751986769"></script>
+    <script src="/js/hugo-learn.js?1751986769"></script>
+
+    <link href="/mermaid/mermaid.css?1751986769" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1751986769"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-158079754-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+  </body>
+</html>

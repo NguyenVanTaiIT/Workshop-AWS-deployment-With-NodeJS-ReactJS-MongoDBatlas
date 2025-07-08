@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Enable S3 Upload and Image Hosting on AWS System Manager</title>
+    <link>/5-s3-upload/</link>
+    <description>Recent content in Enable S3 Upload and Image Hosting on AWS System Manager</description>
+    <generator>Hugo 0.125.0</generator>
+    <language>en</language>
+    <lastBuildDate></lastBuildDate>
+    <atom:link href="/5-s3-upload/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>
