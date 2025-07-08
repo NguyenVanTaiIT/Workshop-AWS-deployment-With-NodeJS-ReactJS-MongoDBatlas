@@ -10,18 +10,41 @@ In this section, you will perform **end-to-end tracing** of user actions from th
 
 ### 🧪 Try This
 
-1. Open your frontend (hosted on S3 or Beanstalk)
-2. Browse to a product
-3. Click "Add to cart", then proceed to checkout
-4. Place an order
+Open your frontend (hosted on S3 or Beanstalk)
+
+Register a new account  
+{{< figure src="./../images/6-end-to-end-tracing/001-EndToEndTracing.png" title="Register a new user account" >}}
+
+Log in using your newly created credentials  
+{{< figure src="./../images/6-end-to-end-tracing/002-EndToEndTracing.png" title="Login to your account" >}}
+
+Browse to a product  
+{{< figure src="./../images/6-end-to-end-tracing/003-EndToEndTracing.png" title="View product details" >}}
+
+Click "Add to cart", then proceed to checkout  
+{{< figure src="./../images/6-end-to-end-tracing/004-EndToEndTracing.png" title="Add product to cart and proceed to checkout" >}}
+
+Place an order  
+{{< figure src="./../images/6-end-to-end-tracing/005-EndToEndTracing.png" title="Place the order" >}}
+
+{{< figure src="./../images/6-end-to-end-tracing/006-EndToEndTracing.png" title="Trace appears in AWS X-Ray after placing order" >}}
 
 ### 🔍 Now check AWS X-Ray:
 
-- Go to X-Ray Console → Service Map
+- Go to CloudWatch Console → Trace Map
 - You should see:
   - Frontend traced request → Backend service (`EcommerceApp`)
-  - Backend → MongoDB operation
-- Click any trace to see detailed breakdown of latency and segments
+
+{{< figure src="./../images/6-end-to-end-tracing/007-EndToEndTracing.png" title="Trace appears in AWS X-Ray after placing order" >}}
+
+
+{{< figure src="./../images/6-end-to-end-tracing/008-EndToEndTracing.png" title="Trace appears in AWS X-Ray after placing order" >}}
+
+- Backend → MongoDB operation
+
+{{< figure src="./../images/6-end-to-end-tracing/009-EndToEndTracing.png" title="Trace appears in AWS X-Ray after placing order" >}}
+
+- Click any trace to see Segment details.
 
 ### ✅ This proves:
 - Frontend sends trace headers (`X-Amzn-Trace-Id`)

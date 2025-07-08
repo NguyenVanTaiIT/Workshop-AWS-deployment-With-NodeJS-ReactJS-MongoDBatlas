@@ -20,7 +20,7 @@ All necessary code is already implemented in `server.js`. This step is about **u
 ## 📂 Source location
 
 - File: `backend/server.js`
-- Module: [`aws-xray-sdk`](https://www.npmjs.com/package/aws-xray-sdk)
+- Module: [aws-xray-sdk](https://www.npmjs.com/package/aws-xray-sdk)
 
 ---
 
@@ -36,7 +36,7 @@ app.use(AWSXRay.express.openSegment('EcommerceApp'));
 ```
 Automatically traces all incoming Express routes.
 Captures upstream headers (from frontend or ALB).
-Sends segments to the local X-Ray daemon at 127.0.0.1:2000.
+Sends segments to the local X-Ray daemon at 127.0.0.1:2000 if run local.
 
 ### ✅ 2. MongoDB Tracing via Custom Subsegments
 
@@ -115,4 +115,91 @@ Inspect traces for:
 - Secure and production-ready.
 
 ---
+
+## 🎯 Tracing Details with Annotation and Metadata
+In this backend project, each major API operation is wrapped using a helper function that adds X-Ray subsegments, with detailed annotations and metadata to enhance observability.
+
+### 📍 Location in Source Code
+- File: `controllers/productController.js`
+- Wrapper Function: `withXRay(segmentName, fn)`
+
+### 🧩 What Are Annotations and Metadata?
+- **Annotations** are indexed key–value pairs — used for filtering in the X-Ray console.
+- **Metadata** are key–value data (any JSON type) — used for detailed trace context.
+
+### ✅ Examples in Code
+#### getProducts API
+When users view the product list, the system captures:
+
+```js
+segment.addAnnotation('category', category || 'all');
+segment.addAnnotation('page', parseInt(page));
+segment.addMetadata('query_params', { category, brand, sort, page, limit });
+segment.addMetadata('category_counts', categoryCounts);
+```
+→ This helps you trace:
+- What filters were used
+- How many products were found
+- Which categories were present
+
+#### uploadProductImage API
+When admins upload a product image to S3:
+
+```js
+s3Segment.addAnnotation('upload_success', true);
+s3Segment.addAnnotation('image_url', imageUrl);
+s3Segment.addMetadata('upload_result', {
+  imageUrl,
+  key: params.Key,
+  bucket: params.Bucket
+});
+```
+→ You can inspect uploaded image details or trace failures (e.g., S3 permission issues).
+
+#### createProduct API
+During new product creation:
+
+```js
+dbSegment.addAnnotation('product_created', true);
+dbSegment.addMetadata('product_info', {
+  id: product._id,
+  name,
+  sku,
+  image,
+  price,
+  category
+});
+```
+→ Lets you trace what product was added and whether the creation succeeded or failed.
+
+### ⚠️ Error Tracing
+In case of failure, the following are added:
+
+```js
+segment.addAnnotation('status', 'error');
+segment.addAnnotation('error_type', err.name);
+segment.addMetadata('error_stack', err.stack);
+segment.addMetadata('error_context', {
+  operation: segmentName,
+  timestamp: new Date().toISOString(),
+  args_count: args.length
+});
+```
+→ This allows filtering for failed requests and viewing complete error context in AWS X-Ray > Trace Details.
+
+### 🔍 How to View These in X-Ray Console
+Go to [CloudWatch Home](https://console.aws.amazon.com/cloudwatch/home) → Application Signals (APM) →Traces
+{{< figure src="./../images/3-xray-sdk/001-CloudWatch.png" title="Amazon Simple Storage Service (Amazon S3)" >}}
+
+Filter traces using annotations, e.g.:
+
+```
+annotation.status = "success"
+```
+{{< figure src="./../images/3-xray-sdk/002-CloudWatch.png" title="Amazon Simple Storage Service (Amazon S3)" >}}
+
+{{< figure src="./../images/3-xray-sdk/003-CloudWatch.png" title="Amazon Simple Storage Service (Amazon S3)" >}}
+Click into a trace → View subsegments → Check **Metadata** or **Annotations** tab
+{{< figure src="./../images/3-xray-sdk/004-CloudWatch.png" title="Amazon Simple Storage Service (Amazon S3)" >}}
+💡 **Note:** This structured tracing makes debugging, auditing, and performance monitoring significantly easier in production environments.
 

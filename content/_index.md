@@ -10,7 +10,7 @@ chapter : false
 ### Overall
 In this hands-on workshop, you will learn how to build, deploy, trace, and monitor a Node.js + React e-commerce web application using AWS services. We will walk through advanced tracing techniques using AWS X-Ray and CloudWatch, securely manage credentials with Secrets Manager, and store data on MongoDB Atlas. You'll also integrate image uploads via Amazon S3 and deploy the entire stack using Elastic Beanstalk.
 
-![Tracing Architecture](/images/arc-log.png)
+![Tracing Architecture](./images/arc.png)
 
 ### Content
 1. [Introduction and Architecture Overview](1-introduce/)

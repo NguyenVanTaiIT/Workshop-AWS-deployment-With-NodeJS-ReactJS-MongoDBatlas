@@ -7,7 +7,7 @@ pre: " <b> 2.5. </b> "
 ---
 
 # ☁️ Amazon S3 Overview
-{{< figure src="../../../images/2-preparation/043-S3.png" title="Amazon Simple Storage Service (Amazon S3)" width="150">}}
+{{< figure src="./../../images/2-preparation/043-S3.png" title="Amazon Simple Storage Service (Amazon S3)" width="150">}}
 **Amazon S3 (Simple Storage Service)** is a scalable, durable, and highly available object storage service provided by AWS. It allows developers to store and retrieve any amount of data at any time, from anywhere on the web.
 
 ### 💡 Common Use Cases
@@ -48,14 +48,17 @@ Your backend is preconfigured to upload product images to a specified S3 bucket 
 
 This functionality is handled in the backend by:
 
+```bash
 📦 backend/
 └── controllers/productController.js
 └── uploadProductImage() // S3 + X-Ray integration
-
+``` 
+    
 You can test it via:
 
 ```http
 POST /api/products/upload
 ```
 
-👉 Continue to the next step: Create S3 Bucket
+👉 Continue to the next step: [Create S3 Bucket for Product Images](./2.5.1-create-bucket/)
+

@@ -14,7 +14,7 @@ Unlike S3/CloudFront hosting, this approach uses the Express backend to serve yo
 
 ## 📦 Download Frontend Source Code
 
-[⬇️ Download Frontend Source (frontend.zip)](../../../downloads/ecommerce-frontend.zip)
+[⬇️ Download Frontend Source (frontend.zip)](./../../downloads/ecommerce-frontend.zip)
 
 After downloading:
 
@@ -70,10 +70,15 @@ zip -r ../ecommerce-backend-with-frontend.zip .
 Go to the Elastic Beanstalk Console
 
 - Select your existing ecommerce-app environment
-- Click Upload and deploy
-- Choose the new zip file: ecommerce-backend-with-frontend.zip
-- Click Deploy
 
+
+
+{{< figure src="../../images/4-deployment/001-FrontendDeploy.png" title="Amazon Simple Storage Service (Amazon S3)" >}}
+- Click Upload and deploy
+{{< figure src="../../images/4-deployment/002-FrontendDeploy.png" title="Amazon Simple Storage Service (Amazon S3)" >}}
+- Choose the new zip file: **ecommerce-backend-with-frontend.zip** and label `version-2`
+{{< figure src="../../images/4-deployment/003-FrontendDeploy.png" title="Amazon Simple Storage Service (Amazon S3)" >}}
+- Click **Deploy**
 ---
 
 🌐 **Access the Application**
@@ -83,6 +88,8 @@ Visit your Beanstalk environment URL:
 http://ecommerce-env.eba-xxxx.ap-southeast-1.elasticbeanstalk.com
 ```
 You should see your React frontend being served — fully integrated with your backend.
+
+{{< figure src="../../images/4-deployment/004-FrontendDeploy.png" title="Amazon Simple Storage Service (Amazon S3)" >}}
 
 ---
 

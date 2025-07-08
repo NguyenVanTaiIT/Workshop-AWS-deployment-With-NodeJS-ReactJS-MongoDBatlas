@@ -101,7 +101,7 @@ Make sure this line:
 ```js
 Bucket: 'ecommerce-products-2025'
 ```
-matches your actual S3 bucket name (the one you created manually or in lab step 2.X.X).
+matches your actual S3 bucket name (the one you created manually or in lab step [2.5.1 - Create S3 Bucket](../../2.5.1-create-bucket/)).
 
 ✅ **IAM Role used by Beanstalk must have this policy:**
 
@@ -142,13 +142,12 @@ Every file upload is traced via AWS X-Ray:
 **FileValidation segment logs:**
 - file size
 - mimetype
-- user-agent
-
+{{< figure src="./../images/5-s3-upload/001-S3uploads.png" title="Amazon Simple Storage Service (Amazon S3)" >}}
 **S3Upload segment logs:**
-- bucket name
+- image_url
 - key
 - upload result or error
-
+{{< figure src="./../images/5-s3-upload/002-S3uploads.png" title="Amazon Simple Storage Service (Amazon S3)" >}}
 Go to X-Ray Console and navigate to the Service Map to confirm upload activity.
 
 ---

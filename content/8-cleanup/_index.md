@@ -19,10 +19,19 @@ Here’s how to clean up each service:
 ### 1️⃣ Elastic Beanstalk
 
 1. Go to the [Elastic Beanstalk Console](https://console.aws.amazon.com/elasticbeanstalk/)
+
 2. Select your environment (e.g. `ecommerce-app`)
+
 3. Click **Actions** → **Terminate environment**
-4. Confirm deletion  
+
    ⚠️ This will terminate EC2, Load Balancer, Auto Scaling, and S3 resources created by Beanstalk.
+{{< figure src="./../images/8-cleanup/001-CleanUp.png" title="Trace appears in AWS X-Ray after placing order" >}}
+
+4. Confirm deletion 
+
+{{< figure src="./../images/8-cleanup/002-CleanUp.png" title="Trace appears in AWS X-Ray after placing order" >}}
+
+
 
 ---
 
@@ -30,12 +39,24 @@ Here’s how to clean up each service:
 
 1. Go to the [S3 Console](https://s3.console.aws.amazon.com/s3/home)
 2. Select your bucket (e.g. `ecommerce-products-2025`)
+
+{{< figure src="./../images/8-cleanup/003-CleanUp.png" title="Trace appears in AWS X-Ray after placing order" >}}
+
 3. **Empty** the bucket contents first:
    - Click **Empty**
+
+{{< figure src="./../images/8-cleanup/004-CleanUp.png" title="Trace appears in AWS X-Ray after placing order" >}}
+
    - Confirm deletion
 4. Then click **Delete bucket**
 
+{{< figure src="./../images/8-cleanup/005-CleanUp.png" title="Trace appears in AWS X-Ray after placing order" >}}
+
+{{< figure src="./../images/8-cleanup/006-CleanUp.png" title="Trace appears in AWS X-Ray after placing order" >}}
+
+{{% notice warning %}}
 ⚠️ Buckets must be emptied before deletion.
+{{% /notice %}}
 
 ---
 
@@ -45,8 +66,22 @@ Here’s how to clean up each service:
 
 1. Go to [MongoDB Atlas](https://cloud.mongodb.com)
 2. Navigate to your project
+
+3.leave project
+
+{{< figure src="./../images/8-cleanup/007-CleanUp.png" title="Trace appears in AWS X-Ray after placing order" >}}
+
+{{< figure src="./../images/8-cleanup/008-CleanUp.png" title="Trace appears in AWS X-Ray after placing order" >}}
+
 3. Click **Cluster → Terminate**
+
+{{< figure src="./../images/8-cleanup/009-CleanUp.png" title="Trace appears in AWS X-Ray after placing order" >}}
+
+{{< figure src="./../images/8-cleanup/010-CleanUp.png" title="Trace appears in AWS X-Ray after placing order" >}}
+
 4. Delete the project if not used again
+
+{{< figure src="./../images/8-cleanup/011-CleanUp.png" title="Trace appears in AWS X-Ray after placing order" >}}
 
 ---
 
@@ -56,6 +91,8 @@ Here’s how to clean up each service:
 2. Select your secret (e.g. `mongodb/connection`, `ecommerce-secrets`)
 3. Click **Actions → Delete**
 4. Confirm deletion
+
+{{< figure src="./../images/8-cleanup/012-CleanUp.png" title="Trace appears in AWS X-Ray after placing order" >}}
 
 Secrets are scheduled for deletion in 7 days (you can force immediate deletion via CLI).
 

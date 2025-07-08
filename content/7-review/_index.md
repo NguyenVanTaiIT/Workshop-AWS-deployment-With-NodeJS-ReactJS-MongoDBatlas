@@ -1,5 +1,5 @@
 ---
-title : "Workshop Review and Common Issues"
+title : "Workshop Review and Common Issues, Future Enhancements"
 date: 2025-07-07
 weight : 7
 chapter : false
@@ -51,9 +51,6 @@ Although this version of the workshop provides a complete deployment pipeline, h
 - 📈 **Integrate Auto Scaling Groups**  
   Automatically scale EC2 instances based on traffic or CPU usage using Elastic Beanstalk's scaling options.
 
-- 🔐 **MFA and IAM best practices**  
-  Enforce stronger IAM policies, least-privilege permissions, and Multi-Factor Authentication for production access.
-
 - 🔒 **Advanced secrets rotation**  
   Enable automatic rotation of secrets for MongoDB or AWS credentials.
 
@@ -68,15 +65,6 @@ Although this version of the workshop provides a complete deployment pipeline, h
 
 - 🌐 **Use Route 53 with HTTPS + Custom Domain**  
   Map your Beanstalk environments or CloudFront distributions to your own domain with SSL certificates.
-
----
-
-## 📩 Feedback or Questions?
-
-If you have questions, find bugs, or want to contribute:
-- Submit issues on the GitHub repo (if shared)
-- Email the instructor
-- Or join the next advanced AWS workshop!
 
 ---
 

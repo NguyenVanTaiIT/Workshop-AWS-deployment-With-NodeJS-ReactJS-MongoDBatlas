@@ -9,24 +9,24 @@
 
     <link rel="icon" href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/images/favicon.png" type="image/png">
 
-    <title>Clean Up AWS Resources :: AWS System Manager</title>
+    <title>Clean Up AWS Resources :: How to Write a Lab Guide</title>
 
     
-    <link href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/css/nucleus.css?1751989528" rel="stylesheet">
-    <link href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/css/fontawesome-all.min.css?1751989528" rel="stylesheet">
-    <link href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/css/hybrid.css?1751989528" rel="stylesheet">
-    <link href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/css/featherlight.min.css?1751989528" rel="stylesheet">
-    <link href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/css/perfect-scrollbar.min.css?1751989528" rel="stylesheet">
-    <link href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/css/auto-complete.css?1751989528" rel="stylesheet">
-    <link href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/css/atom-one-dark-reasonable.css?1751989528" rel="stylesheet">
-    <link href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/css/theme.css?1751989528" rel="stylesheet">
-    <link href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/css/hugo-theme.css?1751989528" rel="stylesheet">
+    <link href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/css/nucleus.css?1752015778" rel="stylesheet">
+    <link href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/css/fontawesome-all.min.css?1752015778" rel="stylesheet">
+    <link href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/css/hybrid.css?1752015778" rel="stylesheet">
+    <link href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/css/featherlight.min.css?1752015778" rel="stylesheet">
+    <link href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/css/perfect-scrollbar.min.css?1752015778" rel="stylesheet">
+    <link href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/css/auto-complete.css?1752015778" rel="stylesheet">
+    <link href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/css/atom-one-dark-reasonable.css?1752015778" rel="stylesheet">
+    <link href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/css/theme.css?1752015778" rel="stylesheet">
+    <link href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/css/hugo-theme.css?1752015778" rel="stylesheet">
     
-    <link href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/css/theme-workshop.css?1751989528" rel="stylesheet">
+    <link href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/css/theme-workshop.css?1752015778" rel="stylesheet">
     
     
 
-    <script src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/jquery-3.3.1.min.js?1751989528"></script>
+    <script src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/jquery-3.3.1.min.js?1752015778"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,15 +57,15 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/lunr.min.js?1751989528"></script>
-<script type="text/javascript" src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/auto-complete.js?1751989528"></script>
+<script type="text/javascript" src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/lunr.min.js?1752015778"></script>
+<script type="text/javascript" src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/auto-complete.js?1752015778"></script>
 <script type="text/javascript">
     
         var baseurl = "http:\/\/localhost:1313\/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas\/";
     
 </script>
 
-<script type="text/javascript" src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/search.js?1751989528"></script>
+<script type="text/javascript" src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/search.js?1752015778"></script>
 
     
   </div>
@@ -691,13 +691,13 @@
  
   
     
-    <li data-nav-id="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/7-review/" title="Workshop Review and Common Issues" class="dd-item 
+    <li data-nav-id="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/7-review/" title="Workshop Review and Common Issues, Future Enhancements" class="dd-item 
         
         
         
         ">
       <a href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/7-review/">
-           <b> 7. </b> Workshop Review and Common Issues
+           <b> 7. </b> Workshop Review and Common Issues, Future Enhancements
           
             <i class="fas fa-check read-icon"></i>
           
@@ -916,26 +916,73 @@
 <hr>
 <h3 id="1-elastic-beanstalk">1️⃣ Elastic Beanstalk</h3>
 <ol>
-<li>Go to the <a href="https://console.aws.amazon.com/elasticbeanstalk/">Elastic Beanstalk Console</a></li>
-<li>Select your environment (e.g. <code>ecommerce-app</code>)</li>
-<li>Click <strong>Actions</strong> → <strong>Terminate environment</strong></li>
-<li>Confirm deletion<br>
-⚠️ This will terminate EC2, Load Balancer, Auto Scaling, and S3 resources created by Beanstalk.</li>
+<li>
+<p>Go to the <a href="https://console.aws.amazon.com/elasticbeanstalk/">Elastic Beanstalk Console</a></p>
+</li>
+<li>
+<p>Select your environment (e.g. <code>ecommerce-app</code>)</p>
+</li>
+<li>
+<p>Click <strong>Actions</strong> → <strong>Terminate environment</strong></p>
+<p>⚠️ This will terminate EC2, Load Balancer, Auto Scaling, and S3 resources created by Beanstalk.
+<figure><img src="./../images/8-cleanup/001-CleanUp.png"><figcaption>
+      <h4>Trace appears in AWS X-Ray after placing order</h4>
+    </figcaption>
+</figure>
+</p>
+</li>
+<li>
+<p>Confirm deletion</p>
+</li>
 </ol>
+<figure><img src="./../images/8-cleanup/002-CleanUp.png"><figcaption>
+      <h4>Trace appears in AWS X-Ray after placing order</h4>
+    </figcaption>
+</figure>
+
 <hr>
 <h3 id="2-amazon-s3-buckets">2️⃣ Amazon S3 Buckets</h3>
 <ol>
 <li>Go to the <a href="https://s3.console.aws.amazon.com/s3/home">S3 Console</a></li>
 <li>Select your bucket (e.g. <code>ecommerce-products-2025</code>)</li>
+</ol>
+<figure><img src="./../images/8-cleanup/003-CleanUp.png"><figcaption>
+      <h4>Trace appears in AWS X-Ray after placing order</h4>
+    </figcaption>
+</figure>
+
+<ol start="3">
 <li><strong>Empty</strong> the bucket contents first:
 <ul>
 <li>Click <strong>Empty</strong></li>
-<li>Confirm deletion</li>
 </ul>
 </li>
+</ol>
+<figure><img src="./../images/8-cleanup/004-CleanUp.png"><figcaption>
+      <h4>Trace appears in AWS X-Ray after placing order</h4>
+    </figcaption>
+</figure>
+
+<ul>
+<li>Confirm deletion</li>
+</ul>
+<ol start="4">
 <li>Then click <strong>Delete bucket</strong></li>
 </ol>
-<p>⚠️ Buckets must be emptied before deletion.</p>
+<figure><img src="./../images/8-cleanup/005-CleanUp.png"><figcaption>
+      <h4>Trace appears in AWS X-Ray after placing order</h4>
+    </figcaption>
+</figure>
+
+<figure><img src="./../images/8-cleanup/006-CleanUp.png"><figcaption>
+      <h4>Trace appears in AWS X-Ray after placing order</h4>
+    </figcaption>
+</figure>
+
+
+<div class="notices warning" ><p>⚠️ Buckets must be emptied before deletion.</p>
+</div>
+
 <hr>
 <h3 id="3-mongodb-atlas-cluster">3️⃣ MongoDB Atlas Cluster</h3>
 <blockquote>
@@ -943,9 +990,39 @@
 <ol>
 <li>Go to <a href="https://cloud.mongodb.com">MongoDB Atlas</a></li>
 <li>Navigate to your project</li>
+</ol>
+<p>3.leave project</p>
+<figure><img src="./../images/8-cleanup/007-CleanUp.png"><figcaption>
+      <h4>Trace appears in AWS X-Ray after placing order</h4>
+    </figcaption>
+</figure>
+
+<figure><img src="./../images/8-cleanup/008-CleanUp.png"><figcaption>
+      <h4>Trace appears in AWS X-Ray after placing order</h4>
+    </figcaption>
+</figure>
+
+<ol start="3">
 <li>Click <strong>Cluster → Terminate</strong></li>
+</ol>
+<figure><img src="./../images/8-cleanup/009-CleanUp.png"><figcaption>
+      <h4>Trace appears in AWS X-Ray after placing order</h4>
+    </figcaption>
+</figure>
+
+<figure><img src="./../images/8-cleanup/010-CleanUp.png"><figcaption>
+      <h4>Trace appears in AWS X-Ray after placing order</h4>
+    </figcaption>
+</figure>
+
+<ol start="4">
 <li>Delete the project if not used again</li>
 </ol>
+<figure><img src="./../images/8-cleanup/011-CleanUp.png"><figcaption>
+      <h4>Trace appears in AWS X-Ray after placing order</h4>
+    </figcaption>
+</figure>
+
 <hr>
 <h3 id="4-aws-secrets-manager">4️⃣ AWS Secrets Manager</h3>
 <ol>
@@ -954,6 +1031,11 @@
 <li>Click <strong>Actions → Delete</strong></li>
 <li>Confirm deletion</li>
 </ol>
+<figure><img src="./../images/8-cleanup/012-CleanUp.png"><figcaption>
+      <h4>Trace appears in AWS X-Ray after placing order</h4>
+    </figcaption>
+</figure>
+
 <p>Secrets are scheduled for deletion in 7 days (you can force immediate deletion via CLI).</p>
 <hr>
 <h3 id="5-iam-users-and-roles">5️⃣ IAM Users and Roles</h3>
@@ -1406,7 +1488,7 @@
 	 
 	 
 		
-			<a class="nav nav-prev" href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/7-review/" title="Workshop Review and Common Issues"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/7-review/" title="Workshop Review and Common Issues, Future Enhancements"> <i class="fa fa-chevron-left"></i></a>
 		
 		
 			<a class="nav nav-next" href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/1-introduce/" title="Introduction" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
@@ -1419,19 +1501,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/clipboard.min.js?1751989528"></script>
-    <script src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/perfect-scrollbar.min.js?1751989528"></script>
-    <script src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/perfect-scrollbar.jquery.min.js?1751989528"></script>
-    <script src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/jquery.sticky.js?1751989528"></script>
-    <script src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/featherlight.min.js?1751989528"></script>
-    <script src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/highlight.pack.js?1751989528"></script>
+    <script src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/clipboard.min.js?1752015778"></script>
+    <script src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/perfect-scrollbar.min.js?1752015778"></script>
+    <script src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/perfect-scrollbar.jquery.min.js?1752015778"></script>
+    <script src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/jquery.sticky.js?1752015778"></script>
+    <script src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/featherlight.min.js?1752015778"></script>
+    <script src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/highlight.pack.js?1752015778"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/modernizr.custom-3.6.0.js?1751989528"></script>
-    <script src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/learn.js?1751989528"></script>
-    <script src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/hugo-learn.js?1751989528"></script>
+    <script src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/modernizr.custom-3.6.0.js?1752015778"></script>
+    <script src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/learn.js?1752015778"></script>
+    <script src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/hugo-learn.js?1752015778"></script>
 
-    <link href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/mermaid/mermaid.css?1751989528" rel="stylesheet" />
-    <script src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/mermaid/mermaid.js?1751989528"></script>
+    <link href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/mermaid/mermaid.css?1752015778" rel="stylesheet" />
+    <script src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/mermaid/mermaid.js?1752015778"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

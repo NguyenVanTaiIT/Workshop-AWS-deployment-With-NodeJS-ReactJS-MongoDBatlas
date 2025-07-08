@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>AWS System Manager</title>
+    <title>Cách viết một Lab Guide</title>
     <link>http://localhost:1313/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/vi/2-preparation/</link>
-    <description>Recent content on AWS System Manager</description>
+    <description>Recent content on Cách viết một Lab Guide</description>
     <generator>Hugo</generator>
     <language>vi</language>
     <lastBuildDate></lastBuildDate>

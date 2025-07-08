@@ -22,7 +22,7 @@ You will:
 
 Download the backend source code (already configured for Beanstalk + X-Ray):
 
-[⬇️ Download Workshop backend Source Code](../../../downloads/ecommerce-backend.zip)
+[⬇️ Download Workshop backend Source Code(backend.zip)](../../../downloads/ecommerce-backend.zip)
 
 After downloading, extract and re-zip the contents of the `backend/` folder (not the folder itself):
 
