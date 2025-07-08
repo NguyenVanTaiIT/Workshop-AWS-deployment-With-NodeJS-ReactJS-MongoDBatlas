@@ -9,24 +9,24 @@
 
     <link rel="icon" href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/images/favicon.png" type="image/png">
 
-    <title>Instrument Node.js Backend with AWS X-Ray SDK :: AWS System Manager</title>
+    <title>Instrument Node.js Backend with AWS X-Ray SDK :: How to Write a Lab Guide</title>
 
     
-    <link href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/css/nucleus.css?1751989548" rel="stylesheet">
-    <link href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/css/fontawesome-all.min.css?1751989548" rel="stylesheet">
-    <link href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/css/hybrid.css?1751989548" rel="stylesheet">
-    <link href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/css/featherlight.min.css?1751989548" rel="stylesheet">
-    <link href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/css/perfect-scrollbar.min.css?1751989548" rel="stylesheet">
-    <link href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/css/auto-complete.css?1751989548" rel="stylesheet">
-    <link href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/css/atom-one-dark-reasonable.css?1751989548" rel="stylesheet">
-    <link href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/css/theme.css?1751989548" rel="stylesheet">
-    <link href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/css/hugo-theme.css?1751989548" rel="stylesheet">
+    <link href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/css/nucleus.css?1752015924" rel="stylesheet">
+    <link href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/css/fontawesome-all.min.css?1752015924" rel="stylesheet">
+    <link href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/css/hybrid.css?1752015924" rel="stylesheet">
+    <link href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/css/featherlight.min.css?1752015924" rel="stylesheet">
+    <link href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/css/perfect-scrollbar.min.css?1752015924" rel="stylesheet">
+    <link href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/css/auto-complete.css?1752015924" rel="stylesheet">
+    <link href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/css/atom-one-dark-reasonable.css?1752015924" rel="stylesheet">
+    <link href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/css/theme.css?1752015924" rel="stylesheet">
+    <link href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/css/hugo-theme.css?1752015924" rel="stylesheet">
     
-    <link href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/css/theme-workshop.css?1751989548" rel="stylesheet">
+    <link href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/css/theme-workshop.css?1752015924" rel="stylesheet">
     
     
 
-    <script src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/jquery-3.3.1.min.js?1751989548"></script>
+    <script src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/jquery-3.3.1.min.js?1752015924"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,15 +57,15 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/lunr.min.js?1751989548"></script>
-<script type="text/javascript" src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/auto-complete.js?1751989548"></script>
+<script type="text/javascript" src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/lunr.min.js?1752015924"></script>
+<script type="text/javascript" src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/auto-complete.js?1752015924"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/nguyenvantaiit.github.io\/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas\/";
     
 </script>
 
-<script type="text/javascript" src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/search.js?1751989548"></script>
+<script type="text/javascript" src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/search.js?1752015924"></script>
 
     
   </div>
@@ -691,13 +691,13 @@
  
   
     
-    <li data-nav-id="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/7-review/" title="Workshop Review and Common Issues" class="dd-item 
+    <li data-nav-id="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/7-review/" title="Workshop Review and Common Issues, Future Enhancements" class="dd-item 
         
         
         
         ">
       <a href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/7-review/">
-           <b> 7. </b> Workshop Review and Common Issues
+           <b> 7. </b> Workshop Review and Common Issues, Future Enhancements
           
             <i class="fas fa-check read-icon"></i>
           
@@ -898,6 +898,15 @@
     </li>
     <li><a href="#-verify-in-aws-console">🧪 Verify in AWS Console</a></li>
     <li><a href="#-summary">✅ Summary</a></li>
+    <li><a href="#-tracing-details-with-annotation-and-metadata">🎯 Tracing Details with Annotation and Metadata</a>
+      <ul>
+        <li><a href="#-location-in-source-code">📍 Location in Source Code</a></li>
+        <li><a href="#-what-are-annotations-and-metadata">🧩 What Are Annotations and Metadata?</a></li>
+        <li><a href="#-examples-in-code">✅ Examples in Code</a></li>
+        <li><a href="#-error-tracing">⚠️ Error Tracing</a></li>
+        <li><a href="#-how-to-view-these-in-x-ray-console">🔍 How to View These in X-Ray Console</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
     </div>
@@ -935,7 +944,7 @@
 <h2 id="-source-location">📂 Source location</h2>
 <ul>
 <li>File: <code>backend/server.js</code></li>
-<li>Module: <a href="https://www.npmjs.com/package/aws-xray-sdk"><code>aws-xray-sdk</code></a></li>
+<li>Module: <a href="https://www.npmjs.com/package/aws-xray-sdk">aws-xray-sdk</a></li>
 </ul>
 <hr>
 <h2 id="-key-features-of-the-integration">🧠 Key Features of the Integration</h2>
@@ -946,7 +955,7 @@
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">use</span>(<span style="color:#a6e22e">AWSXRay</span>.<span style="color:#a6e22e">express</span>.<span style="color:#a6e22e">openSegment</span>(<span style="color:#e6db74">&#39;EcommerceApp&#39;</span>));
 </span></span></code></pre></div><p>Automatically traces all incoming Express routes.
 Captures upstream headers (from frontend or ALB).
-Sends segments to the local X-Ray daemon at 127.0.0.1:2000.</p>
+Sends segments to the local X-Ray daemon at 127.0.0.1:2000 if run local.</p>
 <h3 id="-2-mongodb-tracing-via-custom-subsegments">✅ 2. MongoDB Tracing via Custom Subsegments</h3>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">segment</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">AWSXRay</span>.<span style="color:#a6e22e">getSegment</span>();
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">subsegment</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">segment</span>.<span style="color:#a6e22e">addNewSubsegment</span>(<span style="color:#e6db74">&#39;MongoDB - Connect&#39;</span>);
@@ -1000,6 +1009,90 @@ Sends segments to the local X-Ray daemon at 127.0.0.1:2000.</p>
 <li>Secure and production-ready.</li>
 </ul>
 <hr>
+<h2 id="-tracing-details-with-annotation-and-metadata">🎯 Tracing Details with Annotation and Metadata</h2>
+<p>In this backend project, each major API operation is wrapped using a helper function that adds X-Ray subsegments, with detailed annotations and metadata to enhance observability.</p>
+<h3 id="-location-in-source-code">📍 Location in Source Code</h3>
+<ul>
+<li>File: <code>controllers/productController.js</code></li>
+<li>Wrapper Function: <code>withXRay(segmentName, fn)</code></li>
+</ul>
+<h3 id="-what-are-annotations-and-metadata">🧩 What Are Annotations and Metadata?</h3>
+<ul>
+<li><strong>Annotations</strong> are indexed key–value pairs — used for filtering in the X-Ray console.</li>
+<li><strong>Metadata</strong> are key–value data (any JSON type) — used for detailed trace context.</li>
+</ul>
+<h3 id="-examples-in-code">✅ Examples in Code</h3>
+<h4 id="getproducts-api">getProducts API</h4>
+<p>When users view the product list, the system captures:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">segment</span>.<span style="color:#a6e22e">addAnnotation</span>(<span style="color:#e6db74">&#39;category&#39;</span>, <span style="color:#a6e22e">category</span> <span style="color:#f92672">||</span> <span style="color:#e6db74">&#39;all&#39;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">segment</span>.<span style="color:#a6e22e">addAnnotation</span>(<span style="color:#e6db74">&#39;page&#39;</span>, parseInt(<span style="color:#a6e22e">page</span>));
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">segment</span>.<span style="color:#a6e22e">addMetadata</span>(<span style="color:#e6db74">&#39;query_params&#39;</span>, { <span style="color:#a6e22e">category</span>, <span style="color:#a6e22e">brand</span>, <span style="color:#a6e22e">sort</span>, <span style="color:#a6e22e">page</span>, <span style="color:#a6e22e">limit</span> });
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">segment</span>.<span style="color:#a6e22e">addMetadata</span>(<span style="color:#e6db74">&#39;category_counts&#39;</span>, <span style="color:#a6e22e">categoryCounts</span>);
+</span></span></code></pre></div><p>→ This helps you trace:</p>
+<ul>
+<li>What filters were used</li>
+<li>How many products were found</li>
+<li>Which categories were present</li>
+</ul>
+<h4 id="uploadproductimage-api">uploadProductImage API</h4>
+<p>When admins upload a product image to S3:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">s3Segment</span>.<span style="color:#a6e22e">addAnnotation</span>(<span style="color:#e6db74">&#39;upload_success&#39;</span>, <span style="color:#66d9ef">true</span>);
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">s3Segment</span>.<span style="color:#a6e22e">addAnnotation</span>(<span style="color:#e6db74">&#39;image_url&#39;</span>, <span style="color:#a6e22e">imageUrl</span>);
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">s3Segment</span>.<span style="color:#a6e22e">addMetadata</span>(<span style="color:#e6db74">&#39;upload_result&#39;</span>, {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">imageUrl</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">key</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">params</span>.<span style="color:#a6e22e">Key</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">bucket</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">params</span>.<span style="color:#a6e22e">Bucket</span>
+</span></span><span style="display:flex;"><span>});
+</span></span></code></pre></div><p>→ You can inspect uploaded image details or trace failures (e.g., S3 permission issues).</p>
+<h4 id="createproduct-api">createProduct API</h4>
+<p>During new product creation:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">dbSegment</span>.<span style="color:#a6e22e">addAnnotation</span>(<span style="color:#e6db74">&#39;product_created&#39;</span>, <span style="color:#66d9ef">true</span>);
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">dbSegment</span>.<span style="color:#a6e22e">addMetadata</span>(<span style="color:#e6db74">&#39;product_info&#39;</span>, {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">id</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">product</span>.<span style="color:#a6e22e">_id</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">name</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">sku</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">image</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">price</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">category</span>
+</span></span><span style="display:flex;"><span>});
+</span></span></code></pre></div><p>→ Lets you trace what product was added and whether the creation succeeded or failed.</p>
+<h3 id="-error-tracing">⚠️ Error Tracing</h3>
+<p>In case of failure, the following are added:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">segment</span>.<span style="color:#a6e22e">addAnnotation</span>(<span style="color:#e6db74">&#39;status&#39;</span>, <span style="color:#e6db74">&#39;error&#39;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">segment</span>.<span style="color:#a6e22e">addAnnotation</span>(<span style="color:#e6db74">&#39;error_type&#39;</span>, <span style="color:#a6e22e">err</span>.<span style="color:#a6e22e">name</span>);
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">segment</span>.<span style="color:#a6e22e">addMetadata</span>(<span style="color:#e6db74">&#39;error_stack&#39;</span>, <span style="color:#a6e22e">err</span>.<span style="color:#a6e22e">stack</span>);
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">segment</span>.<span style="color:#a6e22e">addMetadata</span>(<span style="color:#e6db74">&#39;error_context&#39;</span>, {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">operation</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">segmentName</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">timestamp</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">new</span> Date().<span style="color:#a6e22e">toISOString</span>(),
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">args_count</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">args</span>.<span style="color:#a6e22e">length</span>
+</span></span><span style="display:flex;"><span>});
+</span></span></code></pre></div><p>→ This allows filtering for failed requests and viewing complete error context in AWS X-Ray &gt; Trace Details.</p>
+<h3 id="-how-to-view-these-in-x-ray-console">🔍 How to View These in X-Ray Console</h3>
+<p>Go to <a href="https://console.aws.amazon.com/cloudwatch/home">CloudWatch Home</a> → Application Signals (APM) →Traces
+<figure><img src="./../images/3-xray-sdk/001-CloudWatch.png"><figcaption>
+      <h4>Amazon Simple Storage Service (Amazon S3)</h4>
+    </figcaption>
+</figure>
+</p>
+<p>Filter traces using annotations, e.g.:</p>
+<pre tabindex="0"><code>annotation.status = &#34;success&#34;
+</code></pre><figure><img src="./../images/3-xray-sdk/002-CloudWatch.png"><figcaption>
+      <h4>Amazon Simple Storage Service (Amazon S3)</h4>
+    </figcaption>
+</figure>
+
+<p><figure><img src="./../images/3-xray-sdk/003-CloudWatch.png"><figcaption>
+      <h4>Amazon Simple Storage Service (Amazon S3)</h4>
+    </figcaption>
+</figure>
+
+Click into a trace → View subsegments → Check <strong>Metadata</strong> or <strong>Annotations</strong> tab
+<figure><img src="./../images/3-xray-sdk/004-CloudWatch.png"><figcaption>
+      <h4>Amazon Simple Storage Service (Amazon S3)</h4>
+    </figcaption>
+</figure>
+
+💡 <strong>Note:</strong> This structured tracing makes debugging, auditing, and performance monitoring significantly easier in production environments.</p>
 
 
 
@@ -1426,19 +1519,19 @@ Sends segments to the local X-Ray daemon at 127.0.0.1:2000.</p>
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/clipboard.min.js?1751989549"></script>
-    <script src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/perfect-scrollbar.min.js?1751989549"></script>
-    <script src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/perfect-scrollbar.jquery.min.js?1751989549"></script>
-    <script src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/jquery.sticky.js?1751989549"></script>
-    <script src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/featherlight.min.js?1751989549"></script>
-    <script src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/highlight.pack.js?1751989549"></script>
+    <script src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/clipboard.min.js?1752015924"></script>
+    <script src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/perfect-scrollbar.min.js?1752015924"></script>
+    <script src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/perfect-scrollbar.jquery.min.js?1752015924"></script>
+    <script src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/jquery.sticky.js?1752015924"></script>
+    <script src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/featherlight.min.js?1752015924"></script>
+    <script src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/highlight.pack.js?1752015924"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/modernizr.custom-3.6.0.js?1751989549"></script>
-    <script src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/learn.js?1751989549"></script>
-    <script src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/hugo-learn.js?1751989549"></script>
+    <script src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/modernizr.custom-3.6.0.js?1752015924"></script>
+    <script src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/learn.js?1752015924"></script>
+    <script src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/hugo-learn.js?1752015924"></script>
 
-    <link href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/mermaid/mermaid.css?1751989549" rel="stylesheet" />
-    <script src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/mermaid/mermaid.js?1751989549"></script>
+    <link href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/mermaid/mermaid.css?1752015924" rel="stylesheet" />
+    <script src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/mermaid/mermaid.js?1752015924"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
