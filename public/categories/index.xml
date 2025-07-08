@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on AWS System Manager</title>
-    <link>http://localhost:1313/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/categories/</link>
+    <link>http://localhost:1313/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/categories/</link>
     <description>Recent content in Categories on AWS System Manager</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <atom:link href="http://localhost:1313/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/categories/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

@@ -1,32 +1,32 @@
 <!DOCTYPE html>
 <html lang="en" class="js csstransforms3d">
-  <head><script src="/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/livereload" data-no-instant defer></script>
+  <head><script src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="generator" content="Hugo 0.147.5">
     <meta name="description" content="">
 <meta name="author" content="journeyoftheaverageguy@gmail.com">
 
-    <link rel="icon" href="/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/images/favicon.png" type="image/png">
+    <link rel="icon" href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/images/favicon.png" type="image/png">
 
     <title>Integrate MongoDB Atlas and Mongoose :: AWS System Manager</title>
 
     
-    <link href="/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/css/nucleus.css?1751989453" rel="stylesheet">
-    <link href="/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/css/fontawesome-all.min.css?1751989453" rel="stylesheet">
-    <link href="/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/css/hybrid.css?1751989453" rel="stylesheet">
-    <link href="/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/css/featherlight.min.css?1751989453" rel="stylesheet">
-    <link href="/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/css/perfect-scrollbar.min.css?1751989453" rel="stylesheet">
-    <link href="/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/css/auto-complete.css?1751989453" rel="stylesheet">
-    <link href="/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/css/atom-one-dark-reasonable.css?1751989453" rel="stylesheet">
-    <link href="/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/css/theme.css?1751989453" rel="stylesheet">
-    <link href="/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/css/hugo-theme.css?1751989453" rel="stylesheet">
+    <link href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/css/nucleus.css?1751989527" rel="stylesheet">
+    <link href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/css/fontawesome-all.min.css?1751989527" rel="stylesheet">
+    <link href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/css/hybrid.css?1751989527" rel="stylesheet">
+    <link href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/css/featherlight.min.css?1751989527" rel="stylesheet">
+    <link href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/css/perfect-scrollbar.min.css?1751989527" rel="stylesheet">
+    <link href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/css/auto-complete.css?1751989527" rel="stylesheet">
+    <link href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/css/atom-one-dark-reasonable.css?1751989528" rel="stylesheet">
+    <link href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/css/theme.css?1751989528" rel="stylesheet">
+    <link href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/css/hugo-theme.css?1751989528" rel="stylesheet">
     
-    <link href="/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/css/theme-workshop.css?1751989453" rel="stylesheet">
+    <link href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/css/theme-workshop.css?1751989528" rel="stylesheet">
     
     
 
-    <script src="/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/js/jquery-3.3.1.min.js?1751989453"></script>
+    <script src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/jquery-3.3.1.min.js?1751989528"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -36,7 +36,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/2-preparation/2.4-mongodb-integration/">
+  <body class="" data-url="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/2-preparation/2.4-mongodb-integration/">
     <nav id="sidebar" class="showVisitedLinks">
 
 
@@ -57,15 +57,15 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/js/lunr.min.js?1751989453"></script>
-<script type="text/javascript" src="/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/js/auto-complete.js?1751989453"></script>
+<script type="text/javascript" src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/lunr.min.js?1751989528"></script>
+<script type="text/javascript" src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/auto-complete.js?1751989528"></script>
 <script type="text/javascript">
     
-        var baseurl = "http:\/\/localhost:1313\/NguyenVanTaiIT\/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git\/";
+        var baseurl = "http:\/\/localhost:1313\/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas\/";
     
 </script>
 
-<script type="text/javascript" src="/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/js/search.js?1751989453"></script>
+<script type="text/javascript" src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/search.js?1751989528"></script>
 
     
   </div>
@@ -83,12 +83,12 @@
  
   
     
-    <li data-nav-id="/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/1-introduce/" title="Introduction" class="dd-item 
+    <li data-nav-id="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/1-introduce/" title="Introduction" class="dd-item 
         
         
         
         ">
-      <a href="/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/1-introduce/">
+      <a href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/1-introduce/">
            <b> 1. </b> Introduction
           
             <i class="fas fa-check read-icon"></i>
@@ -109,12 +109,12 @@
  
   
     
-    <li data-nav-id="/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/2-preparation/" title="Preparation" class="dd-item 
+    <li data-nav-id="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/2-preparation/" title="Preparation" class="dd-item 
         parent
         
         
         ">
-      <a href="/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/2-preparation/">
+      <a href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/2-preparation/">
           <b> 2. </b>Preparation
           
             <i class="fas fa-check read-icon"></i>
@@ -140,12 +140,12 @@
  
   
     
-    <li data-nav-id="/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/2-preparation/2.1-create-mongodb-atlas-db/" title="Create MongoDB Atlas Database for Development" class="dd-item 
+    <li data-nav-id="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/2-preparation/2.1-create-mongodb-atlas-db/" title="Create MongoDB Atlas Database for Development" class="dd-item 
         
         
         
         ">
-      <a href="/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/2-preparation/2.1-create-mongodb-atlas-db/">
+      <a href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/2-preparation/2.1-create-mongodb-atlas-db/">
            <b> 2.1 </b> Create MongoDB Atlas Database for Development
           
             <i class="fas fa-check read-icon"></i>
@@ -168,12 +168,12 @@
  
   
     
-    <li data-nav-id="/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/2-preparation/2.2-iam-and-secrets/" title="Preparing IAM and Secrets" class="dd-item 
+    <li data-nav-id="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/2-preparation/2.2-iam-and-secrets/" title="Preparing IAM and Secrets" class="dd-item 
         
         
         
         ">
-      <a href="/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/2-preparation/2.2-iam-and-secrets/">
+      <a href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/2-preparation/2.2-iam-and-secrets/">
            <b> 2.2 </b> Preparing IAM and Secrets
           
             <i class="fas fa-check read-icon"></i>
@@ -199,12 +199,12 @@
  
   
     
-    <li data-nav-id="/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/2-preparation/2.2-iam-and-secrets/2.2.1-create-iam-user/" title="Create IAM User for Development" class="dd-item 
+    <li data-nav-id="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/2-preparation/2.2-iam-and-secrets/2.2.1-create-iam-user/" title="Create IAM User for Development" class="dd-item 
         
         
         
         ">
-      <a href="/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/2-preparation/2.2-iam-and-secrets/2.2.1-create-iam-user/">
+      <a href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/2-preparation/2.2-iam-and-secrets/2.2.1-create-iam-user/">
            <b> 2.2.1 </b> Create IAM User for Development
           
             <i class="fas fa-check read-icon"></i>
@@ -227,12 +227,12 @@
  
   
     
-    <li data-nav-id="/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/2-preparation/2.2-iam-and-secrets/2.2.2-create-iam-role/" title="Create IAM Role for Beanstalk" class="dd-item 
+    <li data-nav-id="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/2-preparation/2.2-iam-and-secrets/2.2.2-create-iam-role/" title="Create IAM Role for Beanstalk" class="dd-item 
         
         
         
         ">
-      <a href="/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/2-preparation/2.2-iam-and-secrets/2.2.2-create-iam-role/">
+      <a href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/2-preparation/2.2-iam-and-secrets/2.2.2-create-iam-role/">
            <b> 2.2.2 </b> Create IAM Role for Beanstalk
           
             <i class="fas fa-check read-icon"></i>
@@ -255,12 +255,12 @@
  
   
     
-    <li data-nav-id="/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/2-preparation/2.2-iam-and-secrets/2.2.3-create-secret/" title="Create and Use Secret in AWS Secrets Manager" class="dd-item 
+    <li data-nav-id="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/2-preparation/2.2-iam-and-secrets/2.2.3-create-secret/" title="Create and Use Secret in AWS Secrets Manager" class="dd-item 
         
         
         
         ">
-      <a href="/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/2-preparation/2.2-iam-and-secrets/2.2.3-create-secret/">
+      <a href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/2-preparation/2.2-iam-and-secrets/2.2.3-create-secret/">
            <b> 2.2.3 </b> Create and Use Secret in AWS Secrets Manager
           
             <i class="fas fa-check read-icon"></i>
@@ -292,12 +292,12 @@
  
   
     
-    <li data-nav-id="/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/2-preparation/2.3-create-beanstalk/" title="Create Elastic Beanstalk Environment" class="dd-item 
+    <li data-nav-id="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/2-preparation/2.3-create-beanstalk/" title="Create Elastic Beanstalk Environment" class="dd-item 
         
         
         
         ">
-      <a href="/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/2-preparation/2.3-create-beanstalk/">
+      <a href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/2-preparation/2.3-create-beanstalk/">
            <b> 2.3 </b> Create Elastic Beanstalk Environment
           
             <i class="fas fa-check read-icon"></i>
@@ -323,12 +323,12 @@
  
   
     
-    <li data-nav-id="/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/2-preparation/2.3-create-beanstalk/2.3.1-create-eb-env/" title="Create and Configure Elastic Beanstalk Environment" class="dd-item 
+    <li data-nav-id="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/2-preparation/2.3-create-beanstalk/2.3.1-create-eb-env/" title="Create and Configure Elastic Beanstalk Environment" class="dd-item 
         
         
         
         ">
-      <a href="/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/2-preparation/2.3-create-beanstalk/2.3.1-create-eb-env/">
+      <a href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/2-preparation/2.3-create-beanstalk/2.3.1-create-eb-env/">
            <b> 2.3.1 </b> Create and Configure Elastic Beanstalk Environment
           
             <i class="fas fa-check read-icon"></i>
@@ -351,12 +351,12 @@
  
   
     
-    <li data-nav-id="/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/2-preparation/2.3-create-beanstalk/2.3.2-configure-eb-env/" title="Update Elastic Beanstalk Environment Configuration" class="dd-item 
+    <li data-nav-id="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/2-preparation/2.3-create-beanstalk/2.3.2-configure-eb-env/" title="Update Elastic Beanstalk Environment Configuration" class="dd-item 
         
         
         
         ">
-      <a href="/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/2-preparation/2.3-create-beanstalk/2.3.2-configure-eb-env/">
+      <a href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/2-preparation/2.3-create-beanstalk/2.3.2-configure-eb-env/">
            <b> 2.3.2 </b> Update Elastic Beanstalk Environment Configuration
           
             <i class="fas fa-check read-icon"></i>
@@ -388,12 +388,12 @@
  
   
     
-    <li data-nav-id="/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/2-preparation/2.4-mongodb-integration/" title="Integrate MongoDB Atlas and Mongoose" class="dd-item 
+    <li data-nav-id="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/2-preparation/2.4-mongodb-integration/" title="Integrate MongoDB Atlas and Mongoose" class="dd-item 
         
         active
         
         ">
-      <a href="/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/2-preparation/2.4-mongodb-integration/">
+      <a href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/2-preparation/2.4-mongodb-integration/">
            <b> 2.4 </b> Integrate MongoDB Atlas and Mongoose
           
             <i class="fas fa-check read-icon"></i>
@@ -416,12 +416,12 @@
  
   
     
-    <li data-nav-id="/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/2-preparation/2.5-s3-setup/" title="Setup Amazon S3 for Image Upload" class="dd-item 
+    <li data-nav-id="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/2-preparation/2.5-s3-setup/" title="Setup Amazon S3 for Image Upload" class="dd-item 
         
         
         
         ">
-      <a href="/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/2-preparation/2.5-s3-setup/">
+      <a href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/2-preparation/2.5-s3-setup/">
            <b> 2.5. </b> Setup Amazon S3 for Image Upload
           
             <i class="fas fa-check read-icon"></i>
@@ -447,12 +447,12 @@
  
   
     
-    <li data-nav-id="/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/2-preparation/2.5-s3-setup/2.5.1-create-bucket/" title="Create S3 Bucket for Product Images" class="dd-item 
+    <li data-nav-id="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/2-preparation/2.5-s3-setup/2.5.1-create-bucket/" title="Create S3 Bucket for Product Images" class="dd-item 
         
         
         
         ">
-      <a href="/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/2-preparation/2.5-s3-setup/2.5.1-create-bucket/">
+      <a href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/2-preparation/2.5-s3-setup/2.5.1-create-bucket/">
            <b> 2.5.1 </b> Create S3 Bucket for Product Images
           
             <i class="fas fa-check read-icon"></i>
@@ -475,12 +475,12 @@
  
   
     
-    <li data-nav-id="/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/2-preparation/2.5-s3-setup/2.5.2-test-upload/" title="Test Image Upload to S3" class="dd-item 
+    <li data-nav-id="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/2-preparation/2.5-s3-setup/2.5.2-test-upload/" title="Test Image Upload to S3" class="dd-item 
         
         
         
         ">
-      <a href="/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/2-preparation/2.5-s3-setup/2.5.2-test-upload/">
+      <a href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/2-preparation/2.5-s3-setup/2.5.2-test-upload/">
            <b> 2.5.2 </b> Test Image Upload to S3
           
             <i class="fas fa-check read-icon"></i>
@@ -519,12 +519,12 @@
  
   
     
-    <li data-nav-id="/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/3-xray-sdk/" title="Instrument Node.js Backend with AWS X-Ray SDK" class="dd-item 
+    <li data-nav-id="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/3-xray-sdk/" title="Instrument Node.js Backend with AWS X-Ray SDK" class="dd-item 
         
         
         
         ">
-      <a href="/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/3-xray-sdk/">
+      <a href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/3-xray-sdk/">
            <b> 3. </b> Instrument Node.js Backend with AWS X-Ray SDK
           
             <i class="fas fa-check read-icon"></i>
@@ -545,12 +545,12 @@
  
   
     
-    <li data-nav-id="/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/4-deployment/" title="Deployment Backend and Frontend" class="dd-item 
+    <li data-nav-id="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/4-deployment/" title="Deployment Backend and Frontend" class="dd-item 
         
         
         
         ">
-      <a href="/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/4-deployment/">
+      <a href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/4-deployment/">
           <b> 4. </b>Deployment Backend and Frontend
           
             <i class="fas fa-check read-icon"></i>
@@ -576,12 +576,12 @@
  
   
     
-    <li data-nav-id="/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/4-deployment/4.1-deploy-backend/" title="Deploy Backend to AWS Elastic Beanstalk" class="dd-item 
+    <li data-nav-id="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/4-deployment/4.1-deploy-backend/" title="Deploy Backend to AWS Elastic Beanstalk" class="dd-item 
         
         
         
         ">
-      <a href="/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/4-deployment/4.1-deploy-backend/">
+      <a href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/4-deployment/4.1-deploy-backend/">
            <b> 4.1 </b> Deploy Backend to AWS Elastic Beanstalk
           
             <i class="fas fa-check read-icon"></i>
@@ -604,12 +604,12 @@
  
   
     
-    <li data-nav-id="/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/4-deployment/4.2-deploy-frontend/" title="Deploy React Frontend to AWS Elastic Beanstalk" class="dd-item 
+    <li data-nav-id="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/4-deployment/4.2-deploy-frontend/" title="Deploy React Frontend to AWS Elastic Beanstalk" class="dd-item 
         
         
         
         ">
-      <a href="/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/4-deployment/4.2-deploy-frontend/">
+      <a href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/4-deployment/4.2-deploy-frontend/">
            <b> 4.2 </b> Deploy React Frontend to AWS Elastic Beanstalk
           
             <i class="fas fa-check read-icon"></i>
@@ -639,12 +639,12 @@
  
   
     
-    <li data-nav-id="/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/5-s3-upload/" title="Enable S3 Upload and Image Hosting" class="dd-item 
+    <li data-nav-id="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/5-s3-upload/" title="Enable S3 Upload and Image Hosting" class="dd-item 
         
         
         
         ">
-      <a href="/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/5-s3-upload/">
+      <a href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/5-s3-upload/">
            <b> 5. </b> Enable S3 Upload and Image Hosting
           
             <i class="fas fa-check read-icon"></i>
@@ -665,12 +665,12 @@
  
   
     
-    <li data-nav-id="/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/6-end-to-end-tracing/" title="Trace Requests from Frontend to Database" class="dd-item 
+    <li data-nav-id="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/6-end-to-end-tracing/" title="Trace Requests from Frontend to Database" class="dd-item 
         
         
         
         ">
-      <a href="/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/6-end-to-end-tracing/">
+      <a href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/6-end-to-end-tracing/">
            <b> 6. </b> Trace Requests from Frontend to Database
           
             <i class="fas fa-check read-icon"></i>
@@ -691,12 +691,12 @@
  
   
     
-    <li data-nav-id="/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/7-review/" title="Workshop Review and Common Issues" class="dd-item 
+    <li data-nav-id="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/7-review/" title="Workshop Review and Common Issues" class="dd-item 
         
         
         
         ">
-      <a href="/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/7-review/">
+      <a href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/7-review/">
            <b> 7. </b> Workshop Review and Common Issues
           
             <i class="fas fa-check read-icon"></i>
@@ -717,12 +717,12 @@
  
   
     
-    <li data-nav-id="/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/8-cleanup/" title="Clean Up AWS Resources" class="dd-item 
+    <li data-nav-id="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/8-cleanup/" title="Clean Up AWS Resources" class="dd-item 
         
         
         
         ">
-      <a href="/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/8-cleanup/">
+      <a href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/8-cleanup/">
            <b> 8. </b> Clean Up AWS Resources
           
             <i class="fas fa-check read-icon"></i>
@@ -770,7 +770,7 @@
                   
                     
                     
-                      <option id="en" value="http://localhost:1313/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/2-preparation/2.4-mongodb-integration/" selected>English</option>
+                      <option id="en" value="http://localhost:1313/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/2-preparation/2.4-mongodb-integration/" selected>English</option>
                     
                   
               
@@ -784,7 +784,7 @@
                   
                     
                     
-                      <option id="vi" value="http://localhost:1313/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/vi/2-preparation/2.4-mongodb-integration/">Tiếng Việt</option>
+                      <option id="vi" value="http://localhost:1313/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/vi/2-preparation/2.4-mongodb-integration/">Tiếng Việt</option>
                     
                   
               
@@ -876,7 +876,7 @@
             
           
           
-            <a href='/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/'>Tracing and Debugging Node.js Applications with AWS X-Ray, CloudWatch, and MongoDB Atlas</a> > <a href='/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/2-preparation/'>Preparation</a> > Integrate MongoDB Atlas and Mongoose
+            <a href='/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/'>Tracing and Debugging Node.js Applications with AWS X-Ray, CloudWatch, and MongoDB Atlas</a> > <a href='/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/2-preparation/'>Preparation</a> > Integrate MongoDB Atlas and Mongoose
           
         
           
@@ -1388,10 +1388,10 @@
 	 
 	 
 		
-			<a class="nav nav-prev" href="/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/2-preparation/2.3-create-beanstalk/2.3.2-configure-eb-env/" title="Update Elastic Beanstalk Environment Configuration"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/2-preparation/2.3-create-beanstalk/2.3.2-configure-eb-env/" title="Update Elastic Beanstalk Environment Configuration"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/2-preparation/2.5-s3-setup/" title="Setup Amazon S3 for Image Upload" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/2-preparation/2.5-s3-setup/" title="Setup Amazon S3 for Image Upload" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -1401,19 +1401,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/js/clipboard.min.js?1751989453"></script>
-    <script src="/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/js/perfect-scrollbar.min.js?1751989453"></script>
-    <script src="/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/js/perfect-scrollbar.jquery.min.js?1751989453"></script>
-    <script src="/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/js/jquery.sticky.js?1751989453"></script>
-    <script src="/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/js/featherlight.min.js?1751989453"></script>
-    <script src="/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/js/highlight.pack.js?1751989453"></script>
+    <script src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/clipboard.min.js?1751989528"></script>
+    <script src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/perfect-scrollbar.min.js?1751989528"></script>
+    <script src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/perfect-scrollbar.jquery.min.js?1751989528"></script>
+    <script src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/jquery.sticky.js?1751989528"></script>
+    <script src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/featherlight.min.js?1751989528"></script>
+    <script src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/highlight.pack.js?1751989528"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/js/modernizr.custom-3.6.0.js?1751989453"></script>
-    <script src="/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/js/learn.js?1751989453"></script>
-    <script src="/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/js/hugo-learn.js?1751989453"></script>
+    <script src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/modernizr.custom-3.6.0.js?1751989528"></script>
+    <script src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/learn.js?1751989528"></script>
+    <script src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/hugo-learn.js?1751989528"></script>
 
-    <link href="/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/mermaid/mermaid.css?1751989453" rel="stylesheet" />
-    <script src="/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/mermaid/mermaid.js?1751989453"></script>
+    <link href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/mermaid/mermaid.css?1751989528" rel="stylesheet" />
+    <script src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/mermaid/mermaid.js?1751989528"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

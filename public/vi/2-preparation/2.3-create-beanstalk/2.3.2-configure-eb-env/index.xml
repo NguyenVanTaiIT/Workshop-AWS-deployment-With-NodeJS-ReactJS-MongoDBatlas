@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>AWS System Manager</title>
-    <link>http://localhost:1313/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/vi/2-preparation/2.3-create-beanstalk/2.3.2-configure-eb-env/</link>
+    <link>http://localhost:1313/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/vi/2-preparation/2.3-create-beanstalk/2.3.2-configure-eb-env/</link>
     <description>Recent content on AWS System Manager</description>
     <generator>Hugo</generator>
     <language>vi</language>
-    <atom:link href="http://localhost:1313/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/vi/2-preparation/2.3-create-beanstalk/2.3.2-configure-eb-env/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/vi/2-preparation/2.3-create-beanstalk/2.3.2-configure-eb-env/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
