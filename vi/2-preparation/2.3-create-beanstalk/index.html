@@ -7,26 +7,26 @@
     <meta name="description" content="">
 <meta name="author" content="journeyoftheaverageguy@gmail.com">
 
-    <link rel="icon" href="/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/images/favicon.png" type="image/png">
+    <link rel="icon" href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/images/favicon.png" type="image/png">
 
     <title>Tạo IAM Role :: AWS System Manager</title>
 
     
-    <link href="/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/css/nucleus.css?1751989513" rel="stylesheet">
-    <link href="/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/css/fontawesome-all.min.css?1751989513" rel="stylesheet">
-    <link href="/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/css/hybrid.css?1751989513" rel="stylesheet">
-    <link href="/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/css/featherlight.min.css?1751989513" rel="stylesheet">
-    <link href="/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/css/perfect-scrollbar.min.css?1751989513" rel="stylesheet">
-    <link href="/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/css/auto-complete.css?1751989513" rel="stylesheet">
-    <link href="/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/css/atom-one-dark-reasonable.css?1751989513" rel="stylesheet">
-    <link href="/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/css/theme.css?1751989513" rel="stylesheet">
-    <link href="/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/css/hugo-theme.css?1751989513" rel="stylesheet">
+    <link href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/css/nucleus.css?1751989549" rel="stylesheet">
+    <link href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/css/fontawesome-all.min.css?1751989549" rel="stylesheet">
+    <link href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/css/hybrid.css?1751989549" rel="stylesheet">
+    <link href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/css/featherlight.min.css?1751989549" rel="stylesheet">
+    <link href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/css/perfect-scrollbar.min.css?1751989549" rel="stylesheet">
+    <link href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/css/auto-complete.css?1751989549" rel="stylesheet">
+    <link href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/css/atom-one-dark-reasonable.css?1751989549" rel="stylesheet">
+    <link href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/css/theme.css?1751989549" rel="stylesheet">
+    <link href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/css/hugo-theme.css?1751989549" rel="stylesheet">
     
-    <link href="/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/css/theme-workshop.css?1751989513" rel="stylesheet">
+    <link href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/css/theme-workshop.css?1751989549" rel="stylesheet">
     
     
 
-    <script src="/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/js/jquery-3.3.1.min.js?1751989513"></script>
+    <script src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/jquery-3.3.1.min.js?1751989549"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -36,7 +36,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/vi/2-preparation/2.3-create-beanstalk/">
+  <body class="" data-url="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/vi/2-preparation/2.3-create-beanstalk/">
     <nav id="sidebar" class="showVisitedLinks">
 
 
@@ -57,15 +57,15 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/js/lunr.min.js?1751989513"></script>
-<script type="text/javascript" src="/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/js/auto-complete.js?1751989513"></script>
+<script type="text/javascript" src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/lunr.min.js?1751989549"></script>
+<script type="text/javascript" src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/auto-complete.js?1751989549"></script>
 <script type="text/javascript">
     
-        var baseurl = "https:\/\/github.com\/NguyenVanTaiIT\/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git\/\/vi";
+        var baseurl = "https:\/\/nguyenvantaiit.github.io\/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas\/\/vi";
     
 </script>
 
-<script type="text/javascript" src="/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/js/search.js?1751989513"></script>
+<script type="text/javascript" src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/search.js?1751989549"></script>
 
     
   </div>
@@ -83,12 +83,12 @@
  
   
     
-    <li data-nav-id="/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/vi/1-introduce/" title="Giới thiệu" class="dd-item 
+    <li data-nav-id="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/vi/1-introduce/" title="Giới thiệu" class="dd-item 
         
         
         
         ">
-      <a href="/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/vi/1-introduce/">
+      <a href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/vi/1-introduce/">
            <b> 1. </b> Giới thiệu
           
             <i class="fas fa-check read-icon"></i>
@@ -109,12 +109,12 @@
  
   
     
-    <li data-nav-id="/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/vi/3-xray-sdk/" title="Dọn dẹp tài nguyên  " class="dd-item 
+    <li data-nav-id="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/vi/3-xray-sdk/" title="Dọn dẹp tài nguyên  " class="dd-item 
         
         
         
         ">
-      <a href="/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/vi/3-xray-sdk/">
+      <a href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/vi/3-xray-sdk/">
           <b>6. </b>Dọn dẹp tài nguyên  
           
             <i class="fas fa-check read-icon"></i>
@@ -135,12 +135,12 @@
  
   
     
-    <li data-nav-id="/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/vi/2-preparation/" title="" class="dd-item 
+    <li data-nav-id="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/vi/2-preparation/" title="" class="dd-item 
         parent
         
         
         ">
-      <a href="/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/vi/2-preparation/">
+      <a href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/vi/2-preparation/">
           
           
             <i class="fas fa-check read-icon"></i>
@@ -166,12 +166,12 @@
  
   
     
-    <li data-nav-id="/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/vi/2-preparation/2.2-iam-and-secrets/" title="Chuẩn bị VPC và EC2" class="dd-item 
+    <li data-nav-id="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/vi/2-preparation/2.2-iam-and-secrets/" title="Chuẩn bị VPC và EC2" class="dd-item 
         
         
         
         ">
-      <a href="/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/vi/2-preparation/2.2-iam-and-secrets/">
+      <a href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/vi/2-preparation/2.2-iam-and-secrets/">
            <b> 2.1 </b> Chuẩn bị VPC và EC2
           
             <i class="fas fa-check read-icon"></i>
@@ -197,12 +197,12 @@
  
   
     
-    <li data-nav-id="/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/vi/2-preparation/2.2-iam-and-secrets/2.2.1-create-iam-user/" title="Tạo VPC " class="dd-item 
+    <li data-nav-id="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/vi/2-preparation/2.2-iam-and-secrets/2.2.1-create-iam-user/" title="Tạo VPC " class="dd-item 
         
         
         
         ">
-      <a href="/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/vi/2-preparation/2.2-iam-and-secrets/2.2.1-create-iam-user/">
+      <a href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/vi/2-preparation/2.2-iam-and-secrets/2.2.1-create-iam-user/">
            <b> 2.1.1 </b> Tạo VPC 
           
             <i class="fas fa-check read-icon"></i>
@@ -225,12 +225,12 @@
  
   
     
-    <li data-nav-id="/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/vi/2-preparation/2.2-iam-and-secrets/2.2.2-create-iam-role/" title="Tạo Public subnet" class="dd-item 
+    <li data-nav-id="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/vi/2-preparation/2.2-iam-and-secrets/2.2.2-create-iam-role/" title="Tạo Public subnet" class="dd-item 
         
         
         
         ">
-      <a href="/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/vi/2-preparation/2.2-iam-and-secrets/2.2.2-create-iam-role/">
+      <a href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/vi/2-preparation/2.2-iam-and-secrets/2.2.2-create-iam-role/">
            <b> 2.1.2 </b> Tạo Public subnet
           
             <i class="fas fa-check read-icon"></i>
@@ -253,12 +253,12 @@
  
   
     
-    <li data-nav-id="/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/vi/2-preparation/2.2-iam-and-secrets/2.2.3-create-secret/" title="Tạo Private subnet" class="dd-item 
+    <li data-nav-id="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/vi/2-preparation/2.2-iam-and-secrets/2.2.3-create-secret/" title="Tạo Private subnet" class="dd-item 
         
         
         
         ">
-      <a href="/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/vi/2-preparation/2.2-iam-and-secrets/2.2.3-create-secret/">
+      <a href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/vi/2-preparation/2.2-iam-and-secrets/2.2.3-create-secret/">
            <b> 2.1.3 </b> Tạo Private subnet
           
             <i class="fas fa-check read-icon"></i>
@@ -290,12 +290,12 @@
  
   
     
-    <li data-nav-id="/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/vi/2-preparation/2.3-create-beanstalk/" title="Tạo IAM Role" class="dd-item 
+    <li data-nav-id="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/vi/2-preparation/2.3-create-beanstalk/" title="Tạo IAM Role" class="dd-item 
         
         active
         
         ">
-      <a href="/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/vi/2-preparation/2.3-create-beanstalk/">
+      <a href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/vi/2-preparation/2.3-create-beanstalk/">
            <b> 2.2 </b> Tạo IAM Role
           
             <i class="fas fa-check read-icon"></i>
@@ -321,12 +321,12 @@
  
   
     
-    <li data-nav-id="/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/vi/2-preparation/2.3-create-beanstalk/2.3.1-create-eb-env/" title="" class="dd-item 
+    <li data-nav-id="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/vi/2-preparation/2.3-create-beanstalk/2.3.1-create-eb-env/" title="" class="dd-item 
         
         
         
         ">
-      <a href="/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/vi/2-preparation/2.3-create-beanstalk/2.3.1-create-eb-env/">
+      <a href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/vi/2-preparation/2.3-create-beanstalk/2.3.1-create-eb-env/">
           
           
             <i class="fas fa-check read-icon"></i>
@@ -349,12 +349,12 @@
  
   
     
-    <li data-nav-id="/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/vi/2-preparation/2.3-create-beanstalk/2.3.2-configure-eb-env/" title="" class="dd-item 
+    <li data-nav-id="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/vi/2-preparation/2.3-create-beanstalk/2.3.2-configure-eb-env/" title="" class="dd-item 
         
         
         
         ">
-      <a href="/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/vi/2-preparation/2.3-create-beanstalk/2.3.2-configure-eb-env/">
+      <a href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/vi/2-preparation/2.3-create-beanstalk/2.3.2-configure-eb-env/">
           
           
             <i class="fas fa-check read-icon"></i>
@@ -386,12 +386,12 @@
  
   
     
-    <li data-nav-id="/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/vi/2-preparation/2.4-mongodb-integration/" title="Port Forwarding" class="dd-item 
+    <li data-nav-id="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/vi/2-preparation/2.4-mongodb-integration/" title="Port Forwarding" class="dd-item 
         
         
         
         ">
-      <a href="/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/vi/2-preparation/2.4-mongodb-integration/">
+      <a href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/vi/2-preparation/2.4-mongodb-integration/">
            <b> 5. </b> Port Forwarding
           
             <i class="fas fa-check read-icon"></i>
@@ -414,12 +414,12 @@
  
   
     
-    <li data-nav-id="/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/vi/2-preparation/2.1-create-mongodb-atlas-db/" title="" class="dd-item 
+    <li data-nav-id="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/vi/2-preparation/2.1-create-mongodb-atlas-db/" title="" class="dd-item 
         
         
         
         ">
-      <a href="/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/vi/2-preparation/2.1-create-mongodb-atlas-db/">
+      <a href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/vi/2-preparation/2.1-create-mongodb-atlas-db/">
           
           
             <i class="fas fa-check read-icon"></i>
@@ -476,7 +476,7 @@
                   
                     
                     
-                      <option id="en" value="https://github.com/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/2-preparation/2.3-create-beanstalk/">English</option>
+                      <option id="en" value="https://nguyenvantaiit.github.io/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/2-preparation/2.3-create-beanstalk/">English</option>
                     
                   
               
@@ -490,7 +490,7 @@
                   
                     
                     
-                      <option id="vi" value="https://github.com/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/vi/2-preparation/2.3-create-beanstalk/" selected>Tiếng Việt</option>
+                      <option id="vi" value="https://nguyenvantaiit.github.io/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/vi/2-preparation/2.3-create-beanstalk/" selected>Tiếng Việt</option>
                     
                   
               
@@ -582,7 +582,7 @@
             
           
           
-            <a href='/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/vi/'>Session Management</a> > <a href='/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/vi/2-preparation/'></a> > Tạo IAM Role
+            <a href='/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/vi/'>Session Management</a> > <a href='/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/vi/2-preparation/'></a> > Tạo IAM Role
           
         
           
@@ -915,10 +915,10 @@
 	 
 	 
 		
-			<a class="nav nav-prev" href="/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/vi/2-preparation/2.2-iam-and-secrets/2.2.3-create-secret/" title="Tạo Private subnet"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/vi/2-preparation/2.2-iam-and-secrets/2.2.3-create-secret/" title="Tạo Private subnet"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/vi/2-preparation/2.3-create-beanstalk/2.3.1-create-eb-env/" title="" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/vi/2-preparation/2.3-create-beanstalk/2.3.1-create-eb-env/" title="" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -928,19 +928,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/js/clipboard.min.js?1751989513"></script>
-    <script src="/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/js/perfect-scrollbar.min.js?1751989513"></script>
-    <script src="/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/js/perfect-scrollbar.jquery.min.js?1751989513"></script>
-    <script src="/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/js/jquery.sticky.js?1751989513"></script>
-    <script src="/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/js/featherlight.min.js?1751989513"></script>
-    <script src="/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/js/highlight.pack.js?1751989513"></script>
+    <script src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/clipboard.min.js?1751989549"></script>
+    <script src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/perfect-scrollbar.min.js?1751989549"></script>
+    <script src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/perfect-scrollbar.jquery.min.js?1751989549"></script>
+    <script src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/jquery.sticky.js?1751989549"></script>
+    <script src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/featherlight.min.js?1751989549"></script>
+    <script src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/highlight.pack.js?1751989549"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/js/modernizr.custom-3.6.0.js?1751989513"></script>
-    <script src="/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/js/learn.js?1751989513"></script>
-    <script src="/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/js/hugo-learn.js?1751989513"></script>
+    <script src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/modernizr.custom-3.6.0.js?1751989549"></script>
+    <script src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/learn.js?1751989549"></script>
+    <script src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/hugo-learn.js?1751989549"></script>
 
-    <link href="/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/mermaid/mermaid.css?1751989513" rel="stylesheet" />
-    <script src="/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/mermaid/mermaid.js?1751989513"></script>
+    <link href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/mermaid/mermaid.css?1751989549" rel="stylesheet" />
+    <script src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/mermaid/mermaid.js?1751989549"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

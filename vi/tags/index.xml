@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on AWS System Manager</title>
-    <link>https://github.com/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/vi/tags/</link>
+    <link>https://nguyenvantaiit.github.io/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/vi/tags/</link>
     <description>Recent content in Tags on AWS System Manager</description>
     <generator>Hugo 0.125.0</generator>
     <language>vi</language>
-    <atom:link href="https://github.com/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/vi/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://nguyenvantaiit.github.io/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/vi/tags/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

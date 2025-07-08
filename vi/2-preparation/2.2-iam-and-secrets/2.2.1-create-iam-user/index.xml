@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tạo VPC  on AWS System Manager</title>
-    <link>https://github.com/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/vi/2-preparation/2.2-iam-and-secrets/2.2.1-create-iam-user/</link>
+    <link>https://nguyenvantaiit.github.io/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/vi/2-preparation/2.2-iam-and-secrets/2.2.1-create-iam-user/</link>
     <description>Recent content in Tạo VPC  on AWS System Manager</description>
     <generator>Hugo 0.125.0</generator>
     <language>vi</language>
     <lastBuildDate></lastBuildDate>
-    <atom:link href="https://github.com/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/vi/2-preparation/2.2-iam-and-secrets/2.2.1-create-iam-user/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://nguyenvantaiit.github.io/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/vi/2-preparation/2.2-iam-and-secrets/2.2.1-create-iam-user/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

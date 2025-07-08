@@ -2,227 +2,227 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://github.com/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/2-preparation/2.3-create-beanstalk/2.3.1-create-eb-env/</loc>
+    <loc>https://nguyenvantaiit.github.io/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/2-preparation/2.3-create-beanstalk/2.3.1-create-eb-env/</loc>
     <lastmod>2025-07-07T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="https://github.com/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/vi/2-preparation/2.3-create-beanstalk/2.3.1-create-eb-env/"
+                href="https://nguyenvantaiit.github.io/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/vi/2-preparation/2.3-create-beanstalk/2.3.1-create-eb-env/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://github.com/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/2-preparation/2.3-create-beanstalk/2.3.1-create-eb-env/"
+                href="https://nguyenvantaiit.github.io/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/2-preparation/2.3-create-beanstalk/2.3.1-create-eb-env/"
                 />
   </url><url>
-    <loc>https://github.com/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/2-preparation/2.2-iam-and-secrets/2.2.1-create-iam-user/</loc>
+    <loc>https://nguyenvantaiit.github.io/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/2-preparation/2.2-iam-and-secrets/2.2.1-create-iam-user/</loc>
     <lastmod>2025-07-07T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="https://github.com/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/vi/2-preparation/2.2-iam-and-secrets/2.2.1-create-iam-user/"
+                href="https://nguyenvantaiit.github.io/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/vi/2-preparation/2.2-iam-and-secrets/2.2.1-create-iam-user/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://github.com/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/2-preparation/2.2-iam-and-secrets/2.2.1-create-iam-user/"
+                href="https://nguyenvantaiit.github.io/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/2-preparation/2.2-iam-and-secrets/2.2.1-create-iam-user/"
                 />
   </url><url>
-    <loc>https://github.com/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/2-preparation/2.1-create-mongodb-atlas-db/</loc>
+    <loc>https://nguyenvantaiit.github.io/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/2-preparation/2.1-create-mongodb-atlas-db/</loc>
     <lastmod>2025-07-07T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="https://github.com/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/vi/2-preparation/2.1-create-mongodb-atlas-db/"
+                href="https://nguyenvantaiit.github.io/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/vi/2-preparation/2.1-create-mongodb-atlas-db/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://github.com/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/2-preparation/2.1-create-mongodb-atlas-db/"
+                href="https://nguyenvantaiit.github.io/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/2-preparation/2.1-create-mongodb-atlas-db/"
                 />
   </url><url>
-    <loc>https://github.com/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/2-preparation/2.5-s3-setup/2.5.1-create-bucket/</loc>
+    <loc>https://nguyenvantaiit.github.io/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/2-preparation/2.5-s3-setup/2.5.1-create-bucket/</loc>
     <lastmod>2025-07-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://github.com/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/4-deployment/4.1-deploy-backend/</loc>
+    <loc>https://nguyenvantaiit.github.io/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/4-deployment/4.1-deploy-backend/</loc>
     <lastmod>2025-07-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://github.com/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/1-introduce/</loc>
+    <loc>https://nguyenvantaiit.github.io/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/1-introduce/</loc>
     <lastmod>2025-07-07T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="https://github.com/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/vi/1-introduce/"
+                href="https://nguyenvantaiit.github.io/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/vi/1-introduce/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://github.com/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/1-introduce/"
+                href="https://nguyenvantaiit.github.io/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/1-introduce/"
                 />
   </url><url>
-    <loc>https://github.com/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/2-preparation/</loc>
+    <loc>https://nguyenvantaiit.github.io/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/2-preparation/</loc>
     <lastmod>2025-07-07T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="https://github.com/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/vi/2-preparation/"
+                href="https://nguyenvantaiit.github.io/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/vi/2-preparation/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://github.com/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/2-preparation/"
+                href="https://nguyenvantaiit.github.io/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/2-preparation/"
                 />
   </url><url>
-    <loc>https://github.com/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/</loc>
+    <loc>https://nguyenvantaiit.github.io/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/</loc>
     <lastmod>2025-07-07T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="https://github.com/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/vi/"
+                href="https://nguyenvantaiit.github.io/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/vi/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://github.com/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/"
+                href="https://nguyenvantaiit.github.io/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/"
                 />
   </url><url>
-    <loc>https://github.com/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/2-preparation/2.2-iam-and-secrets/2.2.2-create-iam-role/</loc>
+    <loc>https://nguyenvantaiit.github.io/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/2-preparation/2.2-iam-and-secrets/2.2.2-create-iam-role/</loc>
     <lastmod>2025-07-07T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="https://github.com/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/vi/2-preparation/2.2-iam-and-secrets/2.2.2-create-iam-role/"
+                href="https://nguyenvantaiit.github.io/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/vi/2-preparation/2.2-iam-and-secrets/2.2.2-create-iam-role/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://github.com/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/2-preparation/2.2-iam-and-secrets/2.2.2-create-iam-role/"
+                href="https://nguyenvantaiit.github.io/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/2-preparation/2.2-iam-and-secrets/2.2.2-create-iam-role/"
                 />
   </url><url>
-    <loc>https://github.com/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/4-deployment/4.2-deploy-frontend/</loc>
+    <loc>https://nguyenvantaiit.github.io/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/4-deployment/4.2-deploy-frontend/</loc>
     <lastmod>2025-07-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://github.com/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/2-preparation/2.2-iam-and-secrets/</loc>
+    <loc>https://nguyenvantaiit.github.io/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/2-preparation/2.2-iam-and-secrets/</loc>
     <lastmod>2025-07-07T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="https://github.com/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/vi/2-preparation/2.2-iam-and-secrets/"
+                href="https://nguyenvantaiit.github.io/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/vi/2-preparation/2.2-iam-and-secrets/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://github.com/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/2-preparation/2.2-iam-and-secrets/"
+                href="https://nguyenvantaiit.github.io/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/2-preparation/2.2-iam-and-secrets/"
                 />
   </url><url>
-    <loc>https://github.com/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/2-preparation/2.5-s3-setup/2.5.2-test-upload/</loc>
+    <loc>https://nguyenvantaiit.github.io/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/2-preparation/2.5-s3-setup/2.5.2-test-upload/</loc>
     <lastmod>2025-07-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://github.com/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/2-preparation/2.3-create-beanstalk/2.3.2-configure-eb-env/</loc>
+    <loc>https://nguyenvantaiit.github.io/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/2-preparation/2.3-create-beanstalk/2.3.2-configure-eb-env/</loc>
     <lastmod>2025-07-07T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="https://github.com/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/vi/2-preparation/2.3-create-beanstalk/2.3.2-configure-eb-env/"
+                href="https://nguyenvantaiit.github.io/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/vi/2-preparation/2.3-create-beanstalk/2.3.2-configure-eb-env/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://github.com/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/2-preparation/2.3-create-beanstalk/2.3.2-configure-eb-env/"
+                href="https://nguyenvantaiit.github.io/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/2-preparation/2.3-create-beanstalk/2.3.2-configure-eb-env/"
                 />
   </url><url>
-    <loc>https://github.com/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/2-preparation/2.2-iam-and-secrets/2.2.3-create-secret/</loc>
+    <loc>https://nguyenvantaiit.github.io/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/2-preparation/2.2-iam-and-secrets/2.2.3-create-secret/</loc>
     <lastmod>2025-07-07T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="https://github.com/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/vi/2-preparation/2.2-iam-and-secrets/2.2.3-create-secret/"
+                href="https://nguyenvantaiit.github.io/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/vi/2-preparation/2.2-iam-and-secrets/2.2.3-create-secret/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://github.com/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/2-preparation/2.2-iam-and-secrets/2.2.3-create-secret/"
+                href="https://nguyenvantaiit.github.io/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/2-preparation/2.2-iam-and-secrets/2.2.3-create-secret/"
                 />
   </url><url>
-    <loc>https://github.com/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/2-preparation/2.3-create-beanstalk/</loc>
+    <loc>https://nguyenvantaiit.github.io/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/2-preparation/2.3-create-beanstalk/</loc>
     <lastmod>2025-07-07T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="https://github.com/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/vi/2-preparation/2.3-create-beanstalk/"
+                href="https://nguyenvantaiit.github.io/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/vi/2-preparation/2.3-create-beanstalk/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://github.com/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/2-preparation/2.3-create-beanstalk/"
+                href="https://nguyenvantaiit.github.io/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/2-preparation/2.3-create-beanstalk/"
                 />
   </url><url>
-    <loc>https://github.com/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/3-xray-sdk/</loc>
+    <loc>https://nguyenvantaiit.github.io/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/3-xray-sdk/</loc>
     <lastmod>2025-07-07T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="https://github.com/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/vi/3-xray-sdk/"
+                href="https://nguyenvantaiit.github.io/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/vi/3-xray-sdk/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://github.com/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/3-xray-sdk/"
+                href="https://nguyenvantaiit.github.io/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/3-xray-sdk/"
                 />
   </url><url>
-    <loc>https://github.com/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/4-deployment/</loc>
+    <loc>https://nguyenvantaiit.github.io/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/4-deployment/</loc>
     <lastmod>2025-07-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://github.com/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/2-preparation/2.4-mongodb-integration/</loc>
+    <loc>https://nguyenvantaiit.github.io/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/2-preparation/2.4-mongodb-integration/</loc>
     <lastmod>2025-07-07T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="https://github.com/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/vi/2-preparation/2.4-mongodb-integration/"
+                href="https://nguyenvantaiit.github.io/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/vi/2-preparation/2.4-mongodb-integration/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://github.com/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/2-preparation/2.4-mongodb-integration/"
+                href="https://nguyenvantaiit.github.io/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/2-preparation/2.4-mongodb-integration/"
                 />
   </url><url>
-    <loc>https://github.com/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/5-s3-upload/</loc>
+    <loc>https://nguyenvantaiit.github.io/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/5-s3-upload/</loc>
     <lastmod>2025-07-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://github.com/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/2-preparation/2.5-s3-setup/</loc>
+    <loc>https://nguyenvantaiit.github.io/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/2-preparation/2.5-s3-setup/</loc>
     <lastmod>2025-07-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://github.com/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/6-end-to-end-tracing/</loc>
+    <loc>https://nguyenvantaiit.github.io/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/6-end-to-end-tracing/</loc>
     <lastmod>2025-07-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://github.com/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/7-review/</loc>
+    <loc>https://nguyenvantaiit.github.io/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/7-review/</loc>
     <lastmod>2025-07-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://github.com/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/8-cleanup/</loc>
+    <loc>https://nguyenvantaiit.github.io/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/8-cleanup/</loc>
     <lastmod>2025-07-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://github.com/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/categories/</loc>
+    <loc>https://nguyenvantaiit.github.io/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="https://github.com/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/vi/categories/"
+                href="https://nguyenvantaiit.github.io/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/vi/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://github.com/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/categories/"
+                href="https://nguyenvantaiit.github.io/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/categories/"
                 />
   </url><url>
-    <loc>https://github.com/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/tags/</loc>
+    <loc>https://nguyenvantaiit.github.io/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="https://github.com/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/vi/tags/"
+                href="https://nguyenvantaiit.github.io/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/vi/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://github.com/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/tags/"
+                href="https://nguyenvantaiit.github.io/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/tags/"
                 />
   </url>
 </urlset>

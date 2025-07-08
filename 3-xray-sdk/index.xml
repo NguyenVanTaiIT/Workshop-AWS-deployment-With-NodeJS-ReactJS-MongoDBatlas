@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Instrument Node.js Backend with AWS X-Ray SDK on AWS System Manager</title>
-    <link>https://github.com/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/3-xray-sdk/</link>
+    <link>https://nguyenvantaiit.github.io/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/3-xray-sdk/</link>
     <description>Recent content in Instrument Node.js Backend with AWS X-Ray SDK on AWS System Manager</description>
     <generator>Hugo 0.125.0</generator>
     <language>en</language>
     <lastBuildDate></lastBuildDate>
-    <atom:link href="https://github.com/NguyenVanTaiIT/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas.git/3-xray-sdk/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://nguyenvantaiit.github.io/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/3-xray-sdk/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
