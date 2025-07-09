@@ -1,22 +1,21 @@
 ---
-title : "Giới thiệu"
-date: 2025-05-25 
-weight : 1 
+title : "Giới thiệu"
+date: 2025-07-07
+weight : 1
 chapter : false
 pre : " <b> 1. </b> "
 ---
-**Session Manager** là một chức năng nằm trong dịch vụ System Manager của AWS, Session Manager cung cấp khả năng quản lý các máy chủ một cách an toàn mà **không cần mở port SSH, không cần Bastion Host hoặc quản lý SSH key**. 
-Session Manager cũng giúp dễ dàng tuân thủ các chính sách của công ty yêu cầu quyền truy cập có kiểm soát, đảm bảo việc bảo mật nghiêm ngặt và ghi log truy việc truy cập trong khi vẫn cung cấp cho người dùng cuối quyền truy cập đa nền tảng.
 
-Với việc sử dụng Session Manager, bạn sẽ có được những ưu điểm sau:
+Workshop này giới thiệu về việc theo dõi và giám sát end-to-end của ứng dụng thương mại điện tử Node.js + React sử dụng các dịch vụ AWS như X-Ray, CloudWatch, Secrets Manager và Elastic Beanstalk. Bạn sẽ học cách theo dõi các yêu cầu của người dùng qua các dịch vụ, trực quan hóa các điểm nghẽn về độ trễ, gỡ lỗi logic backend và quản lý bảo mật các bí mật ứng dụng—tất cả trong AWS.
 
-- Không cần phải mở cổng 22 cho giao thức SSH.
-- Có thể cấu hình để kết nối không cần đi ra ngoài internet.
-- Không cần quản lý private key của server để kết nối SSH.
-- Quản lý tập trung được user bằng việc sử dụng AWS IAM.
-- Truy cập tới server một cách dễ dàng và đơn giản bằng một cú click chuột.
-- Thời gian truy cập nhanh chóng hơn các phương thức truyền thống như SSH.
-- Hỗ trợ nhiều hệ điều hành khác nhau như Linux, Windows, MacOS.
-- Log lại được các phiên kết nối và các câu lệnh đã thực thi trong lúc kết nối tới server.
+Chúng ta sẽ sử dụng **MongoDB Atlas** để lưu trữ cơ sở dữ liệu, **Amazon S3** để tải lên hình ảnh và **Elastic Beanstalk** để triển khai. Frontend (React Vite) và backend (Node.js với Express) được tích hợp với **AWS X-Ray SDK**, cung cấp khả năng hiển thị sâu vào hiệu suất ứng dụng và tương tác dịch vụ.
 
-Với những ưu điểm trên, bạn có thể sử dụng Session Manager thay vì sử dụng kỹ thuật Bastion host giúp chúng ta tiết kiệm được thời gian và chi phí khi quản lý server Bastion.
+### Những lợi ích chính bạn sẽ đạt được từ workshop này:
+- Hiểu cách AWS X-Ray theo dõi các yêu cầu qua các API backend và thao tác cơ sở dữ liệu.
+- Học cách quản lý bí mật môi trường một cách an toàn bằng AWS Secrets Manager.
+- Tự động hóa triển khai bằng Elastic Beanstalk và giám sát các chỉ số sức khỏe qua CloudWatch.
+- Trực quan hóa traces và gỡ lỗi nhanh chóng bằng AWS Application Signals.
+- Thay thế logging thủ công truyền thống bằng distributed tracing có cấu trúc.
+- Khám phá các ví dụ thực tế: danh sách sản phẩm, tải lên hình ảnh, đặt hàng và xem traces của chúng theo thời gian thực.
+
+Đến cuối workshop, bạn sẽ xây dựng và triển khai một ứng dụng thương mại điện tử full-stack với các phương pháp tốt nhất về tracing và monitoring—sẵn sàng để mở rộng và sản xuất.

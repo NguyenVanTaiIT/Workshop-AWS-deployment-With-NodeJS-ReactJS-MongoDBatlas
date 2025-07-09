@@ -1,7 +1,7 @@
 ---
 title: "Preparation"
 date: 2025-07-07
-weight: 1
+weight: 2
 chapter: true
 pre: "<b> 2. </b>"
 ---

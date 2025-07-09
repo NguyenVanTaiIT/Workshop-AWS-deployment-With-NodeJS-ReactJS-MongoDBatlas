@@ -43,9 +43,29 @@
   </url><url>
     <loc>http://localhost:1313/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/2-preparation/2.5-s3-setup/2.5.1-create-bucket/</loc>
     <lastmod>2025-07-07T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="http://localhost:1313/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/vi/2-preparation/2.5-s3-setup/2.5.1-create-bucket/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/2-preparation/2.5-s3-setup/2.5.1-create-bucket/"
+                />
   </url><url>
     <loc>http://localhost:1313/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/4-deployment/4.1-deploy-backend/</loc>
     <lastmod>2025-07-07T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="http://localhost:1313/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/vi/4-deployment/4.1-deploy-backend/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/4-deployment/4.1-deploy-backend/"
+                />
   </url><url>
     <loc>http://localhost:1313/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/1-introduce/</loc>
     <lastmod>2025-07-07T00:00:00+00:00</lastmod>
@@ -58,19 +78,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="http://localhost:1313/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/1-introduce/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/2-preparation/</loc>
-    <lastmod>2025-07-07T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="http://localhost:1313/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/vi/2-preparation/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/2-preparation/"
                 />
   </url><url>
     <loc>http://localhost:1313/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/</loc>
@@ -101,6 +108,29 @@
   </url><url>
     <loc>http://localhost:1313/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/4-deployment/4.2-deploy-frontend/</loc>
     <lastmod>2025-07-07T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="http://localhost:1313/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/vi/4-deployment/4.2-deploy-frontend/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/4-deployment/4.2-deploy-frontend/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/2-preparation/</loc>
+    <lastmod>2025-07-07T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="http://localhost:1313/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/vi/2-preparation/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/2-preparation/"
+                />
   </url><url>
     <loc>http://localhost:1313/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/2-preparation/2.2-iam-and-secrets/</loc>
     <lastmod>2025-07-07T00:00:00+00:00</lastmod>
@@ -117,6 +147,16 @@
   </url><url>
     <loc>http://localhost:1313/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/2-preparation/2.5-s3-setup/2.5.2-test-upload/</loc>
     <lastmod>2025-07-07T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="http://localhost:1313/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/vi/2-preparation/2.5-s3-setup/2.5.2-test-upload/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/2-preparation/2.5-s3-setup/2.5.2-test-upload/"
+                />
   </url><url>
     <loc>http://localhost:1313/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/2-preparation/2.3-create-beanstalk/2.3.2-configure-eb-env/</loc>
     <lastmod>2025-07-07T00:00:00+00:00</lastmod>
@@ -172,6 +212,16 @@
   </url><url>
     <loc>http://localhost:1313/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/4-deployment/</loc>
     <lastmod>2025-07-07T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="http://localhost:1313/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/vi/4-deployment/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/4-deployment/"
+                />
   </url><url>
     <loc>http://localhost:1313/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/2-preparation/2.4-mongodb-integration/</loc>
     <lastmod>2025-07-07T00:00:00+00:00</lastmod>
@@ -188,18 +238,68 @@
   </url><url>
     <loc>http://localhost:1313/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/5-s3-upload/</loc>
     <lastmod>2025-07-07T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="http://localhost:1313/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/vi/5-s3-upload/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/5-s3-upload/"
+                />
   </url><url>
     <loc>http://localhost:1313/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/2-preparation/2.5-s3-setup/</loc>
     <lastmod>2025-07-07T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="http://localhost:1313/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/vi/2-preparation/2.5-s3-setup/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/2-preparation/2.5-s3-setup/"
+                />
   </url><url>
     <loc>http://localhost:1313/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/6-end-to-end-tracing/</loc>
     <lastmod>2025-07-07T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="http://localhost:1313/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/vi/6-end-to-end-tracing/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/6-end-to-end-tracing/"
+                />
   </url><url>
     <loc>http://localhost:1313/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/7-review/</loc>
     <lastmod>2025-07-07T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="http://localhost:1313/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/vi/7-review/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/7-review/"
+                />
   </url><url>
     <loc>http://localhost:1313/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/8-cleanup/</loc>
     <lastmod>2025-07-07T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="http://localhost:1313/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/vi/8-cleanup/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/8-cleanup/"
+                />
   </url><url>
     <loc>http://localhost:1313/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/categories/</loc>
     <xhtml:link

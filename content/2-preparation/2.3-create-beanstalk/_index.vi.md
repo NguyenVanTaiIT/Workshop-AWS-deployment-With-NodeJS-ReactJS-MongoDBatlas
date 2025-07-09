@@ -1,39 +1,45 @@
 ---
-title : "Tạo IAM Role"
-date: 2025-05-25 
-weight : 2 
+title : "Tạo Elastic Beanstalk Environment"
+date: 2025-07-07
+weight : 3
 chapter : false
-pre : " <b> 2.2 </b> "
+pre : " <b> 2.3 </b> "
 ---
 
-### Tạo IAM Role
+## 🚀 AWS Elastic Beanstalk là gì?
 
-Trong bước này chúng ta sẽ tiến hành tạo IAM Role. Trong IAM Role này sẽ được gán policy **AmazonSSMManagedInstanceCore**, đây là policy cho phép máy chủ EC2 có thể giao tiếp với Session Manager.
+{{< figure src="./../../images/2-preparation/048-ElasticBeanstalk.png" title="ElasticBeanstalk" width="150px">}}
 
-1. Truy cập vào [giao diện quản trị dịch vụ IAM](https://console.aws.amazon.com/iamv2/)
-2. Ở thanh điều hướng bên trái, click  **Roles**.  
 
-![role](/images/2.prerequisite/038-iamrole.png)
+**Elastic Beanstalk** là một dịch vụ Platform-as-a-Service (PaaS) từ AWS giúp dễ dàng triển khai, quản lý và mở rộng ứng dụng. Nó hỗ trợ nhiều ngôn ngữ và nền tảng bao gồm **Node.js**, **Java**, **Python** và **.NET**.
 
-3. Click **Create role**.  
+Với Elastic Beanstalk, bạn tập trung vào **code**, và AWS xử lý **infrastructure**—như cung cấp EC2 instances, load balancers, auto scaling, monitoring và deployments.
 
-![role1](/images/2.prerequisite/039-iamrole.png)
+---
 
-4. Click **AWS service** và click **EC2**. 
-  + Click **Next: Permissions**.  
+### ✅ Lợi ích chính
 
-![role1](/images/2.prerequisite/040-iamrole.png)
+- **Không cần quản lý infrastructure** — không cần thủ công cung cấp EC2, security groups, hoặc scaling groups
+- **Monitoring tích hợp** qua **CloudWatch** và health dashboards
+- **Triển khai dễ dàng** qua file zip hoặc Git
+- **Tích hợp với IAM, X-Ray, S3** và các dịch vụ AWS khác
+- **Hỗ trợ environment variables** và secret injection
 
-5. Trong ô Search, điền **AmazonSSMManagedInstanceCore** và ấn phím Enter để tìm kiếm policy này.
-  + Click chọn policy **AmazonSSMManagedInstanceCore**.
-  + Click **Next: Tags.**
+---
 
-![createpolicy](/images/2.prerequisite/041-iamrole.png)
+## 🎯 Trong bước này, bạn sẽ:
 
-6. Click **Next: Review**.
-7. Đặt tên cho Role là **SSM-Role** ở Role Name  
-  + Click **Create Role** \.
+- Tải lên **Node.js backend** dưới dạng file zip
+- Tạo **Elastic Beanstalk environment**
+- Gắn **IAM role** để cho phép truy cập:
+  - AWS X-Ray
+  - Secrets Manager
+  - S3 Buckets
+- Bật **X-Ray daemon** bằng `.ebextensions`
+- Thiết lập **environment variables** như `JWT_SECRET`, `ALLOWED_ORIGINS`, và `PORT`
 
-![namerole](/images/2.prerequisite/042-iamrole.png)
+Sau khi hoàn thành, ứng dụng backend của bạn sẽ được triển khai đầy đủ trong môi trường AWS production-grade, tự động mở rộng và có thể quan sát được.
 
-Tiếp theo chúng ta sẽ thực hiện kết nối đến các máy chủ EC2 chúng ta đã tạo bằng **Session Manager**.
+---
+
+➡️ Tiếp tục đến [2.3.1 – Triển khai Backend Application](2.3.1-deploy-backend/) để bắt đầu thiết lập.

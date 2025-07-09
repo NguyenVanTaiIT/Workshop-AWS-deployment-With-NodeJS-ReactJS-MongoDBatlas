@@ -15,9 +15,13 @@ Step-by-step guide to create a new database on **MongoDB Atlas** for your MERN s
 ### 🧭 Steps:
 
 1. Log in to [MongoDB Atlas](https://www.mongodb.com/cloud/atlas).  
+
 {{< figure src="./../../images/2-preparation/020-mongoDB.png" title="Log in to MongoDB Atlas Dashboard" >}}
+
 2. Create a **new Project** (if you haven't already).
+
 {{< figure src="./../../images/2-preparation/021-mongoDB.png" title="Log in to MongoDB Atlas Dashboard" >}}
+
 - Name your project: (e.g. `Xray`)
 
 {{< figure src="./../../images/2-preparation/022-mongoDB.png" title="Log in to MongoDB Atlas Dashboard" >}}

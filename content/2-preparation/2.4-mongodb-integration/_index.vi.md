@@ -1,93 +1,78 @@
 ---
-title : "Port Forwarding"
-date: 2025-05-25 
-weight : 5 
+title : "Tích hợp MongoDB Atlas và Mongoose"
+date: 2025-07-07
+weight : 4
 chapter : false
-pre : " <b> 5. </b> "
+pre : " <b> 2.4 </b> "
 ---
 
-{{% notice info %}}
-**Port Forwarding** là mốt cách thức hữu ích để chuyển hướng lưu lượng mạng từ 1 địa chỉ IP - Port này sang 1 địa chỉ IP - Port khác. Với **Port Forwarding** chúng ta có thể truy cập một EC2 instance nằm trong private subnet từ máy trạm của chúng ta.
-{{% /notice %}}
+Trong phần này, bạn sẽ xác minh cách ứng dụng backend kết nối an toàn với **MongoDB Atlas** bằng **Mongoose** và AWS **Secrets Manager**.
 
-Chúng ta sẽ cấu hình **Port Forwarding** cho kết nối RDP giữa máy của mình với **Private Windows Instance** nằm trong private subnet mà chúng ta đã tạo cho bài thực hành này.
+Bạn không cần viết logic từ đầu. Tích hợp hoàn chỉnh đã được implement trong file `server.js` có sẵn trong source code workshop.
 
-![port-fwd](/images/arc-04.png) 
+---
 
+## 📦 Tải xuống Source Code
 
+👉 [Tải xuống Workshop Code (.zip)](https://your-link.com/aws-xray-workshop-src.zip)
 
-#### Tạo IAM User có quyền kết nối SSM
+Giải nén và mở thư mục `backend/`. Tất cả logic kết nối database nằm trong `server.js`.
 
-1. Truy cập vào [giao diện quản trị dịch vụ IAM](https://console.aws.amazon.com/iamv2/home)
-  + Click **Users** , sau đó click **Add users**.
+---
 
-![FWD](/images/5.fwd/001-fwd.png)
+## 🧠 Cách hoạt động
 
-2. Tại trang **Add user**.
-  + Tại mục **User name**, điền **Portfwd**.
-  + Click chọn **Access key - Programmatic access**.
-  + Click **Next: Permissions**.
-  
-![FWD](/images/5.fwd/002-fwd.png)
+- AWS Secrets Manager lưu trữ MongoDB connection string dưới key `mongodb/connection`
+- Tại runtime, ứng dụng lấy giá trị đó bằng AWS SDK:
 
-3. Click **Attach existing policies directly**.
-  + Tại ô tìm kiếm , điền **ssm**.
-  + Click chọn **AmazonSSMFullAccess**.
-  + Click **Next: Tags**, click **Next: Reviews**.
-  + Click **Create user**.
-
-4. Lưu lại thông tin **Access key ID** và **Secret access key** để thực hiện cấu hình AWS CLI.
-
-#### Cài đặt và cấu hình AWS CLI và Session Manager Plugin 
-  
-Để thực hiện phần thực hành này, đảm bảo máy trạm của bạn đã cài [AWS CLI]() và [Session Manager Plugin](https://docs.aws.amazon.com/systems-manager/latest/userguide/session-manager-working-with-install-plugin.html)
-
-Bạn có thể tham khảo thêm bài thực hành về cài đặt và cấu hình AWS CLI [tại đây](https://000011.awsstudygroup.com/).
-
-{{%notice tip%}}
-Với Windows thì khi giải nén thư mục cài đặt **Session Manager Plugin** bạn hãy chạy file **install.bat** với quyền Administrator để thực hiện cài đặt.
-{{%/notice%}}
-
-#### Thực hiện Portforwarding 
-
-1. Chạy command dưới đây trong **Command Prompt** trên máy của bạn để cấu hình **Port Forwarding**.
-
+```js
+const client = new SecretsManagerClient({ region: 'ap-southeast-1' });
+const command = new GetSecretValueCommand({ SecretId: 'mongodb/connection' });
+const data = await client.send(command);
+const uri = JSON.parse(data.SecretString).MONGODB_URI;
 ```
-  aws ssm start-session --target (your ID windows instance) --document-name AWS-StartPortForwardingSession --parameters portNumber="3389",localPortNumber="9999" --region (your region) 
-```
-{{%notice tip%}}
+Sau đó kết nối MongoDB bằng:
 
-Thông tin **Instance ID** của **Windows Private Instance** có thể tìm được khi bạn xem chi tiết máy chủ EC2 Windows Private Instance.
-
-{{%/notice%}}
-
-  + Câu lệnh ví dụ
-
-```
-C:\Windows\system32>aws ssm start-session --target i-06343d7377486760c --document-name AWS-StartPortForwardingSession --parameters portNumber="3389",localPortNumber="9999" --region ap-southeast-1
+```js
+await mongoose.connect(uri, { ...connectionOptions });
 ```
 
-{{%notice warning%}}
+---
 
-Nếu câu lệnh của bạn báo lỗi như dưới đây : \
-SessionManagerPlugin is not found. Please refer to SessionManager Documentation here: http://docs.aws.amazon.com/console/systems-manager/session-manager-plugin-not-found\
-Chứng tỏ bạn chưa cài Session Manager Plugin thành công. Bạn có thể cần khởi chạy lại **Command Prompt** sau khi cài **Session Manager Plugin**.
+## 🔍 Những gì cần tìm
+Mở function này trong server.js:
 
-{{%/notice%}}
+```js
+const connectMongoDB = async (maxRetries = 5, retryDelay = 3000) => { ... }
+```
+Bao gồm:
 
-2. Kết nối tới **Private Windows Instance** bạn đã tạo bằng công cụ **Remote Desktop** trên máy trạm của bạn.
-  + Tại mục Computer: điền **localhost:9999**.
+- Logic auto-retry connection
+- Cài đặt timeout
+- Pool sizing
+- Xử lý lỗi graceful
 
+---
 
-![FWD](/images/5.fwd/003-fwd.png)
+## 🧪 Xác minh kết nối
+Sau khi triển khai backend:
 
+- Truy cập endpoint /health
+- Bạn sẽ thấy:
 
-3. Quay trở lại giao diện quản trị của dịch vụ System Manager - Session Manager.
-  + Click tab **Session history**.
-  + Chúng ta sẽ thấy các session logs với tên Document là **AWS-StartPortForwardingSession**.
+```json
+"services": {
+  "database": "connected",
+  "xray": "enabled"
+}
+```
+Nếu MongoDB bị ngắt kết nối hoặc credentials sai, status sẽ hiển thị `"database": "disconnected"`.
 
+---
 
-![FWD](/images/5.fwd/004-fwd.png)
+## 🛡️ Nhắc nhở bảo mật
+- MongoDB credentials không được hardcode
+- Secrets được lưu trong AWS Secrets Manager
+- Chỉ Beanstalk EC2 role mới có thể truy cập
 
-
-Chúc mừng bạn đã hoàn tất bài thực hành hướng dẫn cách sử dụng Session Manager để kết nối cũng như lưu trữ các session logs trong S3 bucket. Hãy nhớ thực hiện bước dọn dẹp tài nguyên để tránh sinh chi phí ngoài ý muốn nhé.
+✅ Với setup này, backend của bạn được kết nối an toàn và đáng tin cậy với MongoDB Atlas theo cách production-ready.

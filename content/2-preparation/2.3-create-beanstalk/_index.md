@@ -8,6 +8,9 @@ pre : " <b> 2.3 </b> "
 
 ## 🚀 What is AWS Elastic Beanstalk?
 
+{{< figure src="./../../images/2-preparation/048-ElasticBeanstalk.png" title="ElasticBeanstalk" width="150px">}}
+
+
 **Elastic Beanstalk** is a Platform-as-a-Service (PaaS) offering from AWS that makes it easy to deploy, manage, and scale applications. It supports several languages and platforms including **Node.js**, **Java**, **Python**, and **.NET**.
 
 With Elastic Beanstalk, you focus on your **code**, and AWS handles the **infrastructure**—like provisioning EC2 instances, load balancers, auto scaling, monitoring, and deployments.

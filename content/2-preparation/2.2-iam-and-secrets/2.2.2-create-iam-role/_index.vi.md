@@ -1,99 +1,99 @@
 ---
-title : "Tạo Public subnet"
-date: 2025-05-25 
+title : "Tạo IAM Role cho Beanstalk"
+date: 2025-07-07
 weight : 2
 chapter : false
-pre : " <b> 2.1.2 </b> "
+pre : " <b> 2.2.2 </b> "
 ---
 
-#### Tạo Public subnet
+Tạo một IAM role để gắn vào các EC2 instances của Elastic Beanstalk. Điều này cho phép các instances tương tác với AWS X-Ray, S3 và Secrets Manager.
 
-1. Click **Subnets**.
-  + Click **Create subnet**.
+Các policies cần thiết:
+- `AWSXRayFullAccess`
+- `AmazonS3FullAccess`
+- `SecretsManagerReadWrite`
+- `AWSElasticBeanstalkWebTier`
 
-![VPC](/images/2.prerequisite/003-createsubnet.png)
-
-2. Tại trang **Create subnet**.
-  + Tại mục **VPC ID** click chọn **Lab VPC**.
-  + Tại mục **Subnet name** điền **Lab Public Subnet**.
-  + Tại mục **Availability Zone** chọn Availability zone đầu tiên.
-  + Tại mục **IPv4 CIRD block** điền **10.10.1.0/24**.
-
-![VPC](/images/2.prerequisite/004-createsubnet.png)
-
-3. Kéo xuống cuối trang , click **Create subnet**.
-
-4. Click chọn **Lab Public Subnet**.
-  + Click **Actions**.
-  + Click **Edit subnet settings**.
-
-![VPC](/images/2.prerequisite/005-createsubnet.png)
-
-5. Click chọn **Enable auto-assign public IPv4 address**.
-  + Click **Save**.
-
-![VPC](/images/2.prerequisite/006-createsubnet.png)
-
-6. Click **Internet Gateways**.
-  + Click **Create internet gateway**.
-  
-![VPC](/images/2.prerequisite/007-createigw.png)
-
-7. Tại trang **Create internet gateway**.
-  + Tại mục **Name tag** điền **Lab IGW**.
-  + Click **Create internet gateway**.
-  
-![VPC](/images/2.prerequisite/008-createigw.png)
-
-8. Sau khi tạo thành công, click **Actions**.
-  + Click **Attach to VPC**.
- 
-![VPC](/images/2.prerequisite/009-createigw.png)
-
-9. Tại trang **Attach to VPC**.
-  + Tại mục **Available VPCs** chọn **Lab VPC**.
-  + Click **Attach internet gateway**.
-  + Kiểm tra quá trình attach thành công như hình dưới.
-
-![VPC](/images/2.prerequisite/010-createigw.png)
-
-10. Tiếp theo chúng ta sẽ tạo một custom route table để gán vào **Lab Public Subnet**.
-  + Click **Route Tables**.
-  + Click **Create route table**.
-
-![VPC](/images/2.prerequisite/011-creatertb.png)
-
-11. Tại trang **Create route table**.
-  + Tại mục **Name**, điền **Lab Publicrtb**.
-  + Tại mục **VPC**, chọn **Lab VPC**.
-  + Click **Create route table**.
-
-12. Sau khi tạo route table thành công.
-  + Click **Edit routes**.
-  
-![VPC](/images/2.prerequisite/012-creatertb.png)
-
-13. Tại trang **Edit routes**.
-  + Click **Add route**.
-  + Tại mục **Destination** điền 0.0.0.0/0
-  + Tại mục **Target** chọn **Internet Gateway** sau đó chọn **Lab IGW**.
-  + Click **Save changes**.
-
-![VPC](/images/2.prerequisite/013-creatertb.png)
-
-14. Click tab **Subnet associations**.
-  + Click **Edit subnet associations** để tiến hành associate custom routable chúng ta vừa tạo vào **Lab Public Subnet**.
+1. Truy cập [IAM Roles Console](https://console.aws.amazon.com/iam/home#/roles) để xem hoặc tạo roles cho môi trường của bạn.  
 
 
-![VPC](/images/2.prerequisite/014-creatertb.png)
-
-15. Tại trang **Edit subnet associations**. 
-  + Click chọn **Lab Public Subnet**.
-  + Click **Save associations**.
-
-![VPC](/images/2.prerequisite/015-creatertb.png)
-
-16. Kiểm tra thông tin route table đã được associate với **Lab Public Subnet** và thông tin route đi internet đã được trỏ đến Internet Gateway như hình dưới.
+2. Nhấp **Create role** ở đầu trang.
+{{< figure src="../../../images/2-preparation/015-IamRole.png" title="Tạo IAM Role mới" >}}
 
 
-![VPC](/images/2.prerequisite/016-creatertb.png)
+3. Dưới **Trusted entity type**, chọn **AWS service EC2**  
+{{< figure src="../../../images/2-preparation/016-IamRole.png" title="Tạo IAM Role mới" >}}
+
+4. Nhấp **Next** để chuyển đến permissions.
+
+---
+
+## 📌 Gắn Policies
+
+5. Trong bước **Permissions**, tìm kiếm và chọn các policies sau:
+
+- `AWSElasticBeanstalkMulticontainerDocker`
+- `AWSElasticBeanstalkWebTier`
+- `AWSElasticBeanstalkWorkerTier`
+- `AWSElasticBeanstalkEnhancedHealth`
+- `AWSElasticBeanstalkManagedUpdatesCustomerRolePolicy`
+- `SecretsManagerReadWrite` 
+- `AWSXRayDaemonWriteAccess` 
+{{< figure src="../../../images/2-preparation/017-IamRole.png" title="Tạo IAM Role mới" >}}
+Nhấp **Next**.
+
+---
+
+## 📝 Đặt tên và Tạo Role
+
+6. Nhập tên cho role, ví dụ: `aws-elasticbeanstalk-ec2-role`
+7. (Tùy chọn) Thêm mô tả như:  
+`IAM role cho Elastic Beanstalk EC2 instances với quyền truy cập X-Ray, Secrets Manager và các tính năng Beanstalk.`
+{{< figure src="../../../images/2-preparation/018-IamRole.png" title="Tạo IAM Role mới" >}}
+8. Nhấp **Create Role**
+9. Sau khi tạo role, quay lại [IAM Roles Console](https://console.aws.amazon.com/iam/home#/roles) và tìm kiếm tên role bạn vừa tạo  
+(ví dụ: `EcommerceAppInstanceRole`) để xác minh rằng nó xuất hiện trong danh sách.
+
+{{< figure src="../../../images/2-preparation/019-IamRole.png" title="Tạo IAM Role mới" >}}
+10. **Gắn Secrets Manager Policy vào IAM Role**
+
+Để cho phép các EC2 instances của Elastic Beanstalk truy xuất an toàn MongoDB credentials từ AWS Secrets Manager, bạn cần gắn một custom policy vào IAM role (ví dụ: `aws-elasticbeanstalk-ec2-role`).
+
+**Các bước:**
+
+1. Truy cập [IAM Roles Console](https://console.aws.amazon.com/iam/home#/roles).
+2. Nhấp tên role của bạn (ví dụ: `aws-elasticbeanstalk-ec2-role`).
+3. Dưới tab **Permissions**, nhấp **Add permissions** → **Create inline policy**.
+4. Chọn tab **JSON**, và paste nội dung sau:
+
+```json
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": "secretsmanager:GetSecretValue",
+      "Resource": "arn:aws:secretsmanager:ap-southeast-1:<your-account-id>:secret:mongodb/connection-*"
+    }
+  ]
+}
+```
+
+> 🔁 **Thay thế `<your-account-id>` bằng AWS account ID thực tế của bạn.**
+
+5. Nhấp **Next** → Đặt tên policy (ví dụ: `SecretsManagerAccessPolicy`).
+6. Nhấp **Create policy**.
+
+---
+
+### 🔍 Policy này làm gì
+
+- **Cho phép:** `secretsmanager:GetSecretValue`
+- **Resource:** Chỉ cho secrets có tên `mongodb/connection-*` trong region `ap-southeast-1`
+- **Mục đích:** Cho phép ứng dụng Node.js (trên Beanstalk) lấy MongoDB connection strings an toàn tại runtime bằng AWS SDK.
+- **Bảo mật:** Quyền truy cập chỉ giới hạn cho secret cần thiết, tránh phơi bày không cần thiết.
+
+✅ Sau khi gắn, instance Beanstalk của bạn có thể truy cập secrets an toàn — không cần hardcode credentials trong file `.env` hoặc deploy dữ liệu nhạy cảm.
+
+✅ Đảm bảo các policies đã gắn trông đúng.  
+Bạn có thể nhấp tên role để xem lại permissions và trust relationships.
