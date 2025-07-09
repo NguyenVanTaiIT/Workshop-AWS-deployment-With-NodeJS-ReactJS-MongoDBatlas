@@ -16,11 +16,11 @@ Hướng dẫn từng bước để tạo một database mới trên **MongoDB A
 
 1. Đăng nhập vào [MongoDB Atlas](https://www.mongodb.com/cloud/atlas).  
 
-{{< figure src=".../../../images/2-preparation/020-mongoDB.png" title="Đăng nhập vào MongoDB Atlas Dashboard" >}}
+{{< figure src="../../../images/2-preparation/020-mongoDB.png" title="Đăng nhập vào MongoDB Atlas Dashboard" >}}
 
 2. Tạo một **Project mới** (nếu chưa có).
 
-{{< figure src=".../../../images/2-preparation/021-mongoDB.png" title="Đăng nhập vào MongoDB Atlas Dashboard" >}}
+{{< figure src="../../../images/2-preparation/021-mongoDB.png" title="Đăng nhập vào MongoDB Atlas Dashboard" >}}
 
 - Đặt tên project: (ví dụ: `Xray`)
 
