@@ -9,24 +9,24 @@
 
     <link rel="icon" href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/images/favicon.png" type="image/png">
 
-    <title>Tạo Private subnet :: Cách viết một Lab Guide</title>
+    <title>Tạo và Sử dụng Secret trong AWS Secrets Manager :: Cách viết một Lab Guide</title>
 
     
-    <link href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/css/nucleus.css?1752015924" rel="stylesheet">
-    <link href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/css/fontawesome-all.min.css?1752015924" rel="stylesheet">
-    <link href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/css/hybrid.css?1752015924" rel="stylesheet">
-    <link href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/css/featherlight.min.css?1752015924" rel="stylesheet">
-    <link href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/css/perfect-scrollbar.min.css?1752015924" rel="stylesheet">
-    <link href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/css/auto-complete.css?1752015924" rel="stylesheet">
-    <link href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/css/atom-one-dark-reasonable.css?1752015924" rel="stylesheet">
-    <link href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/css/theme.css?1752015924" rel="stylesheet">
-    <link href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/css/hugo-theme.css?1752015924" rel="stylesheet">
+    <link href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/css/nucleus.css?1752021879" rel="stylesheet">
+    <link href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/css/fontawesome-all.min.css?1752021879" rel="stylesheet">
+    <link href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/css/hybrid.css?1752021879" rel="stylesheet">
+    <link href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/css/featherlight.min.css?1752021879" rel="stylesheet">
+    <link href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/css/perfect-scrollbar.min.css?1752021879" rel="stylesheet">
+    <link href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/css/auto-complete.css?1752021879" rel="stylesheet">
+    <link href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/css/atom-one-dark-reasonable.css?1752021879" rel="stylesheet">
+    <link href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/css/theme.css?1752021879" rel="stylesheet">
+    <link href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/css/hugo-theme.css?1752021879" rel="stylesheet">
     
-    <link href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/css/theme-workshop.css?1752015924" rel="stylesheet">
+    <link href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/css/theme-workshop.css?1752021879" rel="stylesheet">
     
     
 
-    <script src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/jquery-3.3.1.min.js?1752015924"></script>
+    <script src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/jquery-3.3.1.min.js?1752021879"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,15 +57,15 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/lunr.min.js?1752015924"></script>
-<script type="text/javascript" src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/auto-complete.js?1752015924"></script>
+<script type="text/javascript" src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/lunr.min.js?1752021879"></script>
+<script type="text/javascript" src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/auto-complete.js?1752021879"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/nguyenvantaiit.github.io\/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas\/\/vi";
     
 </script>
 
-<script type="text/javascript" src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/search.js?1752015924"></script>
+<script type="text/javascript" src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/search.js?1752021879"></script>
 
     
   </div>
@@ -83,13 +83,13 @@
  
   
     
-    <li data-nav-id="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/vi/1-introduce/" title="Giới thiệu" class="dd-item 
+    <li data-nav-id="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/vi/1-introduce/" title="Giới thiệu" class="dd-item 
         
         
         
         ">
       <a href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/vi/1-introduce/">
-           <b> 1. </b> Giới thiệu
+           <b> 1. </b> Giới thiệu
           
             <i class="fas fa-check read-icon"></i>
           
@@ -109,70 +109,13 @@
  
   
     
-    <li data-nav-id="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/vi/3-xray-sdk/" title="Dọn dẹp tài nguyên  " class="dd-item 
-        
-        
-        
-        ">
-      <a href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/vi/3-xray-sdk/">
-          <b>6. </b>Dọn dẹp tài nguyên  
-          
-            <i class="fas fa-check read-icon"></i>
-          
-      </a>
-      
-              
-    </li>
-  
- 
-
-          
-          
-
-
-
-
- 
-  
-    
-    <li data-nav-id="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/vi/2-preparation/" title="" class="dd-item 
+    <li data-nav-id="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/vi/2-preparation/" title="Chuẩn bị" class="dd-item 
         parent
         
         
         ">
       <a href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/vi/2-preparation/">
-          
-          
-            <i class="fas fa-check read-icon"></i>
-          
-      </a>
-      
-      
-        <ul>
-          
-          
-            
-          
-          
-          
-        
-          
-            
-            
-
-
-
-
- 
-  
-    
-    <li data-nav-id="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/vi/2-preparation/2.2-iam-and-secrets/" title="Chuẩn bị VPC và EC2" class="dd-item 
-        parent
-        
-        
-        ">
-      <a href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/vi/2-preparation/2.2-iam-and-secrets/">
-           <b> 2.1 </b> Chuẩn bị VPC và EC2
+          <b> 2. </b>Chuẩn bị
           
             <i class="fas fa-check read-icon"></i>
           
@@ -197,230 +140,128 @@
  
   
     
-    <li data-nav-id="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/vi/2-preparation/2.2-iam-and-secrets/2.2.1-create-iam-user/" title="Tạo VPC " class="dd-item 
-        
-        
-        
-        ">
-      <a href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/vi/2-preparation/2.2-iam-and-secrets/2.2.1-create-iam-user/">
-           <b> 2.1.1 </b> Tạo VPC 
-          
-            <i class="fas fa-check read-icon"></i>
-          
-      </a>
-      
-              
-    </li>
-  
- 
-
-            
-          
-            
-            
-
-
-
-
- 
-  
-    
-    <li data-nav-id="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/vi/2-preparation/2.2-iam-and-secrets/2.2.2-create-iam-role/" title="Tạo Public subnet" class="dd-item 
-        
-        
-        
-        ">
-      <a href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/vi/2-preparation/2.2-iam-and-secrets/2.2.2-create-iam-role/">
-           <b> 2.1.2 </b> Tạo Public subnet
-          
-            <i class="fas fa-check read-icon"></i>
-          
-      </a>
-      
-              
-    </li>
-  
- 
-
-            
-          
-            
-            
-
-
-
-
- 
-  
-    
-    <li data-nav-id="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/vi/2-preparation/2.2-iam-and-secrets/2.2.3-create-secret/" title="Tạo Private subnet" class="dd-item 
-        
-        active
-        
-        ">
-      <a href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/vi/2-preparation/2.2-iam-and-secrets/2.2.3-create-secret/">
-           <b> 2.1.3 </b> Tạo Private subnet
-          
-            <i class="fas fa-check read-icon"></i>
-          
-      </a>
-      
-              
-    </li>
-  
- 
-
-            
-          
-        
-        </ul>
-              
-    </li>
-  
- 
-
-            
-          
-            
-            
-
-
-
-
- 
-  
-    
-    <li data-nav-id="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/vi/2-preparation/2.3-create-beanstalk/" title="Tạo IAM Role" class="dd-item 
-        
-        
-        
-        ">
-      <a href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/vi/2-preparation/2.3-create-beanstalk/">
-           <b> 2.2 </b> Tạo IAM Role
-          
-            <i class="fas fa-check read-icon"></i>
-          
-      </a>
-      
-      
-        <ul>
-          
-          
-            
-          
-          
-          
-        
-          
-            
-            
-
-
-
-
- 
-  
-    
-    <li data-nav-id="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/vi/2-preparation/2.3-create-beanstalk/2.3.1-create-eb-env/" title="" class="dd-item 
-        
-        
-        
-        ">
-      <a href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/vi/2-preparation/2.3-create-beanstalk/2.3.1-create-eb-env/">
-          
-          
-            <i class="fas fa-check read-icon"></i>
-          
-      </a>
-      
-              
-    </li>
-  
- 
-
-            
-          
-            
-            
-
-
-
-
- 
-  
-    
-    <li data-nav-id="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/vi/2-preparation/2.3-create-beanstalk/2.3.2-configure-eb-env/" title="" class="dd-item 
-        
-        
-        
-        ">
-      <a href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/vi/2-preparation/2.3-create-beanstalk/2.3.2-configure-eb-env/">
-          
-          
-            <i class="fas fa-check read-icon"></i>
-          
-      </a>
-      
-              
-    </li>
-  
- 
-
-            
-          
-        
-        </ul>
-              
-    </li>
-  
- 
-
-            
-          
-            
-            
-
-
-
-
- 
-  
-    
-    <li data-nav-id="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/vi/2-preparation/2.4-mongodb-integration/" title="Port Forwarding" class="dd-item 
-        
-        
-        
-        ">
-      <a href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/vi/2-preparation/2.4-mongodb-integration/">
-           <b> 5. </b> Port Forwarding
-          
-            <i class="fas fa-check read-icon"></i>
-          
-      </a>
-      
-              
-    </li>
-  
- 
-
-            
-          
-            
-            
-
-
-
-
- 
-  
-    
-    <li data-nav-id="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/vi/2-preparation/2.1-create-mongodb-atlas-db/" title="" class="dd-item 
+    <li data-nav-id="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/vi/2-preparation/2.1-create-mongodb-atlas-db/" title="Tạo Database MongoDB Atlas cho Development" class="dd-item 
         
         
         
         ">
       <a href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/vi/2-preparation/2.1-create-mongodb-atlas-db/">
+           <b> 2.1 </b> Tạo Database MongoDB Atlas cho Development
           
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/vi/2-preparation/2.2-iam-and-secrets/" title="Chuẩn bị IAM và Secrets" class="dd-item 
+        parent
+        
+        
+        ">
+      <a href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/vi/2-preparation/2.2-iam-and-secrets/">
+           <b> 2.2 </b> Chuẩn bị IAM và Secrets
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/vi/2-preparation/2.2-iam-and-secrets/2.2.1-create-iam-user/" title="Tạo IAM User cho Development" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/vi/2-preparation/2.2-iam-and-secrets/2.2.1-create-iam-user/">
+           <b> 2.2.1 </b> Tạo IAM User cho Development
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/vi/2-preparation/2.2-iam-and-secrets/2.2.2-create-iam-role/" title="Tạo IAM Role cho Beanstalk" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/vi/2-preparation/2.2-iam-and-secrets/2.2.2-create-iam-role/">
+           <b> 2.2.2 </b> Tạo IAM Role cho Beanstalk
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/vi/2-preparation/2.2-iam-and-secrets/2.2.3-create-secret/" title="Tạo và Sử dụng Secret trong AWS Secrets Manager" class="dd-item 
+        
+        active
+        
+        ">
+      <a href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/vi/2-preparation/2.2-iam-and-secrets/2.2.3-create-secret/">
+           <b> 2.2.3 </b> Tạo và Sử dụng Secret trong AWS Secrets Manager
           
             <i class="fas fa-check read-icon"></i>
           
@@ -435,6 +276,459 @@
           
         
         </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/vi/2-preparation/2.3-create-beanstalk/" title="Tạo Elastic Beanstalk Environment" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/vi/2-preparation/2.3-create-beanstalk/">
+           <b> 2.3 </b> Tạo Elastic Beanstalk Environment
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/vi/2-preparation/2.3-create-beanstalk/2.3.1-create-eb-env/" title="Tạo và Cấu hình Elastic Beanstalk Environment" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/vi/2-preparation/2.3-create-beanstalk/2.3.1-create-eb-env/">
+           <b> 2.3.1 </b> Tạo và Cấu hình Elastic Beanstalk Environment
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/vi/2-preparation/2.3-create-beanstalk/2.3.2-configure-eb-env/" title="Cập nhật Cấu hình Elastic Beanstalk Environment" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/vi/2-preparation/2.3-create-beanstalk/2.3.2-configure-eb-env/">
+           <b> 2.3.2 </b> Cập nhật Cấu hình Elastic Beanstalk Environment
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/vi/2-preparation/2.4-mongodb-integration/" title="Tích hợp MongoDB Atlas và Mongoose" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/vi/2-preparation/2.4-mongodb-integration/">
+           <b> 2.4 </b> Tích hợp MongoDB Atlas và Mongoose
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/vi/2-preparation/2.5-s3-setup/" title="Thiết lập Amazon S3 cho Image Upload" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/vi/2-preparation/2.5-s3-setup/">
+           <b> 2.5. </b> Thiết lập Amazon S3 cho Image Upload
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/vi/2-preparation/2.5-s3-setup/2.5.1-create-bucket/" title="Tạo S3 Bucket cho Product Images" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/vi/2-preparation/2.5-s3-setup/2.5.1-create-bucket/">
+           <b> 2.5.1 </b> Tạo S3 Bucket cho Product Images
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/vi/2-preparation/2.5-s3-setup/2.5.2-test-upload/" title="Test Image Upload to S3" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/vi/2-preparation/2.5-s3-setup/2.5.2-test-upload/">
+           <b> 2.5.2 </b> Test Image Upload to S3
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/vi/3-xray-sdk/" title="Instrument Node.js Backend với AWS X-Ray SDK" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/vi/3-xray-sdk/">
+           <b> 3. </b> Instrument Node.js Backend với AWS X-Ray SDK
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/vi/4-deployment/" title="Triển khai Backend và Frontend" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/vi/4-deployment/">
+          <b> 4. </b>Triển khai Backend và Frontend
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/vi/4-deployment/4.1-deploy-backend/" title="Triển khai Backend lên AWS Elastic Beanstalk" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/vi/4-deployment/4.1-deploy-backend/">
+           <b> 4.1 </b> Triển khai Backend lên AWS Elastic Beanstalk
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/vi/4-deployment/4.2-deploy-frontend/" title="Triển khai React Frontend lên AWS Elastic Beanstalk" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/vi/4-deployment/4.2-deploy-frontend/">
+           <b> 4.2 </b> Triển khai React Frontend lên AWS Elastic Beanstalk
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/vi/5-s3-upload/" title="Bật S3 Upload và Image Hosting" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/vi/5-s3-upload/">
+           <b> 5. </b> Bật S3 Upload và Image Hosting
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/vi/6-end-to-end-tracing/" title="Trace Requests từ Frontend đến Database" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/vi/6-end-to-end-tracing/">
+           <b> 6. </b> Trace Requests từ Frontend đến Database
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/vi/7-review/" title="Đánh giá Workshop và Vấn đề thường gặp, Cải tiến tương lai" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/vi/7-review/">
+           <b> 7. </b> Đánh giá Workshop và Vấn đề thường gặp, Cải tiến tương lai
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/vi/8-cleanup/" title="Dọn dẹp Tài nguyên AWS" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/vi/8-cleanup/">
+           <b> 8. </b> Dọn dẹp Tài nguyên AWS
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
               
     </li>
   
@@ -586,7 +880,7 @@
             
           
           
-            <a href='/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/vi/'>Session Management</a> > <a href='/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/vi/2-preparation/'></a> > <a href='/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/vi/2-preparation/2.2-iam-and-secrets/'>Chuẩn bị VPC và EC2</a> > Tạo Private subnet
+            <a href='/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/vi/'>Tracing và Debugging Node.js Applications với AWS X-Ray, CloudWatch, và MongoDB Atlas</a> > <a href='/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/vi/2-preparation/'>Chuẩn bị</a> > <a href='/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/vi/2-preparation/2.2-iam-and-secrets/'>Chuẩn bị IAM và Secrets</a> > Tạo và Sử dụng Secret trong AWS Secrets Manager
           
         
           
@@ -603,11 +897,9 @@
     <div class="wrapper">
 <nav id="TableOfContents">
   <ul>
-    <li>
-      <ul>
-        <li></li>
-      </ul>
-    </li>
+    <li><a href="#-từng-bước-tạo-secret-trong-secrets-manager">🔐 Từng bước: Tạo secret trong Secrets Manager</a></li>
+    <li><a href="#-xác-nhận-secret">🧪 Xác nhận Secret</a></li>
+    <li><a href="#-cách-sử-dụng-secret-trong-nodejs-runtime-access">🧑‍💻 Cách sử dụng secret trong Node.js (runtime access)</a></li>
   </ul>
 </nav>
     </div>
@@ -625,7 +917,7 @@
           
             <h1>
               
-              Tạo Private subnet
+              Tạo và Sử dụng Secret trong AWS Secrets Manager
             </h1>
           
 
@@ -633,29 +925,97 @@
 
 
 
-	<h4 id="tạo-private-subnet">Tạo Private subnet</h4>
+	<p>Trong phần này, bạn sẽ học cách lưu trữ và truy xuất an toàn các credentials nhạy cảm bằng <strong>AWS Secrets Manager</strong>.</p>
+<p>Thay vì hardcode MongoDB connection strings hoặc AWS keys trong file <code>.env</code> hoặc source code, bạn sẽ sử dụng <strong>AWS Secrets Manager</strong> để lưu trữ secrets và truy cập chúng an toàn từ ứng dụng backend.</p>
+<hr>
+<h2 id="-từng-bước-tạo-secret-trong-secrets-manager">🔐 Từng bước: Tạo secret trong Secrets Manager</h2>
 <ol>
-<li>Click <strong>Subnets</strong>.</li>
+<li>
+<p>Truy cập <a href="https://console.aws.amazon.com/secretsmanager/">Secrets Manager Console</a></p>
+</li>
+<li>
+<p>Nhấp <strong>Store a new secret</strong></p>
+</li>
 </ol>
-<ul>
-<li>Click <strong>Create subnet</strong>.</li>
-</ul>
-<p><img alt="VPC" src="/images/2.prerequisite/017-createsubnet.png"></p>
-<ol start="2">
-<li>Tại trang <strong>Create subnet</strong>.</li>
-</ol>
-<ul>
-<li>Tại mục <strong>VPC ID</strong> click chọn <strong>Lab VPC</strong>.</li>
-<li>Tại mục <strong>Subnet name</strong> điền <strong>Lab Private Subnet</strong>.</li>
-<li>Tại mục <strong>Availability Zone</strong> chọn Availability zone đầu tiên.</li>
-<li>Tại mục <strong>IPv4 CIRD block</strong> điền <strong>10.10.2.0/24</strong>.</li>
-</ul>
-<p><img alt="VPC" src="/images/2.prerequisite/018-createsubnet.png"></p>
-<ol start="3">
-<li>Kéo xuống cuối trang , click <strong>Create subnet</strong>.</li>
-</ol>
-<p>Bước tiếp theo chúng ta sẽ tạo các security group cần thiết cho bài lab.</p>
+<figure><img src="../../../images/2-preparation/040-SecretsManager.png"><figcaption>
+      <h4>Lưu secret mới trong AWS Secrets Manager</h4>
+    </figcaption>
+</figure>
 
+<hr>
+<ol start="3">
+<li>Chọn <strong>Other type of secrets</strong><br>
+Điều này cho phép bạn định nghĩa các key-value pairs tùy chỉnh một cách thủ công.</li>
+</ol>
+<hr>
+<ol start="4">
+<li>Trong phần <strong>Plaintext</strong>, nhập nội dung sau (hoặc chỉnh sửa theo nhu cầu):</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;MONGODB_URI&#34;</span>: <span style="color:#e6db74">&#34;mongodb+srv://&lt;user&gt;:&lt;pass&gt;@cluster.mongodb.net/ecommerce&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;AWS_ACCESS_KEY&#34;</span>: <span style="color:#e6db74">&#34;&lt;your-access-key&gt;&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;AWS_SECRET_KEY&#34;</span>: <span style="color:#e6db74">&#34;&lt;your-secret-key&gt;&#34;</span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><figure><img src="../../../images/2-preparation/041-SecretsManager.png"><figcaption>
+      <h4>Lưu secret mới trong AWS Secrets Manager</h4>
+    </figcaption>
+</figure>
+
+
+<div class="notices warning" ><p>Thay thế <code>&lt;user&gt;</code>, <code>&lt;password&gt;</code>, <code>&lt;your-access-key&gt;</code>, <code>&lt;your-secret-key&gt;</code> bằng credentials thực tế của bạn.</p>
+</div>
+
+<ol start="5">
+<li>
+<p>Nhấp <strong>Next</strong></p>
+</li>
+<li>
+<p>Nhập tên cho secret</p>
+</li>
+</ol>
+<p>Ví dụ: <code>mongodb/connection</code></p>
+<p>✅ Tên này sẽ được sử dụng trong ứng dụng để truy xuất secret.</p>
+<p>Bạn có thể tùy chọn thêm mô tả và tags.</p>
+<ol start="7">
+<li>
+<p>Để <strong>automatic rotation</strong> tắt (hiện tại), sau đó nhấp <strong>Next</strong></p>
+</li>
+<li>
+<p>Trên trang <strong>Review</strong>, kiểm tra lại các thông tin đã nhập<br>
+Sau đó nhấp <strong>Store</strong> để tạo secret.</p>
+</li>
+</ol>
+<p>Bạn sẽ thấy thông báo xác nhận và secret mới được liệt kê trong dashboard Secrets Manager.</p>
+<h2 id="-xác-nhận-secret">🧪 Xác nhận Secret</h2>
+<p>Nhấp vào tên secret (<code>mongodb/connection</code>) để mở nó.<br>
+Xác minh rằng các key-value pairs đã được lưu đúng.</p>
+<figure><img src="../../../images/2-preparation/042-SecretsManager.png"><figcaption>
+      <h4>Xem secret đã lưu trong Secrets Manager</h4>
+    </figcaption>
+</figure>
+
+<hr>
+<h2 id="-cách-sử-dụng-secret-trong-nodejs-runtime-access">🧑‍💻 Cách sử dụng secret trong Node.js (runtime access)</h2>
+<p>Để lấy secret từ ứng dụng backend:</p>
+<ol>
+<li>Cài đặt AWS SDK v3 nếu chưa có:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>npm install @aws-sdk/client-secrets-manager
+</span></span></code></pre></div><ol start="2">
+<li>Sử dụng code sau trong backend (ví dụ: server.js hoặc config module):</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> { <span style="color:#a6e22e">SecretsManagerClient</span>, <span style="color:#a6e22e">GetSecretValueCommand</span> } <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;@aws-sdk/client-secrets-manager&#39;</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">client</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">SecretsManagerClient</span>({ <span style="color:#a6e22e">region</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;ap-southeast-1&#39;</span> });
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">async</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">getMongoURI</span>() {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">command</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">GetSecretValueCommand</span>({ <span style="color:#a6e22e">SecretId</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;mongodb/connection&#39;</span> });
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">data</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">await</span> <span style="color:#a6e22e">client</span>.<span style="color:#a6e22e">send</span>(<span style="color:#a6e22e">command</span>);
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">secret</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">JSON</span>.<span style="color:#a6e22e">parse</span>(<span style="color:#a6e22e">data</span>.<span style="color:#a6e22e">SecretString</span>);
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">secret</span>.<span style="color:#a6e22e">MONGODB_URI</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div>
 
 
 
@@ -714,38 +1074,6 @@
             
                 
                     
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                    
-                
-                
-
-                    
-                    
-                        
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
                     
                 
                 
@@ -781,44 +1109,6 @@
             
                 
                     
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                        
-                        
                     
                 
                 
@@ -834,6 +1124,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -862,6 +1155,211 @@
             
         
                     
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
             
         
                     
@@ -896,6 +1394,35 @@
                     
             
         
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
                     
             
         
@@ -909,10 +1436,10 @@
 	 
 	 
 		
-			<a class="nav nav-prev" href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/vi/2-preparation/2.2-iam-and-secrets/2.2.2-create-iam-role/" title="Tạo Public subnet"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/vi/2-preparation/2.2-iam-and-secrets/2.2.2-create-iam-role/" title="Tạo IAM Role cho Beanstalk"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/vi/2-preparation/2.3-create-beanstalk/" title="Tạo IAM Role" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/vi/2-preparation/2.3-create-beanstalk/" title="Tạo Elastic Beanstalk Environment" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -922,19 +1449,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/clipboard.min.js?1752015924"></script>
-    <script src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/perfect-scrollbar.min.js?1752015924"></script>
-    <script src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/perfect-scrollbar.jquery.min.js?1752015924"></script>
-    <script src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/jquery.sticky.js?1752015924"></script>
-    <script src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/featherlight.min.js?1752015924"></script>
-    <script src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/highlight.pack.js?1752015924"></script>
+    <script src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/clipboard.min.js?1752021879"></script>
+    <script src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/perfect-scrollbar.min.js?1752021879"></script>
+    <script src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/perfect-scrollbar.jquery.min.js?1752021879"></script>
+    <script src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/jquery.sticky.js?1752021879"></script>
+    <script src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/featherlight.min.js?1752021879"></script>
+    <script src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/highlight.pack.js?1752021879"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/modernizr.custom-3.6.0.js?1752015924"></script>
-    <script src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/learn.js?1752015924"></script>
-    <script src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/hugo-learn.js?1752015924"></script>
+    <script src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/modernizr.custom-3.6.0.js?1752021879"></script>
+    <script src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/learn.js?1752021879"></script>
+    <script src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/hugo-learn.js?1752021879"></script>
 
-    <link href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/mermaid/mermaid.css?1752015924" rel="stylesheet" />
-    <script src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/mermaid/mermaid.js?1752015924"></script>
+    <link href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/mermaid/mermaid.css?1752021879" rel="stylesheet" />
+    <script src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/mermaid/mermaid.js?1752021879"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
