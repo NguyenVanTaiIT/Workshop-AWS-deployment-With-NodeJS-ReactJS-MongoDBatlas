@@ -22,7 +22,7 @@ Bạn sẽ:
 
 Tải xuống source code backend (đã được cấu hình cho Beanstalk + X-Ray):
 
-[⬇️ Tải xuống Workshop backend Source Code(backend.zip)](../../../downloads/ecommerce-backend.zip)
+[⬇️ Tải xuống Workshop backend Source Code(backend.zip)](../../../../downloads/ecommerce-backend.zip)
 
 Sau khi tải xuống, giải nén và nén lại nội dung của thư mục `backend/` (không phải thư mục chính):
 
@@ -63,7 +63,7 @@ AWS_SECRET_KEY=your-aws-secret-key
 ## ☁️ Bước 3: Tạo Elastic Beanstalk Environment
 Truy cập [Elastic Beanstalk Console](https://console.aws.amazon.com/elasticbeanstalk/home)
 
-{{< figure src="../../../images/2-preparation/033-ElasticBeanstalk.png" title="Elastic Beanstalk Console" >}}
+{{< figure src="../../../../images/2-preparation/033-ElasticBeanstalk.png" title="Elastic Beanstalk Console" >}}
 
 - Nhấp **Create Application**
 - Điền thông tin:
@@ -75,14 +75,14 @@ Truy cập [Elastic Beanstalk Console](https://console.aws.amazon.com/elasticbea
   - Chọn Upload your code
   - Upload: **ecommerce-backend.zip**
 
-{{< figure src="../../../images/2-preparation/034-ElasticBeanstalk.png" title="Chọn Platform và Upload Application" >}}
-{{< figure src="../../../images/2-preparation/035-ElasticBeanstalk.png" title="Environment Type và Upload ZIP" >}}
+{{< figure src="../../../../images/2-preparation/034-ElasticBeanstalk.png" title="Chọn Platform và Upload Application" >}}
+{{< figure src="../../../../images/2-preparation/035-ElasticBeanstalk.png" title="Environment Type và Upload ZIP" >}}
 
 ---
 
 ## ⚙️ Bước 4: Cấu hình Service Access
 
-{{< figure src="../../../images/2-preparation/036-ElasticBeanstalk.png" title="Gắn IAM Role vào EC2 instance" >}}
+{{< figure src="../../../../images/2-preparation/036-ElasticBeanstalk.png" title="Gắn IAM Role vào EC2 instance" >}}
 
 {{% notice note %}}
 IAM role này cho phép EC2 instance truy cập Secrets Manager, S3 và X-Ray
@@ -93,7 +93,7 @@ IAM role này cho phép EC2 instance truy cập Secrets Manager, S3 và X-Ray
 ## ⚙️ Bước 5: Bật Monitoring và X-Ray
 Dưới Monitoring **bật AWS X-Ray tracing**
 
-{{< figure src="../../../images/2-preparation/037-ElasticBeanstalk.png" title="Bật X-Ray daemon trong environment settings" >}}
+{{< figure src="../../../../images/2-preparation/037-ElasticBeanstalk.png" title="Bật X-Ray daemon trong environment settings" >}}
 
 Nhấp Apply.
 
@@ -107,7 +107,7 @@ Sau khi environment đã chạy:
 - Chuyển đến tab Configuration
 - Nhấp **Edit**
 
-{{< figure src="../../../images/2-preparation/038-ElasticBeanstalk.png" title="Chỉnh sửa software settings để thêm environment variables" >}}
+{{< figure src="../../../../images/2-preparation/038-ElasticBeanstalk.png" title="Chỉnh sửa software settings để thêm environment variables" >}}
 
 Copy các variables sau:
 
@@ -121,7 +121,7 @@ ALLOWED_ORIGINS=http://localhost:5173,https://your-frontend
 ```
 
 Nhấp **Add environment property**.
-{{< figure src="../../../images/2-preparation/039-ElasticBeanstalk.png" title="Thiết lập environment variables" >}}
+{{< figure src="../../../../images/2-preparation/039-ElasticBeanstalk.png" title="Thiết lập environment variables" >}}
 
 Nhấp Apply để lưu thay đổi.
 

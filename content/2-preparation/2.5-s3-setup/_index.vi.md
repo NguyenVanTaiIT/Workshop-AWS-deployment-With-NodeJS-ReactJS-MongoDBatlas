@@ -7,7 +7,7 @@ pre: " <b> 2.5. </b> "
 ---
 
 # ☁️ Tổng quan Amazon S3
-{{< figure src="./../../images/2-preparation/043-S3.png" title="Amazon Simple Storage Service (Amazon S3)" width="150">}}
+{{< figure src="../../../images/2-preparation/043-S3.png" title="Amazon Simple Storage Service (Amazon S3)" width="150">}}
 **Amazon S3 (Simple Storage Service)** là dịch vụ lưu trữ object có thể mở rộng, bền vững và có tính khả dụng cao được cung cấp bởi AWS. Nó cho phép developers lưu trữ và truy xuất bất kỳ lượng dữ liệu nào vào bất kỳ lúc nào, từ bất kỳ đâu trên web.
 
 ### 💡 Các trường hợp sử dụng phổ biến

@@ -16,30 +16,30 @@ Hướng dẫn từng bước để tạo một database mới trên **MongoDB A
 
 1. Đăng nhập vào [MongoDB Atlas](https://www.mongodb.com/cloud/atlas).  
 
-{{< figure src="./../../images/2-preparation/020-mongoDB.png" title="Đăng nhập vào MongoDB Atlas Dashboard" >}}
+{{< figure src=".../../../images/2-preparation/020-mongoDB.png" title="Đăng nhập vào MongoDB Atlas Dashboard" >}}
 
 2. Tạo một **Project mới** (nếu chưa có).
 
-{{< figure src="./../../images/2-preparation/021-mongoDB.png" title="Đăng nhập vào MongoDB Atlas Dashboard" >}}
+{{< figure src=".../../../images/2-preparation/021-mongoDB.png" title="Đăng nhập vào MongoDB Atlas Dashboard" >}}
 
 - Đặt tên project: (ví dụ: `Xray`)
 
-{{< figure src="./../../images/2-preparation/022-mongoDB.png" title="Đăng nhập vào MongoDB Atlas Dashboard" >}}
+{{< figure src="../../../images/2-preparation/022-mongoDB.png" title="Đăng nhập vào MongoDB Atlas Dashboard" >}}
 
 - Nhấp **Next** và **Create project**
-{{< figure src="./../../images/2-preparation/023-mongoDB.png" title="Đăng nhập vào MongoDB Atlas Dashboard" >}}
+{{< figure src="../../../images/2-preparation/023-mongoDB.png" title="Đăng nhập vào MongoDB Atlas Dashboard" >}}
 3. Tạo một **Cluster mới**
 
 
-{{< figure src="./../../images/2-preparation/024-mongoDB.png" title="Nhấp Build a Database trong MongoDB Atlas" >}}
+{{< figure src="../../../images/2-preparation/024-mongoDB.png" title="Nhấp Build a Database trong MongoDB Atlas" >}}
 
 - Chọn **Cloud Provider**, **Cluster Tier/Template** và **Region** ưa thích của bạn
 
-{{< figure src="./../../images/2-preparation/025-mongoDB.png" title="Chọn Cloud Provider, Template và Region" >}}
+{{< figure src="../../../images/2-preparation/025-mongoDB.png" title="Chọn Cloud Provider, Template và Region" >}}
 
 - Sau khi chọn các tùy chọn, nhấp **Create Deployment** để bắt đầu cung cấp cluster
 
-{{< figure src="./../../images/2-preparation/026-mongoDB.png" title="Tạo MongoDB Cluster Deployment" >}}
+{{< figure src="../../../images/2-preparation/026-mongoDB.png" title="Tạo MongoDB Cluster Deployment" >}}
 
 4. Thiết lập **Network Access** và **Tạo Database User**
 
@@ -60,7 +60,7 @@ Một database user mặc định cũng được đề xuất.
 
 Bạn có thể sử dụng credentials được tạo tự động hoặc tạo riêng.  
 Nhấp **Copy** (1) để lưu password, sau đó nhấp **Create Database User** (2).
-{{< figure src="./../../images/2-preparation/027-mongoDB.png" title="Thêm IP address và chuẩn bị tạo database user" >}}
+{{< figure src="../../../images/2-preparation/027-mongoDB.png" title="Thêm IP address và chuẩn bị tạo database user" >}}
 
 
 ---
@@ -68,7 +68,7 @@ Nhấp **Copy** (1) để lưu password, sau đó nhấp **Create Database User*
 - **Bước 3: Chọn phương thức kết nối**
 
 Sau khi user được tạo, nhấp **Choose a connection method**.
-{{< figure src="./../../images/2-preparation/028-mongoDB.png" title="Tạo MongoDB database user và copy credentials" >}}
+{{< figure src="../../../images/2-preparation/028-mongoDB.png" title="Tạo MongoDB database user và copy credentials" >}}
 
 
 ---
@@ -76,7 +76,7 @@ Sau khi user được tạo, nhấp **Choose a connection method**.
 - **Bước 4: Chọn 'Drivers' và chọn Node.js**
 
 Trong màn hình tiếp theo, chọn **Drivers**, sau đó chọn **Node.js** làm driver và version.
-{{< figure src="./../../images/2-preparation/029-mongoDB.png" title="Chọn phương thức kết nối cho MongoDB Atlas" >}}
+{{< figure src="../../../images/2-preparation/029-mongoDB.png" title="Chọn phương thức kết nối cho MongoDB Atlas" >}}
 
 
 ---
@@ -87,7 +87,7 @@ Nhấp nút **Copy** và lưu string — bạn sẽ sử dụng nó trong ứng 
 {{% notice note %}} 
 Đây là **lần duy nhất password sẽ hiển thị**, vì vậy hãy lưu trữ an toàn hoặc ngay lập tức thêm vào AWS Secrets Manager.
 {{% /notice %}}
-{{< figure src="./../../images/2-preparation/030-mongoDB.png" title="Lấy connection string với Node.js driver" >}}
+{{< figure src="../../../images/2-preparation/030-mongoDB.png" title="Lấy connection string với Node.js driver" >}}
 
 ---
 
@@ -102,7 +102,7 @@ Sau khi hoàn thành, bạn sẽ nhận được **MongoDB connection URI**, s�
 2. Bạn sẽ thấy danh sách các user hiện có.  
    Nhấp nút **Edit** bên cạnh user bạn muốn chỉnh sửa.
 
-{{< figure src="./../../images/2-preparation/031-mongoDB.png" title="Chỉnh sửa MongoDB database user" >}}
+{{< figure src="../../../images/2-preparation/031-mongoDB.png" title="Chỉnh sửa MongoDB database user" >}}
 
 3. Trong modal:
    - Để **thay đổi password**, nhập password mới
@@ -125,7 +125,7 @@ Sau khi hoàn thành, bạn sẽ nhận được **MongoDB connection URI**, s�
 
 2. Bạn sẽ thấy **IP Access List**.
 
-{{< figure src="./../../images/2-preparation/032-mongoDB.png" title="Quản lý IP Whitelist MongoDB Atlas" >}}
+{{< figure src="../../../images/2-preparation/032-mongoDB.png" title="Quản lý IP Whitelist MongoDB Atlas" >}}
 
 3. Để **thêm IP mới**:
    - Nhấp **Add IP Address**

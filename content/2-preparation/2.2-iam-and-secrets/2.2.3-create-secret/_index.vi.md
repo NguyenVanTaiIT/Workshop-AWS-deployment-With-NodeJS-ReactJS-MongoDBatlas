@@ -18,7 +18,7 @@ Thay vì hardcode MongoDB connection strings hoặc AWS keys trong file `.env` h
 
 2. Nhấp **Store a new secret**
 
-{{< figure src="../../../images/2-preparation/040-SecretsManager.png" title="Lưu secret mới trong AWS Secrets Manager" >}}
+{{< figure src="../../../../images/2-preparation/040-SecretsManager.png" title="Lưu secret mới trong AWS Secrets Manager" >}}
 
 ---
 
@@ -36,7 +36,7 @@ Thay vì hardcode MongoDB connection strings hoặc AWS keys trong file `.env` h
   "AWS_SECRET_KEY": "<your-secret-key>"
 }
 ```
-{{< figure src="../../../images/2-preparation/041-SecretsManager.png" title="Lưu secret mới trong AWS Secrets Manager" >}}
+{{< figure src="../../../../images/2-preparation/041-SecretsManager.png" title="Lưu secret mới trong AWS Secrets Manager" >}}
 
 {{% notice warning %}} 
 Thay thế `<user>`, `<password>`, `<your-access-key>`, `<your-secret-key>` bằng credentials thực tế của bạn.
@@ -65,7 +65,7 @@ Bạn sẽ thấy thông báo xác nhận và secret mới được liệt kê t
 Nhấp vào tên secret (`mongodb/connection`) để mở nó.  
 Xác minh rằng các key-value pairs đã được lưu đúng.
 
-{{< figure src="../../../images/2-preparation/042-SecretsManager.png" title="Xem secret đã lưu trong Secrets Manager" >}}
+{{< figure src="../../../../images/2-preparation/042-SecretsManager.png" title="Xem secret đã lưu trong Secrets Manager" >}}
 
 ---
 

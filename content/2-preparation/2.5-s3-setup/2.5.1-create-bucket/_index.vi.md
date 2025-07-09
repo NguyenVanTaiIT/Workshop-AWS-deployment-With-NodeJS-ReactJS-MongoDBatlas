@@ -19,7 +19,7 @@ Hãy đảm bảo bạn tạo bucket với **tên chính xác này** (hoặc c�
 1. Truy cập [Amazon S3 Console](https://s3.console.aws.amazon.com/s3/home)
 
 2. Nhấp **Create bucket**
-{{< figure src="../../../images/2-preparation/044-S3.png" title="Amazon Simple Storage Service (Amazon S3)" >}}
+{{< figure src="../../../../images/2-preparation/044-S3.png" title="Amazon Simple Storage Service (Amazon S3)" >}}
 3. Điền thông tin sau:
 
 - **Bucket name**: `ecommerce-products-2025`
@@ -28,7 +28,7 @@ Hãy đảm bảo bạn tạo bucket với **tên chính xác này** (hoặc c�
 - **Region**:  
 Chọn cùng AWS Region nơi Beanstalk environment của bạn đang chạy (ví dụ: `ap-southeast-1`)
 
-{{< figure src="../../../images/2-preparation/045-S3.png" title="Amazon Simple Storage Service (Amazon S3)" >}}
+{{< figure src="../../../../images/2-preparation/045-S3.png" title="Amazon Simple Storage Service (Amazon S3)" >}}
 
 ---
 
@@ -40,9 +40,9 @@ Chọn cùng AWS Region nơi Beanstalk environment của bạn đang chạy (ví
 
 3. Xác nhận cảnh báo xuất hiện, sau đó nhấp **Create bucket**
 
-{{< figure src="../../../images/2-preparation/046-S3.png" title="Amazon Simple Storage Service (Amazon S3)" >}}
+{{< figure src="../../../../images/2-preparation/046-S3.png" title="Amazon Simple Storage Service (Amazon S3)" >}}
 
-{{< figure src="../../../images/2-preparation/047-S3.png" title="Amazon Simple Storage Service (Amazon S3)" >}}
+{{< figure src="../../../../images/2-preparation/047-S3.png" title="Amazon Simple Storage Service (Amazon S3)" >}}
 
 ---
 

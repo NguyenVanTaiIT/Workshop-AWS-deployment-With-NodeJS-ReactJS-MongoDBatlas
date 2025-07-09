@@ -18,11 +18,11 @@ Các policies cần thiết:
 
 
 2. Nhấp **Create role** ở đầu trang.
-{{< figure src="../../../images/2-preparation/015-IamRole.png" title="Tạo IAM Role mới" >}}
+{{< figure src="../../../../images/2-preparation/015-IamRole.png" title="Tạo IAM Role mới" >}}
 
 
 3. Dưới **Trusted entity type**, chọn **AWS service EC2**  
-{{< figure src="../../../images/2-preparation/016-IamRole.png" title="Tạo IAM Role mới" >}}
+{{< figure src="../../../../images/2-preparation/016-IamRole.png" title="Tạo IAM Role mới" >}}
 
 4. Nhấp **Next** để chuyển đến permissions.
 
@@ -39,7 +39,7 @@ Các policies cần thiết:
 - `AWSElasticBeanstalkManagedUpdatesCustomerRolePolicy`
 - `SecretsManagerReadWrite` 
 - `AWSXRayDaemonWriteAccess` 
-{{< figure src="../../../images/2-preparation/017-IamRole.png" title="Tạo IAM Role mới" >}}
+{{< figure src="../../../../images/2-preparation/017-IamRole.png" title="Tạo IAM Role mới" >}}
 Nhấp **Next**.
 
 ---
@@ -49,12 +49,12 @@ Nhấp **Next**.
 6. Nhập tên cho role, ví dụ: `aws-elasticbeanstalk-ec2-role`
 7. (Tùy chọn) Thêm mô tả như:  
 `IAM role cho Elastic Beanstalk EC2 instances với quyền truy cập X-Ray, Secrets Manager và các tính năng Beanstalk.`
-{{< figure src="../../../images/2-preparation/018-IamRole.png" title="Tạo IAM Role mới" >}}
+{{< figure src="../../../../images/2-preparation/018-IamRole.png" title="Tạo IAM Role mới" >}}
 8. Nhấp **Create Role**
 9. Sau khi tạo role, quay lại [IAM Roles Console](https://console.aws.amazon.com/iam/home#/roles) và tìm kiếm tên role bạn vừa tạo  
 (ví dụ: `EcommerceAppInstanceRole`) để xác minh rằng nó xuất hiện trong danh sách.
 
-{{< figure src="../../../images/2-preparation/019-IamRole.png" title="Tạo IAM Role mới" >}}
+{{< figure src="../../../../images/2-preparation/019-IamRole.png" title="Tạo IAM Role mới" >}}
 10. **Gắn Secrets Manager Policy vào IAM Role**
 
 Để cho phép các EC2 instances của Elastic Beanstalk truy xuất an toàn MongoDB credentials từ AWS Secrets Manager, bạn cần gắn một custom policy vào IAM role (ví dụ: `aws-elasticbeanstalk-ec2-role`).

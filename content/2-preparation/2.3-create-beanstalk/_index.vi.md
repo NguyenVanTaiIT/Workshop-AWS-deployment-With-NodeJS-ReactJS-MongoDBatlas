@@ -8,7 +8,7 @@ pre : " <b> 2.3 </b> "
 
 ## 🚀 AWS Elastic Beanstalk là gì?
 
-{{< figure src="./../../images/2-preparation/048-ElasticBeanstalk.png" title="ElasticBeanstalk" width="150px">}}
+{{< figure src="../../../images/2-preparation/048-ElasticBeanstalk.png" title="ElasticBeanstalk" width="150px">}}
 
 
 **Elastic Beanstalk** là một dịch vụ Platform-as-a-Service (PaaS) từ AWS giúp dễ dàng triển khai, quản lý và mở rộng ứng dụng. Nó hỗ trợ nhiều ngôn ngữ và nền tảng bao gồm **Node.js**, **Java**, **Python** và **.NET**.

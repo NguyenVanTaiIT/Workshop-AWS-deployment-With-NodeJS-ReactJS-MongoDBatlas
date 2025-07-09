@@ -10,7 +10,7 @@ chapter : false
 ### Tổng quan
 Trong workshop thực hành này, bạn sẽ học cách xây dựng, triển khai, trace và monitor một ứng dụng web thương mại điện tử Node.js + React sử dụng các dịch vụ AWS. Chúng ta sẽ đi qua các kỹ thuật tracing nâng cao sử dụng AWS X-Ray và CloudWatch, quản lý credentials an toàn với Secrets Manager, và lưu trữ dữ liệu trên MongoDB Atlas. Bạn cũng sẽ tích hợp image uploads qua Amazon S3 và triển khai toàn bộ stack sử dụng Elastic Beanstalk.
 
-![Tracing Architecture](./images/arc.png)
+![Tracing Architecture](../images/arc.png) 
 
 ### Nội dung
 1. [Giới thiệu và Tổng quan Kiến trúc](1-introduce/)

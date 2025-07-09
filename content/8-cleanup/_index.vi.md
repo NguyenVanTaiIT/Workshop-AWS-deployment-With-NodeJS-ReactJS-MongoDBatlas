@@ -25,11 +25,11 @@ pre : " <b> 8. </b> "
 3. Nhấp **Actions** → **Terminate environment**
 
    ⚠️ Điều này sẽ chấm dứt EC2, Load Balancer, Auto Scaling, và tài nguyên S3 được tạo bởi Beanstalk.
-{{< figure src="./../images/8-cleanup/001-CleanUp.png" title="Xác nhận xóa environment" >}}
+{{< figure src="../../images/8-cleanup/001-CleanUp.png" title="Xác nhận xóa environment" >}}
 
 4. Xác nhận xóa
 
-{{< figure src="./../images/8-cleanup/002-CleanUp.png" title="Xác nhận xóa environment" >}}
+{{< figure src="../../images/8-cleanup/002-CleanUp.png" title="Xác nhận xóa environment" >}}
 
 ---
 
@@ -38,19 +38,19 @@ pre : " <b> 8. </b> "
 1. Đi đến [S3 Console](https://s3.console.aws.amazon.com/s3/home)
 2. Chọn bucket của bạn (ví dụ: `ecommerce-products-2025`)
 
-{{< figure src="./../images/8-cleanup/003-CleanUp.png" title="Chọn bucket để xóa" >}}
+{{< figure src="../../images/8-cleanup/003-CleanUp.png" title="Chọn bucket để xóa" >}}
 
 3. **Làm trống** nội dung bucket trước:
    - Nhấp **Empty**
 
-{{< figure src="./../images/8-cleanup/004-CleanUp.png" title="Làm trống bucket" >}}
+{{< figure src="../../images/8-cleanup/004-CleanUp.png" title="Làm trống bucket" >}}
 
    - Xác nhận xóa
 4. Sau đó nhấp **Delete bucket**
 
-{{< figure src="./../images/8-cleanup/005-CleanUp.png" title="Xóa bucket" >}}
+{{< figure src="../../images/8-cleanup/005-CleanUp.png" title="Xóa bucket" >}}
 
-{{< figure src="./../images/8-cleanup/006-CleanUp.png" title="Xác nhận xóa bucket" >}}
+{{< figure src="../../images/8-cleanup/006-CleanUp.png" title="Xác nhận xóa bucket" >}}
 
 {{% notice warning %}}
 ⚠️ Buckets phải được làm trống trước khi xóa.
@@ -67,19 +67,19 @@ pre : " <b> 8. </b> "
 
 3. Rời khỏi project
 
-{{< figure src="./../images/8-cleanup/007-CleanUp.png" title="Rời khỏi project" >}}
+{{< figure src="../../images/8-cleanup/007-CleanUp.png" title="Rời khỏi project" >}}
 
-{{< figure src="./../images/8-cleanup/008-CleanUp.png" title="Xác nhận rời khỏi project" >}}
+{{< figure src="../../images/8-cleanup/008-CleanUp.png" title="Xác nhận rời khỏi project" >}}
 
 3. Nhấp **Cluster → Terminate**
 
-{{< figure src="./../images/8-cleanup/009-CleanUp.png" title="Terminate cluster" >}}
+{{< figure src="../../images/8-cleanup/009-CleanUp.png" title="Terminate cluster" >}}
 
-{{< figure src="./../images/8-cleanup/010-CleanUp.png" title="Xác nhận terminate cluster" >}}
+{{< figure src="../../images/8-cleanup/010-CleanUp.png" title="Xác nhận terminate cluster" >}}
 
 4. Xóa project nếu không sử dụng lại
 
-{{< figure src="./../images/8-cleanup/011-CleanUp.png" title="Xóa project" >}}
+{{< figure src="../../images/8-cleanup/011-CleanUp.png" title="Xóa project" >}}
 
 ---
 
@@ -90,7 +90,7 @@ pre : " <b> 8. </b> "
 3. Nhấp **Actions → Delete**
 4. Xác nhận xóa
 
-{{< figure src="./../images/8-cleanup/012-CleanUp.png" title="Xóa secret" >}}
+{{< figure src="../../images/8-cleanup/012-CleanUp.png" title="Xóa secret" >}}
 
 Secrets được lên lịch xóa trong 7 ngày (bạn có thể buộc xóa ngay lập tức qua CLI).
 

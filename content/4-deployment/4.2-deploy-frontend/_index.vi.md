@@ -14,7 +14,7 @@ Khác với S3/CloudFront hosting, cách tiếp cận này sử dụng Express b
 
 ## 📦 Tải xuống Frontend Source Code
 
-[⬇️ Tải xuống Frontend Source (frontend.zip)](./../../downloads/ecommerce-frontend.zip)
+[⬇️ Tải xuống Frontend Source (frontend.zip)](./../../../downloads/ecommerce-frontend.zip)
 
 Sau khi tải xuống:
 
@@ -73,11 +73,11 @@ Truy cập Elastic Beanstalk Console
 
 
 
-{{< figure src="../../images/4-deployment/001-FrontendDeploy.png" title="Amazon Simple Storage Service (Amazon S3)" >}}
+{{< figure src="../../../images/4-deployment/001-FrontendDeploy.png" title="Amazon Simple Storage Service (Amazon S3)" >}}
 - Nhấp Upload and deploy
-{{< figure src="../../images/4-deployment/002-FrontendDeploy.png" title="Amazon Simple Storage Service (Amazon S3)" >}}
+{{< figure src="../../../images/4-deployment/002-FrontendDeploy.png" title="Amazon Simple Storage Service (Amazon S3)" >}}
 - Chọn file zip mới: **ecommerce-backend-with-frontend.zip** và label `version-2`
-{{< figure src="../../images/4-deployment/003-FrontendDeploy.png" title="Amazon Simple Storage Service (Amazon S3)" >}}
+{{< figure src="../../../images/4-deployment/003-FrontendDeploy.png" title="Amazon Simple Storage Service (Amazon S3)" >}}
 - Nhấp **Deploy**
 ---
 
@@ -87,9 +87,9 @@ Truy cập URL Beanstalk environment:
 ```http
 http://ecommerce-env.eba-xxxx.ap-southeast-1.elasticbeanstalk.com
 ```
-Bạn sẽ thấy React frontend được serve — tích hợp hoàn toàn với backend.
+Bạn sẽ thấy React frontend được triển khai — tích hợp hoàn toàn với backend.
 
-{{< figure src="../../images/4-deployment/004-FrontendDeploy.png" title="Amazon Simple Storage Service (Amazon S3)" >}}
+{{< figure src="../../../images/4-deployment/004-FrontendDeploy.png" title="Amazon Simple Storage Service (Amazon S3)" >}}
 
 ---
 

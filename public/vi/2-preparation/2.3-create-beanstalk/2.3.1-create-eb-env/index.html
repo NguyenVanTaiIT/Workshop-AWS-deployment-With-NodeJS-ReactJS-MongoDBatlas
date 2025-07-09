@@ -12,21 +12,21 @@
     <title>Tạo và Cấu hình Elastic Beanstalk Environment :: Cách viết một Lab Guide</title>
 
     
-    <link href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/css/nucleus.css?1752019346" rel="stylesheet">
-    <link href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/css/fontawesome-all.min.css?1752019346" rel="stylesheet">
-    <link href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/css/hybrid.css?1752019346" rel="stylesheet">
-    <link href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/css/featherlight.min.css?1752019346" rel="stylesheet">
-    <link href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/css/perfect-scrollbar.min.css?1752019346" rel="stylesheet">
-    <link href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/css/auto-complete.css?1752019346" rel="stylesheet">
-    <link href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/css/atom-one-dark-reasonable.css?1752019346" rel="stylesheet">
-    <link href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/css/theme.css?1752019346" rel="stylesheet">
-    <link href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/css/hugo-theme.css?1752019346" rel="stylesheet">
+    <link href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/css/nucleus.css?1752051371" rel="stylesheet">
+    <link href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/css/fontawesome-all.min.css?1752051371" rel="stylesheet">
+    <link href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/css/hybrid.css?1752051371" rel="stylesheet">
+    <link href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/css/featherlight.min.css?1752051371" rel="stylesheet">
+    <link href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/css/perfect-scrollbar.min.css?1752051371" rel="stylesheet">
+    <link href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/css/auto-complete.css?1752051371" rel="stylesheet">
+    <link href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/css/atom-one-dark-reasonable.css?1752051371" rel="stylesheet">
+    <link href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/css/theme.css?1752051371" rel="stylesheet">
+    <link href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/css/hugo-theme.css?1752051371" rel="stylesheet">
     
-    <link href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/css/theme-workshop.css?1752019346" rel="stylesheet">
+    <link href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/css/theme-workshop.css?1752051371" rel="stylesheet">
     
     
 
-    <script src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/jquery-3.3.1.min.js?1752019346"></script>
+    <script src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/jquery-3.3.1.min.js?1752051371"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,15 +57,15 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/lunr.min.js?1752019346"></script>
-<script type="text/javascript" src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/auto-complete.js?1752019346"></script>
+<script type="text/javascript" src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/lunr.min.js?1752051371"></script>
+<script type="text/javascript" src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/auto-complete.js?1752051371"></script>
 <script type="text/javascript">
     
         var baseurl = "http:\/\/localhost:1313\/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas\/\/vi";
     
 </script>
 
-<script type="text/javascript" src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/search.js?1752019346"></script>
+<script type="text/javascript" src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/search.js?1752051371"></script>
 
     
   </div>
@@ -945,7 +945,7 @@
 <hr>
 <h2 id="-bước-1-chuẩn-bị-source-code-backend">📦 Bước 1: Chuẩn bị Source Code Backend</h2>
 <p>Tải xuống source code backend (đã được cấu hình cho Beanstalk + X-Ray):</p>
-<p><a href="../../../downloads/ecommerce-backend.zip">⬇️ Tải xuống Workshop backend Source Code(backend.zip)</a></p>
+<p><a href="../../../../downloads/ecommerce-backend.zip">⬇️ Tải xuống Workshop backend Source Code(backend.zip)</a></p>
 <p>Sau khi tải xuống, giải nén và nén lại nội dung của thư mục <code>backend/</code> (không phải thư mục chính):</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cd backend
 </span></span><span style="display:flex;"><span>zip -r ../ecommerce-backend.zip .
@@ -973,7 +973,7 @@
 <hr>
 <h2 id="-bước-3-tạo-elastic-beanstalk-environment">☁️ Bước 3: Tạo Elastic Beanstalk Environment</h2>
 <p>Truy cập <a href="https://console.aws.amazon.com/elasticbeanstalk/home">Elastic Beanstalk Console</a></p>
-<figure><img src="../../../images/2-preparation/033-ElasticBeanstalk.png"><figcaption>
+<figure><img src="../../../../images/2-preparation/033-ElasticBeanstalk.png"><figcaption>
       <h4>Elastic Beanstalk Console</h4>
     </figcaption>
 </figure>
@@ -998,19 +998,19 @@
 </ul>
 </li>
 </ul>
-<p><figure><img src="../../../images/2-preparation/034-ElasticBeanstalk.png"><figcaption>
+<p><figure><img src="../../../../images/2-preparation/034-ElasticBeanstalk.png"><figcaption>
       <h4>Chọn Platform và Upload Application</h4>
     </figcaption>
 </figure>
 
-<figure><img src="../../../images/2-preparation/035-ElasticBeanstalk.png"><figcaption>
+<figure><img src="../../../../images/2-preparation/035-ElasticBeanstalk.png"><figcaption>
       <h4>Environment Type và Upload ZIP</h4>
     </figcaption>
 </figure>
 </p>
 <hr>
 <h2 id="-bước-4-cấu-hình-service-access">⚙️ Bước 4: Cấu hình Service Access</h2>
-<figure><img src="../../../images/2-preparation/036-ElasticBeanstalk.png"><figcaption>
+<figure><img src="../../../../images/2-preparation/036-ElasticBeanstalk.png"><figcaption>
       <h4>Gắn IAM Role vào EC2 instance</h4>
     </figcaption>
 </figure>
@@ -1022,7 +1022,7 @@
 <hr>
 <h2 id="-bước-5-bật-monitoring-và-x-ray">⚙️ Bước 5: Bật Monitoring và X-Ray</h2>
 <p>Dưới Monitoring <strong>bật AWS X-Ray tracing</strong></p>
-<figure><img src="../../../images/2-preparation/037-ElasticBeanstalk.png"><figcaption>
+<figure><img src="../../../../images/2-preparation/037-ElasticBeanstalk.png"><figcaption>
       <h4>Bật X-Ray daemon trong environment settings</h4>
     </figcaption>
 </figure>
@@ -1036,7 +1036,7 @@
 <li>Chuyển đến tab Configuration</li>
 <li>Nhấp <strong>Edit</strong></li>
 </ul>
-<figure><img src="../../../images/2-preparation/038-ElasticBeanstalk.png"><figcaption>
+<figure><img src="../../../../images/2-preparation/038-ElasticBeanstalk.png"><figcaption>
       <h4>Chỉnh sửa software settings để thêm environment variables</h4>
     </figcaption>
 </figure>
@@ -1049,7 +1049,7 @@
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">REFRESH_TOKEN_SECRET</span><span style="color:#f92672">=</span><span style="color:#e6db74">your-refresh-token-secret-key</span>
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">ALLOWED_ORIGINS</span><span style="color:#f92672">=</span><span style="color:#e6db74">http://localhost:5173,https://your-frontend</span>
 </span></span></code></pre></div><p>Nhấp <strong>Add environment property</strong>.
-<figure><img src="../../../images/2-preparation/039-ElasticBeanstalk.png"><figcaption>
+<figure><img src="../../../../images/2-preparation/039-ElasticBeanstalk.png"><figcaption>
       <h4>Thiết lập environment variables</h4>
     </figcaption>
 </figure>
@@ -1520,19 +1520,19 @@ Bạn đã thành công triển khai backend production-ready với AWS Elastic 
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/clipboard.min.js?1752019346"></script>
-    <script src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/perfect-scrollbar.min.js?1752019346"></script>
-    <script src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/perfect-scrollbar.jquery.min.js?1752019346"></script>
-    <script src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/jquery.sticky.js?1752019346"></script>
-    <script src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/featherlight.min.js?1752019346"></script>
-    <script src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/highlight.pack.js?1752019346"></script>
+    <script src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/clipboard.min.js?1752051371"></script>
+    <script src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/perfect-scrollbar.min.js?1752051371"></script>
+    <script src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/perfect-scrollbar.jquery.min.js?1752051371"></script>
+    <script src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/jquery.sticky.js?1752051371"></script>
+    <script src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/featherlight.min.js?1752051371"></script>
+    <script src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/highlight.pack.js?1752051371"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/modernizr.custom-3.6.0.js?1752019346"></script>
-    <script src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/learn.js?1752019346"></script>
-    <script src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/hugo-learn.js?1752019346"></script>
+    <script src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/modernizr.custom-3.6.0.js?1752051371"></script>
+    <script src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/learn.js?1752051371"></script>
+    <script src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/hugo-learn.js?1752051371"></script>
 
-    <link href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/mermaid/mermaid.css?1752019346" rel="stylesheet" />
-    <script src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/mermaid/mermaid.js?1752019346"></script>
+    <link href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/mermaid/mermaid.css?1752051371" rel="stylesheet" />
+    <script src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/mermaid/mermaid.js?1752051371"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

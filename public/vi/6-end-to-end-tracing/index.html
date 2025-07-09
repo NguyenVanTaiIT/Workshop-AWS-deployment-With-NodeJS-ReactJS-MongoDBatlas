@@ -12,21 +12,21 @@
     <title>Trace Requests từ Frontend đến Database :: Cách viết một Lab Guide</title>
 
     
-    <link href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/css/nucleus.css?1752019346" rel="stylesheet">
-    <link href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/css/fontawesome-all.min.css?1752019346" rel="stylesheet">
-    <link href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/css/hybrid.css?1752019346" rel="stylesheet">
-    <link href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/css/featherlight.min.css?1752019346" rel="stylesheet">
-    <link href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/css/perfect-scrollbar.min.css?1752019346" rel="stylesheet">
-    <link href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/css/auto-complete.css?1752019346" rel="stylesheet">
-    <link href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/css/atom-one-dark-reasonable.css?1752019346" rel="stylesheet">
-    <link href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/css/theme.css?1752019346" rel="stylesheet">
-    <link href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/css/hugo-theme.css?1752019346" rel="stylesheet">
+    <link href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/css/nucleus.css?1752051341" rel="stylesheet">
+    <link href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/css/fontawesome-all.min.css?1752051341" rel="stylesheet">
+    <link href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/css/hybrid.css?1752051341" rel="stylesheet">
+    <link href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/css/featherlight.min.css?1752051341" rel="stylesheet">
+    <link href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/css/perfect-scrollbar.min.css?1752051341" rel="stylesheet">
+    <link href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/css/auto-complete.css?1752051341" rel="stylesheet">
+    <link href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/css/atom-one-dark-reasonable.css?1752051341" rel="stylesheet">
+    <link href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/css/theme.css?1752051341" rel="stylesheet">
+    <link href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/css/hugo-theme.css?1752051341" rel="stylesheet">
     
-    <link href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/css/theme-workshop.css?1752019346" rel="stylesheet">
+    <link href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/css/theme-workshop.css?1752051341" rel="stylesheet">
     
     
 
-    <script src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/jquery-3.3.1.min.js?1752019346"></script>
+    <script src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/jquery-3.3.1.min.js?1752051341"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,15 +57,15 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/lunr.min.js?1752019346"></script>
-<script type="text/javascript" src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/auto-complete.js?1752019346"></script>
+<script type="text/javascript" src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/lunr.min.js?1752051341"></script>
+<script type="text/javascript" src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/auto-complete.js?1752051341"></script>
 <script type="text/javascript">
     
         var baseurl = "http:\/\/localhost:1313\/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas\/\/vi";
     
 </script>
 
-<script type="text/javascript" src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/search.js?1752019346"></script>
+<script type="text/javascript" src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/search.js?1752051341"></script>
 
     
   </div>
@@ -921,36 +921,36 @@
 <h3 id="-thử-điều-này">🧪 Thử điều này</h3>
 <p>Mở frontend của bạn (hosted trên S3 hoặc Beanstalk)</p>
 <p>Đăng ký tài khoản mới<br>
-<figure><img src="./../images/6-end-to-end-tracing/001-EndToEndTracing.png"><figcaption>
+<figure><img src="../../images/6-end-to-end-tracing/001-EndToEndTracing.png"><figcaption>
       <h4>Đăng ký tài khoản user mới</h4>
     </figcaption>
 </figure>
 </p>
 <p>Đăng nhập sử dụng credentials vừa tạo<br>
-<figure><img src="./../images/6-end-to-end-tracing/002-EndToEndTracing.png"><figcaption>
+<figure><img src="../../images/6-end-to-end-tracing/002-EndToEndTracing.png"><figcaption>
       <h4>Đăng nhập vào tài khoản</h4>
     </figcaption>
 </figure>
 </p>
 <p>Duyệt đến một sản phẩm<br>
-<figure><img src="./../images/6-end-to-end-tracing/003-EndToEndTracing.png"><figcaption>
+<figure><img src="../../images/6-end-to-end-tracing/003-EndToEndTracing.png"><figcaption>
       <h4>Xem chi tiết sản phẩm</h4>
     </figcaption>
 </figure>
 </p>
 <p>Nhấp &ldquo;Add to cart&rdquo;, sau đó tiến hành checkout<br>
-<figure><img src="./../images/6-end-to-end-tracing/004-EndToEndTracing.png"><figcaption>
+<figure><img src="../../images/6-end-to-end-tracing/004-EndToEndTracing.png"><figcaption>
       <h4>Thêm sản phẩm vào giỏ hàng và tiến hành checkout</h4>
     </figcaption>
 </figure>
 </p>
 <p>Đặt hàng<br>
-<figure><img src="./../images/6-end-to-end-tracing/005-EndToEndTracing.png"><figcaption>
+<figure><img src="../../images/6-end-to-end-tracing/005-EndToEndTracing.png"><figcaption>
       <h4>Đặt hàng</h4>
     </figcaption>
 </figure>
 </p>
-<figure><img src="./../images/6-end-to-end-tracing/006-EndToEndTracing.png"><figcaption>
+<figure><img src="../../images/6-end-to-end-tracing/006-EndToEndTracing.png"><figcaption>
       <h4>Trace xuất hiện trong AWS X-Ray sau khi đặt hàng</h4>
     </figcaption>
 </figure>
@@ -964,12 +964,12 @@
 </ul>
 </li>
 </ul>
-<figure><img src="./../images/6-end-to-end-tracing/007-EndToEndTracing.png"><figcaption>
+<figure><img src="../../images/6-end-to-end-tracing/007-EndToEndTracing.png"><figcaption>
       <h4>Trace xuất hiện trong AWS X-Ray sau khi đặt hàng</h4>
     </figcaption>
 </figure>
 
-<figure><img src="./../images/6-end-to-end-tracing/008-EndToEndTracing.png"><figcaption>
+<figure><img src="../../images/6-end-to-end-tracing/008-EndToEndTracing.png"><figcaption>
       <h4>Trace xuất hiện trong AWS X-Ray sau khi đặt hàng</h4>
     </figcaption>
 </figure>
@@ -977,7 +977,7 @@
 <ul>
 <li>Backend → MongoDB operation</li>
 </ul>
-<figure><img src="./../images/6-end-to-end-tracing/009-EndToEndTracing.png"><figcaption>
+<figure><img src="../../images/6-end-to-end-tracing/009-EndToEndTracing.png"><figcaption>
       <h4>Trace xuất hiện trong AWS X-Ray sau khi đặt hàng</h4>
     </figcaption>
 </figure>
@@ -1417,19 +1417,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/clipboard.min.js?1752019346"></script>
-    <script src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/perfect-scrollbar.min.js?1752019346"></script>
-    <script src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/perfect-scrollbar.jquery.min.js?1752019346"></script>
-    <script src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/jquery.sticky.js?1752019346"></script>
-    <script src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/featherlight.min.js?1752019346"></script>
-    <script src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/highlight.pack.js?1752019346"></script>
+    <script src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/clipboard.min.js?1752051341"></script>
+    <script src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/perfect-scrollbar.min.js?1752051341"></script>
+    <script src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/perfect-scrollbar.jquery.min.js?1752051341"></script>
+    <script src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/jquery.sticky.js?1752051341"></script>
+    <script src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/featherlight.min.js?1752051341"></script>
+    <script src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/highlight.pack.js?1752051341"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/modernizr.custom-3.6.0.js?1752019346"></script>
-    <script src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/learn.js?1752019346"></script>
-    <script src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/hugo-learn.js?1752019346"></script>
+    <script src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/modernizr.custom-3.6.0.js?1752051341"></script>
+    <script src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/learn.js?1752051341"></script>
+    <script src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/js/hugo-learn.js?1752051341"></script>
 
-    <link href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/mermaid/mermaid.css?1752019346" rel="stylesheet" />
-    <script src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/mermaid/mermaid.js?1752019346"></script>
+    <link href="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/mermaid/mermaid.css?1752051341" rel="stylesheet" />
+    <script src="/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/mermaid/mermaid.js?1752051341"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
