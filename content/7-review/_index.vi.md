@@ -41,7 +41,7 @@ Bằng cách hoàn thành workshop này, bạn đã thành công:
 
 ---
 
-## 🚧 Cải tiến tương lai (Đã lên kế hoạch)
+## 🚧 Cải tiến tương lai 
 
 Mặc dù phiên bản workshop này cung cấp complete deployment pipeline, đây là một số **tính năng đã lên kế hoạch** để cải tiến thêm:
 

@@ -8,7 +8,7 @@ pre: "<b> 2. </b>"
 
 Trong phần này, bạn sẽ hoàn thành tất cả các bước chuẩn bị cần thiết trước khi triển khai và theo dõi ứng dụng trên AWS. Các bài lab này sẽ giúp bạn:
 
-{{< figure src="../../images/2-preparation/001-IAM.png" title="AWS Identity and Access Management (IAM)" width=150pc >}}
+{{< figure src="../../images/2-preparation/001-IAM.png" title="Quản lý danh tính và truy cập (IAM) trên AWS" width=150pc >}}
 
 - Thiết lập tài khoản AWS và bật X-Ray
 - Tạo IAM users và roles với quyền phù hợp

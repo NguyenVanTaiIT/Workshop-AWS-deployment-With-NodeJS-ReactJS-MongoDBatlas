@@ -41,7 +41,7 @@ By completing this workshop, you have successfully:
 
 ---
 
-## 🚧 Future Enhancements (Planned)
+## 🚧 Future Enhancements
 
 Although this version of the workshop provides a complete deployment pipeline, here are some **planned features** to enhance it further:
 

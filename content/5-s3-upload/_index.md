@@ -142,12 +142,12 @@ Every file upload is traced via AWS X-Ray:
 **FileValidation segment logs:**
 - file size
 - mimetype
-{{< figure src="./../images/5-s3-upload/001-S3uploads.png" title="Amazon Simple Storage Service (Amazon S3)" >}}
+{{< figure src="./../images/5-s3-upload/001-S3uploads.png" title="X-Ray: File validation segment logs" >}}
 **S3Upload segment logs:**
 - image_url
 - key
 - upload result or error
-{{< figure src="./../images/5-s3-upload/002-S3uploads.png" title="Amazon Simple Storage Service (Amazon S3)" >}}
+{{< figure src="./../images/5-s3-upload/002-S3uploads.png" title="X-Ray: S3 upload segment logs" >}}
 Go to X-Ray Console and navigate to the Service Map to confirm upload activity.
 
 ---

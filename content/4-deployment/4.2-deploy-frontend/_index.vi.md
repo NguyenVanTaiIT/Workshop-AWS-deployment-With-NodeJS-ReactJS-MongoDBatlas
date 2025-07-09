@@ -73,11 +73,11 @@ Truy cập Elastic Beanstalk Console
 
 
 
-{{< figure src="../../../images/4-deployment/001-FrontendDeploy.png" title="Amazon Simple Storage Service (Amazon S3)" >}}
+{{< figure src="../../../images/4-deployment/001-FrontendDeploy.png" title="Elastic Beanstalk: Upload gói triển khai frontend" >}}
 - Nhấp Upload and deploy
-{{< figure src="../../../images/4-deployment/002-FrontendDeploy.png" title="Amazon Simple Storage Service (Amazon S3)" >}}
+{{< figure src="../../../images/4-deployment/002-FrontendDeploy.png" title="Elastic Beanstalk: Chọn và triển khai phiên bản mới" >}}
 - Chọn file zip mới: **ecommerce-backend-with-frontend.zip** và label `version-2`
-{{< figure src="../../../images/4-deployment/003-FrontendDeploy.png" title="Amazon Simple Storage Service (Amazon S3)" >}}
+{{< figure src="../../../images/4-deployment/003-FrontendDeploy.png" title="Elastic Beanstalk: Đặt nhãn phiên bản và deploy" >}}
 - Nhấp **Deploy**
 ---
 
@@ -89,7 +89,7 @@ http://ecommerce-env.eba-xxxx.ap-southeast-1.elasticbeanstalk.com
 ```
 Bạn sẽ thấy React frontend được triển khai — tích hợp hoàn toàn với backend.
 
-{{< figure src="../../../images/4-deployment/004-FrontendDeploy.png" title="Amazon Simple Storage Service (Amazon S3)" >}}
+{{< figure src="../../../images/4-deployment/004-FrontendDeploy.png" title="Frontend đã được triển khai và truy cập qua Beanstalk URL" >}}
 
 ---
 

@@ -67,19 +67,19 @@ pre : " <b> 8. </b> "
 
 3. Rời khỏi project
 
-{{< figure src="../../images/8-cleanup/007-CleanUp.png" title="Rời khỏi project" >}}
+{{< figure src="../../images/8-cleanup/007-CleanUp.png" title="Rời khỏi project MongoDB Atlas" >}}
 
 {{< figure src="../../images/8-cleanup/008-CleanUp.png" title="Xác nhận rời khỏi project" >}}
 
 3. Nhấp **Cluster → Terminate**
 
-{{< figure src="../../images/8-cleanup/009-CleanUp.png" title="Terminate cluster" >}}
+{{< figure src="../../images/8-cleanup/009-CleanUp.png" title="Terminate cluster MongoDB Atlas" >}}
 
 {{< figure src="../../images/8-cleanup/010-CleanUp.png" title="Xác nhận terminate cluster" >}}
 
 4. Xóa project nếu không sử dụng lại
 
-{{< figure src="../../images/8-cleanup/011-CleanUp.png" title="Xóa project" >}}
+{{< figure src="../../images/8-cleanup/011-CleanUp.png" title="Xóa project MongoDB Atlas" >}}
 
 ---
 
@@ -90,7 +90,7 @@ pre : " <b> 8. </b> "
 3. Nhấp **Actions → Delete**
 4. Xác nhận xóa
 
-{{< figure src="../../images/8-cleanup/012-CleanUp.png" title="Xóa secret" >}}
+{{< figure src="../../images/8-cleanup/012-CleanUp.png" title="Xóa secret trong AWS Secrets Manager" >}}
 
 Secrets được lên lịch xóa trong 7 ngày (bạn có thể buộc xóa ngay lập tức qua CLI).
 

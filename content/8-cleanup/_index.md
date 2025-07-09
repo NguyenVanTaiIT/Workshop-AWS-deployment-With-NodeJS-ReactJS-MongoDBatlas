@@ -25,11 +25,11 @@ Here’s how to clean up each service:
 3. Click **Actions** → **Terminate environment**
 
    ⚠️ This will terminate EC2, Load Balancer, Auto Scaling, and S3 resources created by Beanstalk.
-{{< figure src="./../images/8-cleanup/001-CleanUp.png" title="Trace appears in AWS X-Ray after placing order" >}}
+{{< figure src="./../images/8-cleanup/001-CleanUp.png" title="Terminate Elastic Beanstalk environment" >}}
 
 4. Confirm deletion 
 
-{{< figure src="./../images/8-cleanup/002-CleanUp.png" title="Trace appears in AWS X-Ray after placing order" >}}
+{{< figure src="./../images/8-cleanup/002-CleanUp.png" title="Confirm environment termination" >}}
 
 
 
@@ -40,19 +40,19 @@ Here’s how to clean up each service:
 1. Go to the [S3 Console](https://s3.console.aws.amazon.com/s3/home)
 2. Select your bucket (e.g. `ecommerce-products-2025`)
 
-{{< figure src="./../images/8-cleanup/003-CleanUp.png" title="Trace appears in AWS X-Ray after placing order" >}}
+{{< figure src="./../images/8-cleanup/003-CleanUp.png" title="Select S3 bucket to delete" >}}
 
 3. **Empty** the bucket contents first:
    - Click **Empty**
 
-{{< figure src="./../images/8-cleanup/004-CleanUp.png" title="Trace appears in AWS X-Ray after placing order" >}}
+{{< figure src="./../images/8-cleanup/004-CleanUp.png" title="Empty S3 bucket before deletion" >}}
 
    - Confirm deletion
 4. Then click **Delete bucket**
 
-{{< figure src="./../images/8-cleanup/005-CleanUp.png" title="Trace appears in AWS X-Ray after placing order" >}}
+{{< figure src="./../images/8-cleanup/005-CleanUp.png" title="Delete S3 bucket" >}}
 
-{{< figure src="./../images/8-cleanup/006-CleanUp.png" title="Trace appears in AWS X-Ray after placing order" >}}
+{{< figure src="./../images/8-cleanup/006-CleanUp.png" title="Confirm S3 bucket deletion" >}}
 
 {{% notice warning %}}
 ⚠️ Buckets must be emptied before deletion.
@@ -69,19 +69,19 @@ Here’s how to clean up each service:
 
 3.leave project
 
-{{< figure src="./../images/8-cleanup/007-CleanUp.png" title="Trace appears in AWS X-Ray after placing order" >}}
+{{< figure src="./../images/8-cleanup/007-CleanUp.png" title="Leave MongoDB Atlas project" >}}
 
-{{< figure src="./../images/8-cleanup/008-CleanUp.png" title="Trace appears in AWS X-Ray after placing order" >}}
+{{< figure src="./../images/8-cleanup/008-CleanUp.png" title="Confirm leaving MongoDB Atlas project" >}}
 
 3. Click **Cluster → Terminate**
 
-{{< figure src="./../images/8-cleanup/009-CleanUp.png" title="Trace appears in AWS X-Ray after placing order" >}}
+{{< figure src="./../images/8-cleanup/009-CleanUp.png" title="Terminate MongoDB Atlas cluster" >}}
 
-{{< figure src="./../images/8-cleanup/010-CleanUp.png" title="Trace appears in AWS X-Ray after placing order" >}}
+{{< figure src="./../images/8-cleanup/010-CleanUp.png" title="Confirm cluster termination" >}}
 
 4. Delete the project if not used again
 
-{{< figure src="./../images/8-cleanup/011-CleanUp.png" title="Trace appears in AWS X-Ray after placing order" >}}
+{{< figure src="./../images/8-cleanup/011-CleanUp.png" title="Delete MongoDB Atlas project" >}}
 
 ---
 
@@ -92,7 +92,7 @@ Here’s how to clean up each service:
 3. Click **Actions → Delete**
 4. Confirm deletion
 
-{{< figure src="./../images/8-cleanup/012-CleanUp.png" title="Trace appears in AWS X-Ray after placing order" >}}
+{{< figure src="./../images/8-cleanup/012-CleanUp.png" title="Delete secret in AWS Secrets Manager" >}}
 
 Secrets are scheduled for deletion in 7 days (you can force immediate deletion via CLI).
 

@@ -27,7 +27,7 @@ Nhấp "Add to cart", sau đó tiến hành checkout
 Đặt hàng  
 {{< figure src="../../images/6-end-to-end-tracing/005-EndToEndTracing.png" title="Đặt hàng" >}}
 
-{{< figure src="../../images/6-end-to-end-tracing/006-EndToEndTracing.png" title="Trace xuất hiện trong AWS X-Ray sau khi đặt hàng" >}}
+{{< figure src="../../images/6-end-to-end-tracing/006-EndToEndTracing.png" >}}
 
 ### 🔍 Bây giờ kiểm tra AWS X-Ray:
 
@@ -35,14 +35,14 @@ Nhấp "Add to cart", sau đó tiến hành checkout
 - Bạn sẽ thấy:
   - Frontend traced request → Backend service (`EcommerceApp`)
 
-{{< figure src="../../images/6-end-to-end-tracing/007-EndToEndTracing.png" title="Trace xuất hiện trong AWS X-Ray sau khi đặt hàng" >}}
+{{< figure src="../../images/6-end-to-end-tracing/007-EndToEndTracing.png" title="Trace X-Ray: frontend đến backend" >}}
 
 
-{{< figure src="../../images/6-end-to-end-tracing/008-EndToEndTracing.png" title="Trace xuất hiện trong AWS X-Ray sau khi đặt hàng" >}}
+{{< figure src="../../images/6-end-to-end-tracing/008-EndToEndTracing.png" title="Trace X-Ray: backend đến MongoDB" >}}
 
 - Backend → MongoDB operation
 
-{{< figure src="../../images/6-end-to-end-tracing/009-EndToEndTracing.png" title="Trace xuất hiện trong AWS X-Ray sau khi đặt hàng" >}}
+{{< figure src="../../images/6-end-to-end-tracing/009-EndToEndTracing.png" title="Trace X-Ray: chi tiết segment" >}}
 
 - Nhấp vào bất kỳ trace nào để xem Segment details.
 

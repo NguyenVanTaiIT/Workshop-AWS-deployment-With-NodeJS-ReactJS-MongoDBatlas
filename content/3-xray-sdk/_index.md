@@ -189,17 +189,17 @@ segment.addMetadata('error_context', {
 
 ### 🔍 How to View These in X-Ray Console
 Go to [CloudWatch Home](https://console.aws.amazon.com/cloudwatch/home) → Application Signals (APM) →Traces
-{{< figure src="./../images/3-xray-sdk/001-CloudWatch.png" title="Amazon Simple Storage Service (Amazon S3)" >}}
+{{< figure src="./../images/3-xray-sdk/001-CloudWatch.png" title="CloudWatch Traces" >}}
 
 Filter traces using annotations, e.g.:
 
 ```
 annotation.status = "success"
 ```
-{{< figure src="./../images/3-xray-sdk/002-CloudWatch.png" title="Amazon Simple Storage Service (Amazon S3)" >}}
+{{< figure src="./../images/3-xray-sdk/002-CloudWatch.png" title="Filter traces by annotation in CloudWatch" >}}
 
-{{< figure src="./../images/3-xray-sdk/003-CloudWatch.png" title="Amazon Simple Storage Service (Amazon S3)" >}}
+{{< figure src="./../images/3-xray-sdk/003-CloudWatch.png" title="Trace details in CloudWatch" >}}
 Click into a trace → View subsegments → Check **Metadata** or **Annotations** tab
-{{< figure src="./../images/3-xray-sdk/004-CloudWatch.png" title="Amazon Simple Storage Service (Amazon S3)" >}}
+{{< figure src="./../images/3-xray-sdk/004-CloudWatch.png" title="Annotations and Metadata in CloudWatch Trace" >}}
 💡 **Note:** This structured tracing makes debugging, auditing, and performance monitoring significantly easier in production environments.
 

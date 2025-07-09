@@ -73,11 +73,11 @@ Go to the Elastic Beanstalk Console
 
 
 
-{{< figure src="../../images/4-deployment/001-FrontendDeploy.png" title="Amazon Simple Storage Service (Amazon S3)" >}}
+{{< figure src="../../images/4-deployment/001-FrontendDeploy.png" title="Elastic Beanstalk: Upload deployment package" >}}
 - Click Upload and deploy
-{{< figure src="../../images/4-deployment/002-FrontendDeploy.png" title="Amazon Simple Storage Service (Amazon S3)" >}}
+{{< figure src="../../images/4-deployment/002-FrontendDeploy.png" title="Elastic Beanstalk: Select and deploy new version" >}}
 - Choose the new zip file: **ecommerce-backend-with-frontend.zip** and label `version-2`
-{{< figure src="../../images/4-deployment/003-FrontendDeploy.png" title="Amazon Simple Storage Service (Amazon S3)" >}}
+{{< figure src="../../images/4-deployment/003-FrontendDeploy.png" title="Elastic Beanstalk: Version label and deploy" >}}
 - Click **Deploy**
 ---
 
@@ -89,7 +89,7 @@ http://ecommerce-env.eba-xxxx.ap-southeast-1.elasticbeanstalk.com
 ```
 You should see your React frontend being served — fully integrated with your backend.
 
-{{< figure src="../../images/4-deployment/004-FrontendDeploy.png" title="Amazon Simple Storage Service (Amazon S3)" >}}
+{{< figure src="../../images/4-deployment/004-FrontendDeploy.png" title="Frontend deployed and accessible via Beanstalk URL" >}}
 
 ---
 

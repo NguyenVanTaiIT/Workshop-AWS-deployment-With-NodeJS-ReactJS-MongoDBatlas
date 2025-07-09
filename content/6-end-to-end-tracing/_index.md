@@ -27,7 +27,7 @@ Click "Add to cart", then proceed to checkout
 Place an order  
 {{< figure src="./../images/6-end-to-end-tracing/005-EndToEndTracing.png" title="Place the order" >}}
 
-{{< figure src="./../images/6-end-to-end-tracing/006-EndToEndTracing.png" title="Trace appears in AWS X-Ray after placing order" >}}
+{{< figure src="./../images/6-end-to-end-tracing/006-EndToEndTracing.png" >}}
 
 ### 🔍 Now check AWS X-Ray:
 
@@ -35,14 +35,14 @@ Place an order
 - You should see:
   - Frontend traced request → Backend service (`EcommerceApp`)
 
-{{< figure src="./../images/6-end-to-end-tracing/007-EndToEndTracing.png" title="Trace appears in AWS X-Ray after placing order" >}}
+{{< figure src="./../images/6-end-to-end-tracing/007-EndToEndTracing.png" title="X-Ray trace: frontend to backend" >}}
 
 
-{{< figure src="./../images/6-end-to-end-tracing/008-EndToEndTracing.png" title="Trace appears in AWS X-Ray after placing order" >}}
+{{< figure src="./../images/6-end-to-end-tracing/008-EndToEndTracing.png" title="X-Ray trace: backend to MongoDB" >}}
 
 - Backend → MongoDB operation
 
-{{< figure src="./../images/6-end-to-end-tracing/009-EndToEndTracing.png" title="Trace appears in AWS X-Ray after placing order" >}}
+{{< figure src="./../images/6-end-to-end-tracing/009-EndToEndTracing.png" title="X-Ray trace: segment details" >}}
 
 - Click any trace to see Segment details.
 

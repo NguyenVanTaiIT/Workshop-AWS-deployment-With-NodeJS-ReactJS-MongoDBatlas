@@ -142,12 +142,12 @@ Mỗi file upload được trace qua AWS X-Ray:
 **FileValidation segment logs:**
 - file size
 - mimetype
-{{< figure src="../../images/5-s3-upload/001-S3uploads.png" title="Amazon Simple Storage Service (Amazon S3)" >}}
+{{< figure src="../../images/5-s3-upload/001-S3uploads.png" title="X-Ray: Log kiểm tra file upload" >}}
 **S3Upload segment logs:**
 - image_url
 - key
 - upload result hoặc error
-{{< figure src="../../images/5-s3-upload/002-S3uploads.png" title="Amazon Simple Storage Service (Amazon S3)" >}}
+{{< figure src="../../images/5-s3-upload/002-S3uploads.png" title="X-Ray: Log upload ảnh lên S3" >}}
 Truy cập X-Ray Console và navigate đến Service Map để xác nhận upload activity.
 
 ---

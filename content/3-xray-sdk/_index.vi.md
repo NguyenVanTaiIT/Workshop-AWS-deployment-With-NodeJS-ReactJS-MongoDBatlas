@@ -189,16 +189,16 @@ segment.addMetadata('error_context', {
 
 ### 🔍 Cách xem trong X-Ray Console
 Truy cập [CloudWatch Home](https://console.aws.amazon.com/cloudwatch/home) → Application Signals (APM) →Traces
-{{< figure src="../../images/3-xray-sdk/001-CloudWatch.png" title="Amazon Simple Storage Service (Amazon S3)" >}}
+{{< figure src="../../images/3-xray-sdk/001-CloudWatch.png" title="Giao diện CloudWatch Traces" >}}
 
 Filter traces sử dụng annotations, ví dụ:
 
 ```
 annotation.status = "success"
 ```
-{{< figure src="../../images/3-xray-sdk/002-CloudWatch.png" title="Amazon Simple Storage Service (Amazon S3)" >}}
+{{< figure src="../../images/3-xray-sdk/002-CloudWatch.png" title="Lọc traces theo annotation trong CloudWatch" >}}
 
-{{< figure src="../../images/3-xray-sdk/003-CloudWatch.png" title="Amazon Simple Storage Service (Amazon S3)" >}}
+{{< figure src="../../images/3-xray-sdk/003-CloudWatch.png" title="Chi tiết trace trong CloudWatch" >}}
 Click vào trace → View subsegments → Check tab **Metadata** hoặc **Annotations**
-{{< figure src="../../images/3-xray-sdk/004-CloudWatch.png" title="Amazon Simple Storage Service (Amazon S3)" >}}
+{{< figure src="../../images/3-xray-sdk/004-CloudWatch.png" title="Annotations và Metadata trong trace CloudWatch" >}}
 💡 **Lưu ý:** Structured tracing này làm cho debugging, auditing, và performance monitoring dễ dàng hơn đáng kể trong production environments.
