@@ -15,6 +15,8 @@ In this section, you will explore how **AWS X-Ray SDK** is fully integrated into
 
 All necessary code is already implemented in `server.js`. This step is about **understanding, verifying, and testing** the tracing setup.
 
+📥 [Tải X-Ray Daemon tại đây](https://docs.aws.amazon.com/xray/latest/devguide/xray-daemon.html)
+
 ---
 
 ## 📂 Source location
