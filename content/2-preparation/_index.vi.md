@@ -20,8 +20,9 @@ Mỗi lab là nền tảng quan trọng cho một deployment an toàn, có thể
 **Các lab bao gồm:**
 
 - [2.1 Tạo MongoDB Atlas Database](2.1-create-mongodb-atlas-db/)
-- [2.2 Chuẩn bị IAM và Secrets](2.2-iam-and-secrets/)
+- [2.2 IAM và Quản lý Secrets](2.2-iam-and-secrets/)
 - [2.3 Tạo Elastic Beanstalk Environment](2.3-create-beanstalk/)
-- [2.4 Tích hợp MongoDB Atlas và Mongoose](2.4-mongodb-integration/)
+- [2.4 Tích hợp MongoDB Atlas](2.4-mongodb-integration/)
+- [2.5 Thiết lập S3](2.5-s3-setup/)
 
 Hoàn thành các bước này trước khi chuyển sang instrumentation backend và deployment.

@@ -67,7 +67,7 @@
 	"title": "Preparation",
 	"tags": [],
 	"description": "",
-	"content": "In this section, you will complete all the essential preparation steps before deploying and tracing your application on AWS. These labs will help you:\nAWS Identity and Access Management (IAM) Set up your AWS account and enable X-Ray Create IAM users and roles with proper permissions Securely manage credentials using AWS Secrets Manager Integrate MongoDB Atlas with your backend using Mongoose Each lab is a critical foundation for a secure, observable, and production-ready deployment.\nLabs included:\n2.1 AWS Account Setup and Enabling X-Ray 2.2 Create IAM User and Policies 2.3 Secure Credentials with AWS Secrets Manager 2.4 Integrate MongoDB Atlas and Mongoose Complete these steps before moving on to backend instrumentation and deployment.\n"
+	"content": "In this section, you will complete all the essential preparation steps before deploying and tracing your application on AWS. These labs will help you:\nAWS Identity and Access Management (IAM) Set up your AWS account and enable X-Ray Create IAM users and roles with proper permissions Securely manage credentials using AWS Secrets Manager Integrate MongoDB Atlas with your backend using Mongoose Each lab is a critical foundation for a secure, observable, and production-ready deployment.\nLabs included:\n2.1 Create MongoDB Atlas Database 2.2 IAM and Secrets Management 2.3 Create Elastic Beanstalk Environment 2.4 MongoDB Integration 2.5 S3 Setup Complete these steps before moving on to backend instrumentation and deployment.\n"
 },
 {
 	"uri": "http://localhost:1313/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/2-preparation/2.2-iam-and-secrets/",
