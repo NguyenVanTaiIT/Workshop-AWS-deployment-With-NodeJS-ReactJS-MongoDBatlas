@@ -60,7 +60,9 @@ pre : " <b> 8. </b> "
 
 ### 3️⃣ MongoDB Atlas Cluster
 
-> Nếu bạn đã tạo **MongoDB Atlas cluster**, việc xóa nó sẽ dừng tính phí từ MongoDB (không phải AWS).
+{{% notice note %}}
+Nếu bạn đã tạo **MongoDB Atlas cluster**, việc xóa nó sẽ dừng tính phí từ MongoDB (không phải AWS).
+{{% /notice %}}
 
 1. Đi đến [MongoDB Atlas](https://cloud.mongodb.com)
 2. Điều hướng đến project của bạn

@@ -62,7 +62,9 @@ Here’s how to clean up each service:
 
 ### 3️⃣ MongoDB Atlas Cluster
 
-> If you created a **MongoDB Atlas cluster**, deleting it will stop billing from MongoDB (not AWS).
+{{% notice note %}}
+If you created a **MongoDB Atlas cluster**, deleting it will stop billing from MongoDB (not AWS).
+{{% /notice %}}
 
 1. Go to [MongoDB Atlas](https://cloud.mongodb.com)
 2. Navigate to your project
