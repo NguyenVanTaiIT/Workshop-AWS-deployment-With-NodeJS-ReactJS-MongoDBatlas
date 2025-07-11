@@ -60,7 +60,7 @@
 	"title": "Chuẩn bị",
 	"tags": [],
 	"description": "",
-	"content": "Trong phần này, bạn sẽ hoàn thành tất cả các bước chuẩn bị cần thiết trước khi triển khai và theo dõi ứng dụng trên AWS. Các bài lab này sẽ giúp bạn:\nQuản lý danh tính và truy cập (IAM) trên AWS Thiết lập tài khoản AWS và bật X-Ray Tạo IAM users và roles với quyền phù hợp Quản lý credentials an toàn bằng AWS Secrets Manager Tích hợp MongoDB Atlas với backend bằng Mongoose Mỗi lab là nền tảng quan trọng cho một deployment an toàn, có thể quan sát và sẵn sàng cho production.\nCác lab bao gồm:\n2.1 Tạo MongoDB Atlas Database 2.2 Chuẩn bị IAM và Secrets 2.3 Tạo Elastic Beanstalk Environment 2.4 Tích hợp MongoDB Atlas và Mongoose Hoàn thành các bước này trước khi chuyển sang instrumentation backend và deployment.\n"
+	"content": "Trong phần này, bạn sẽ hoàn thành tất cả các bước chuẩn bị cần thiết trước khi triển khai và theo dõi ứng dụng trên AWS. Các bài lab này sẽ giúp bạn:\nQuản lý danh tính và truy cập (IAM) trên AWS Thiết lập tài khoản AWS và bật X-Ray Tạo IAM users và roles với quyền phù hợp Quản lý credentials an toàn bằng AWS Secrets Manager Tích hợp MongoDB Atlas với backend bằng Mongoose Mỗi lab là nền tảng quan trọng cho một deployment an toàn, có thể quan sát và sẵn sàng cho production.\nCác lab bao gồm:\n2.1 Tạo MongoDB Atlas Database 2.2 IAM và Quản lý Secrets 2.3 Tạo Elastic Beanstalk Environment 2.4 Tích hợp MongoDB Atlas 2.5 Thiết lập S3 Hoàn thành các bước này trước khi chuyển sang instrumentation backend và deployment.\n"
 },
 {
 	"uri": "https://nguyenvantaiit.github.io/Workshop-AWS-deployment-With-NodeJS-ReactJS-MongoDBatlas/vi/2-preparation/2.2-iam-and-secrets/",
