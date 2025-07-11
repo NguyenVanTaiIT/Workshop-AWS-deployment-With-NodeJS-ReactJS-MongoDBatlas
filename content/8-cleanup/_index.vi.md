@@ -94,7 +94,9 @@ Nếu bạn đã tạo **MongoDB Atlas cluster**, việc xóa nó sẽ dừng t�
 
 {{< figure src="../../images/8-cleanup/012-CleanUp.png" title="Xóa secret trong AWS Secrets Manager" >}}
 
+{{% notice info %}}
 Secrets được lên lịch xóa trong 7 ngày (bạn có thể buộc xóa ngay lập tức qua CLI).
+{{% /notice %}}
 
 ---
 

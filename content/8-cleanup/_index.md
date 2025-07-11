@@ -96,7 +96,9 @@ If you created a **MongoDB Atlas cluster**, deleting it will stop billing from M
 
 {{< figure src="./../images/8-cleanup/012-CleanUp.png" title="Delete secret in AWS Secrets Manager" >}}
 
+{{% notice info %}}
 Secrets are scheduled for deletion in 7 days (you can force immediate deletion via CLI).
+{{% /notice %}}
 
 ---
 
